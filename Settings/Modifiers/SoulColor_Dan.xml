@@ -2,13 +2,13 @@
 
 	<Modifier Name="SoulColor_TXD" Type="Normal">
 		<DisplayName>天心丹</DisplayName>
-		<Desc>提高心境基础值70。</Desc>
+		<Desc>提高心境基础值50。</Desc>
 		<MaxStack>1</MaxStack>
-		<Duration>1000</Duration>
+		<Duration>1800</Duration>
 		<Display>1</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="MindStateBaseValue" AddV="70"/><!--心境的基础值-->
+			<li Name="MindStateBaseValue" AddV="50"/><!--心境的基础值-->
 		</Properties>
 	</Modifier>
 	
