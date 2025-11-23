@@ -1,0 +1,88 @@
+﻿<Experiences><List>
+
+	<Experience Name="SoulColor_QuanNengRenCai">
+		<DisplayName>全能人才</DisplayName>
+		<Desc>人物属性全满，建议初始选择。[/size]</Desc>
+		<Point>0</Point><!--消耗点数-->
+		<Recommend>1</Recommend><!-- 推荐星级 -->
+		<ModifierDef>
+			<BaseFive>10,10,10,10,10</BaseFive><!--属性-->
+			<!-- 人物技能 -->
+			<Skills>
+				<li Name="DouFa" Level="50"/><!-- 斗法 -->
+				<li Name="DanQi" Level="50"/><!-- 丹器 -->
+				<li Name="Fabao" Level="50"/><!-- 法宝 -->
+				<li Name="FightSkill" Level="50"/><!-- 术法 -->
+				<li Name="Barrier" Level="50"/><!-- 护体 -->
+				<li Name="Zhen" Level="50"/><!-- 阵法 -->
+				<li Name="Fight" Level="110"/><!-- 御物 -->
+				<li Name="Qi" Level="110"/><!-- 气感 -->
+				<li Name="SocialContact" Level="110"/><!-- 社交 -->
+				<li Name="Medicine" Level="110"/><!-- 岐黄 -->
+				<li Name="Cooking" Level="110"/><!-- 烹饪 -->
+				<li Name="Building" Level="110"/><!-- 建筑 -->
+				<li Name="Farming" Level="110"/><!-- 农事 -->
+				<li Name="Mining" Level="110"/><!-- 采掘 -->
+				<li Name="Art" Level="110"/><!-- 巧匠 -->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+			</Skills>
+			<!-- 属性 -->
+			<Properties>
+				<li Name="PotentialOfBasepracticeAddValue" AddV="1.5"/>
+			</Properties>
+		</ModifierDef>
+		<!--功法-->
+		<Gongs>
+		</Gongs>
+		<!--秘籍-->
+		<Esoterics>
+		</Esoterics>
+		<!--身上物品-->
+		<Equips>
+		</Equips>	
+		<!--地上物品-->
+		<Items>
+		</Items>
+	</Experience>
+	
+	<Experience Name="SoulColor_Map">
+		<DisplayName>显示全图</DisplayName>
+		<Desc>[size=10][color=#D06508]开启：全地图[/color][/size]</Desc>
+		<Point>0</Point>
+		<Recommend>1</Recommend>
+		<ModifierDef>
+			<NoFog>1</NoFog>
+		</ModifierDef>
+	</Experience>
+	
+	<Experience Name="SoulColor_1">
+		<DisplayName>七彩传承</DisplayName>
+		<Desc>你进入太一门之前就机缘巧合得到过《七彩琉璃经》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《七彩琉璃经》[/color]\n此功法开局简单，建议初始选择。[/size]</Desc>
+		<Point>5</Point><!--消耗点数-->
+		<Recommend>1</Recommend><!-- 推荐星级 -->
+		<!--扩展属性-->
+		<Properties>
+				<!--<li Name="MaxAge" AddV="0"/>-->
+		</Properties>
+		<!--功法-->
+		<Gongs>
+			<li>SoulColor_1</li><!--七彩琉璃经-->
+		</Gongs>
+		<ModifierDef>
+			<!--技能-->
+			<Skills>
+				<!--<li Name="Fabao" Level="5"/>-->
+			</Skills>
+		</ModifierDef>
+		<!--秘籍-->
+		<Esoterics>
+		</Esoterics>
+		<!--身上物品-->
+		<Equips>
+		</Equips>	
+		<!--地上物品-->
+		<Items>
+		</Items>
+	</Experience>
+	
+</List></Experiences>

@@ -1,0 +1,21 @@
+<ZhenSlotDefs><List>
+<!--阵眼玄机-->
+<!--
+	<Def Name="Lv4_Meng" DisplayName="蒙">
+		<Lv>4</Lv>
+		<SlotType>Lv4_Meng</SlotType> 
+		<Effect>
+			<li Type="FabaoAtkPowerBasev" Value="4" />
+			<li Type="MagicPowerBasev" Value="4" />
+			<li Type="SheildBasev" Value="4" />
+			<li Type="StabilityBasev" Value="4" />
+		</Effect>
+		<CoreEffect>
+			<li Type="FabaoAtkPowerAddp" Value="0.3" />
+			<li Type="MagicPowerAddp" Value="0.3" />
+			<li Type="SheildAddp" Value="0.3" />
+			<li Type="StabilityAddp" Value="0.3" />
+		</CoreEffect>
+	</Def>
+	-->
+</List></ZhenSlotDefs>

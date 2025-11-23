@@ -1,0 +1,136 @@
+﻿<Gongs><List>
+	<Gong Name="SoulColor_1">   
+		<DisplayName>七彩琉璃经</DisplayName>
+		<Desc>元始天尊留在人间的道统，七彩琉璃谷不传之秘。</Desc>
+		<SelectDesc>此功法属于辅助功法擅长恢复灵气与炼器。是否要选择修习此功法？</SelectDesc>
+		<FiveBaseNeed>1, 1, 1, 1, 1</FiveBaseNeed>
+		<SkillSetName></SkillSetName>
+		<ElementKind>Shui</ElementKind><!--None-->
+		<Skill>
+			<li>chumo</li>
+			<li>jiangdao</li>
+			<li>guanding</li>
+			<li>ciqi</li>
+			<li>kaiguang</li>
+			<li>cuiti</li>
+			<li>bihu</li>
+		</Skill>
+		<Hide>2</Hide>
+		<Stages>
+			<Stage Name="SoulColor1" Level="3">
+				<DisplayName>练气境</DisplayName>
+				<Desc>修行入门之境界，需下苦功宁神静坐。</Desc>
+				<Value>1200</Value>
+				<Necks>
+					
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>结丹境</DisplayName>
+						<Desc>修行进入此境界，需逐步壮大真气，并驱使其打通三关三田，打通任督二脉，形成循环。此为周天。</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Qi</AddModifier>
+					</Neck>
+					
+				</Necks>
+			</Stage>
+			
+			<Stage Name="SoulColor2" Level="6">
+				<DisplayName>结丹境</DisplayName>
+				<Desc></Desc>
+				<Value>1800</Value>
+				<Necks>
+					
+					<Neck Location="1" Kind="Gold">
+						<DisplayName>金丹境</DisplayName>
+						<Desc>精气神合一，结成金丹，奠定道基。</Desc>
+						<AddModifier>Gong_Gold</AddModifier>
+					</Neck>
+					
+				</Necks>
+			</Stage>
+			
+			<Stage Name="SoulColor3" Level="9">
+				<DisplayName>金丹境</DisplayName>
+				<Desc></Desc>
+				<Value>140000</Value>
+				<Necks>
+					
+					<Neck Location="0.2" Kind="Thunder">
+						<DisplayName>初劫</DisplayName>
+						<Desc>金丹初成，天降雷劫阻成道。</Desc>
+						<ThunderValue>10000</ThunderValue>
+						<NeckCountdown>4900</NeckCountdown>
+					</Neck>
+
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>元神境</DisplayName>
+						<Desc>自封神通，返璞归真之中，元婴出现，打破肉身之牢笼，此谓之地仙境界。</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Thunder1</AddModifier>
+					</Neck>
+					
+				</Necks>
+			</Stage>	
+			
+			<Stage Name="SoulColor4" Level="12">
+				<DisplayName>元神境</DisplayName>
+				<Desc></Desc>
+				<Value>1490000</Value>
+				<Necks>
+					
+					<Neck Location="0.4" Kind="Chance">
+						<DisplayName>养神</DisplayName>
+						<Desc>以地母太阴之息温养元神，使之成长。</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<!--<ItemCost>
+							<Item name="Item_EarthEssence"/>
+						</ItemCost>-->
+					</Neck>
+					
+					<Neck Location="0.8" Kind="Chance">
+						<DisplayName>炼神</DisplayName>
+						<Desc>以天地元气凝练元神。</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>0.3</SuccessChange>
+					</Neck>
+					
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>出窍</DisplayName>
+						<Desc>自开天门，脱壳而出，逍遥天地。[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>0.2</SuccessChange>
+						<AddModifier>Gong_Thunder2</AddModifier>
+					</Neck>
+					
+				</Necks>
+			</Stage>
+			
+			<Stage Name="SoulColor5" Level="12">
+				<DisplayName>渡劫境</DisplayName>
+				<Desc></Desc>
+				<Value>6760000</Value>
+				<Necks>
+					
+					<Neck Location="0.8" Kind="Chance">
+						<DisplayName>得天</DisplayName>
+						<Desc>以元神得天道之妙，一旦过此关，将直面天劫。[color=#D06508]\n此瓶颈很难突破，且无经验加成。[/color]</Desc>
+						<CostTime>50</CostTime>
+						<SuccessChange>0.1</SuccessChange>
+					</Neck>
+					
+					<Neck Location="1" Kind="God">
+						<DisplayName>飞升</DisplayName>
+						<Desc>天地间反噬到来，度过劫难仙途在望，反之灰飞烟灭。</Desc>
+						<ThunderValue>560000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+						<AddModifier>Gong_Thunder3</AddModifier>
+					</Neck>
+					
+				</Necks>
+			</Stage>
+			
+		</Stages>
+	</Gong>
+</List></Gongs>

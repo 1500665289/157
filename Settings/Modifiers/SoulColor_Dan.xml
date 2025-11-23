@@ -1,0 +1,16 @@
+<ModifierDefs><List>
+
+	<Modifier Name="SoulColor_TXD" Type="Normal">
+		<DisplayName>天心丹</DisplayName>
+		<Desc>提高心情、心境基础值200。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="BaseEmotionAddV" AddV="200"/><!--心情基础值-->
+			<li Name="MindStateBaseValue" AddV="200"/><!--心境的基础值-->
+		</Properties>
+	</Modifier>
+	
+</List></ModifierDefs>

@@ -1,0 +1,104 @@
+﻿<Experiences><List>
+
+	<Experience Name="SoulColor_CeShi">
+		<DisplayName>测试</DisplayName>
+		<Desc>测试[/size]</Desc>
+		<Point>0</Point><!--消耗点数-->
+		<Recommend>0</Recommend><!-- 推荐星级 -->
+		<NpcSlot>0</NpcSlot><!--NPC个数-->
+		<ModifierDef>
+			<NoFog>1</NoFog>
+			<BaseFive>10,10,10,10,10</BaseFive><!--属性-->
+			<!-- 人物技能 -->
+			<Skills>
+				<li Name="DouFa" Level="50"/><!-- 斗法 -->
+				<li Name="DanQi" Level="50"/><!-- 丹器 -->
+				<li Name="Fabao" Level="50"/><!-- 法宝 -->
+				<li Name="FightSkill" Level="50"/><!-- 术法 -->
+				<li Name="Barrier" Level="50"/><!-- 护体 -->
+				<li Name="Zhen" Level="50"/><!-- 阵法 -->
+				<li Name="Fight" Level="110"/><!-- 御物 -->
+				<li Name="Qi" Level="110"/><!-- 气感 -->
+				<li Name="SocialContact" Level="110"/><!-- 社交 -->
+				<li Name="Medicine" Level="110"/><!-- 岐黄 -->
+				<li Name="Cooking" Level="110"/><!-- 烹饪 -->
+				<li Name="Building" Level="110"/><!-- 建筑 -->
+				<li Name="Farming" Level="110"/><!-- 农事 -->
+				<li Name="Mining" Level="110"/><!-- 采掘 -->
+				<li Name="Art" Level="110"/><!-- 巧匠 -->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+			</Skills>
+			<!-- 属性 -->
+			<Properties>
+				<li Name="PotentialOfBasepracticeAddValue" AddV="1.5"/>
+			</Properties>
+		</ModifierDef>
+		<!--功法-->
+		<Gongs>
+			<li>Gong_1_Shui</li><!--《太和十六洞天》-->
+			<li>Gong_2_Mu</li><!--《己寅九冲多宝真解》-->
+			<li>Gong_3_Jin</li><!--《七杀剑诀》-->
+			<li>Gong_4_None</li><!--《昆仑仙法》-->
+			<li>Gong_5_Tu</li><!--《偷天诀》-->
+			<li>Gong_6_Huo</li><!--《九转金丹直指》-->
+			<li>Gong_7_Huo</li><!--《太上忘情道》-->
+			<li>Gong_8_Jin</li><!--《北斗洞心劫法》-->
+			<li>Gong_9_Mu</li><!--《长生六道轮回经》-->
+			<li>Gong_10_Huo</li><!--《三阳三昧丙丁炼火诀》-->
+			<li>Gong_11_Tu</li><!--《葵花炼神大法》-->
+			<li>SoulColor_1</li><!--《七彩琉璃经》-->
+		</Gongs>
+		<!--秘籍-->
+		<Esoterics>
+		</Esoterics>
+		<!--身上物品-->
+		<Equips>
+		</Equips>	
+		<!--地上物品-->
+		<Items>
+			<li Name= "Item_BasePracticeDrug" Count="99"/><!-- 筑基丹 -->
+			<li Name= "Item_Dan_TreeEXP" Count="100"/><!-- 天道神丹 -->
+			<li Name= "SoulColor_Dan_TXD" Count="100"/><!-- 天心丹 -->
+			
+			<li Name= "Item_LingCloth" Count="500"/><!-- 灵布 -->
+			
+			<li Name= "Item_MuLingStoneBlock" Count="500"/><!-- 木灵石砖 -->
+			<li Name= "Item_TuLingStoneBlock" Count="500"/><!-- 土灵石砖 -->
+			<li Name= "Item_JinLingStoneBlock" Count="500"/><!-- 金灵石砖 -->
+			<li Name= "Item_HuoLingStoneBlock" Count="500"/><!-- 火灵石砖 -->
+			<li Name= "Item_ShuiLingStoneBlock" Count="500"/><!-- 水灵石砖 -->
+			<li Name= "SoulColor_Item_WoodRockLeftover" Count="500"/><!-- 木灵石角料 -->
+			<li Name= "SoulColor_Item_BrownRockLeftover" Count="500"/><!-- 土灵石角料 -->
+			<li Name= "SoulColor_Item_IronRockLeftover" Count="500"/><!-- 金灵石角料 -->
+			<li Name= "SoulColor_Item_CopperRockLeftover" Count="500"/><!-- 火灵石角料 -->
+			<li Name= "SoulColor_Item_SilverRockLeftover" Count="500"/><!-- 水灵石角料 -->
+			
+			<li Name= "Item_Jerky" Count="500"/><!-- 肉干 -->
+			<li Name= "Item_Water" Count="500"/><!-- 水 -->
+			
+			<li Name= "Item_RoughWoodBlock" Count="500"/><!--木料-->
+			<li Name= "Item_HardWoodBlock" Count="500"/><!--金丝木料-->
+			<li Name= "Item_ParasolWoodBlock" Count="500"/><!--梧桐木料-->
+			<li Name= "Item_LingWoodBlock" Count="500"/><!--灵木料-->
+			
+			<li Name= "Item_BrownRockBlock" Count="500"/><!--棕石砖-->
+			<li Name= "Item_GrayRockBlock" Count="500"/><!--灰石砖-->
+			<li Name= "Item_MarbleBlock" Count="500"/><!--大理石砖-->
+			<li Name= "Item_JadeBlock" Count="500"/><!--玉石砖-->
+			<li Name= "Item_SkyStoneBlock" Count="500"/><!--天柱石砖-->
+			<li Name= "Item_LingStoneBlock" Count="500"/><!--灵石砖-->
+			<li Name= "Item_LingCrystalBlock" Count="500"/><!--灵晶砖-->
+			
+			<li Name= "Item_IronBlock" Count="500"/><!--铁锭-->
+			<li Name= "Item_CopperBlock" Count="500"/><!--火铜锭-->
+			<li Name= "Item_SilverBlock" Count="500"/><!--寒晶锭-->
+			<li Name= "Item_CopperBlock1" Count="500"/><!--火精锭-->
+			<li Name= "Item_SilverBlock1" Count="500"/><!--寒精锭-->
+			<li Name= "Item_DarksteelBlock" Count="500"/><!--玄铁锭-->
+			<li Name= "Item_StarEssenceBlock" Count="500"/><!--星髓锭-->
+			
+			<li Name= "Item_LingStone" Count="500"/><!--灵石-->
+			<li Name= "Item_LingCrystal" Count="500"/><!--灵晶-->
+		</Items>
+	</Experience>
+</List></Experiences>

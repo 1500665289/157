@@ -1,0 +1,690 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="SoulColor_Sword_GuiRen" Parent="WeaponBase">
+		<ThingName>聚灵剑</ThingName>
+		<TexPath>res\Sprs\object\object_weaponjian01</TexPath>	
+		<MaxStack>1</MaxStack>
+		<Desc>通过魔法吸取灵石和灵晶的灵气凝成的剑，自带聚灵效果，无需灵气就能让使用者隔空发动攻击，还具有隔绝温度的特效。</Desc>
+		<!--<KeepModelColor>1</KeepModelColor>--><!--保持模型贴图颜色，不会受主材料影响-->
+		<Item Lable="Weapon">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>剑</FabaoSuffix>
+			<PhysicalLables>
+			<li>Sharp</li>
+			</PhysicalLables>
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			</BeMade>
+			<Equip>
+				<Damage>30</Damage>
+				<AttackSpeed>1.5</AttackSpeed>
+				<AttackRange>10</AttackRange>
+				<ArmorLingShield>0.05</ArmorLingShield>
+				<TemperatureMaxAdd>50</TemperatureMaxAdd>
+				<TemperatureMinAdd>-50</TemperatureMinAdd>
+				<AtkDamage>
+					<li PartKind="Flesh" Name="Cut1" Rate="0.4"/>
+					<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+					<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+				</AtkDamage>
+				<AtkAnis>
+					<li Name="LJpugong1" HitPoint="11"/>
+					<li Name="LJpugong2" HitPoint="9"/>
+					<li Name="LJpugong3" HitPoint="15"/>
+					<li Name="LJpugong4" HitPoint="9"/>
+				</AtkAnis>
+				<WeaponKind>Sword</WeaponKind>
+				<ModPath>Mod/Prop/Weapon/weapon_jian1</ModPath>
+				<!--<ModPath>Mod/Weapon/Jian/ChangJian.FBX</ModPath>-->
+			</Equip>
+		</Item>
+		<Ling>
+			<AddionLing>100</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>2</AddionFailRadius>
+			<Attenuation>0.1</Attenuation>
+			<Absorption>1</Absorption>
+			<Accommodate>100</Accommodate>
+		</Ling>
+		<Light>
+			<Value>20</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>1</Radius>
+		<Color>94C8DAFF</Color>
+	</Light>
+	</ThingDef>
+<!--
+	<ThingDef Type="Item" Name="SoulColor_001" Parent="ClothesBase">
+		<ThingName>角色扮演服</ThingName>
+		<TexPath>Spr/Object/NPC001.png</TexPath>
+		<MaxStack>1</MaxStack>
+		<Desc>穿上后可以变身的衣服。</Desc>
+		<KeepModelColor>1</KeepModelColor>
+		<Item Lable="Clothes">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCloth" count = "100"/>
+				</CostItems>
+			</BeMade>
+			<Equip>
+				<ModelID>2</ModelID>
+				<ArmorLingShield>0.05</ArmorLingShield>
+				<TemperatureMaxAdd>30</TemperatureMaxAdd>
+				<TemperatureMinAdd>-20</TemperatureMinAdd>
+				<NpcMod>Mod/Npc/Human/NPC001/NPC.FBX</NpcMod>
+			</Equip>
+		</Item>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="SoulColor_002" Parent="ClothesBase">
+		<ThingName>角色扮演服</ThingName>
+		<TexPath>Spr/Object/NPC002.png</TexPath>
+		<MaxStack>1</MaxStack>
+		<Desc>穿上后可以变身的衣服。</Desc>
+		<KeepModelColor>1</KeepModelColor>
+		<Item Lable="Clothes">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCloth" count = "100"/>
+				</CostItems>
+			</BeMade>
+			<Equip>
+				<ModelID>2</ModelID>
+				<ArmorLingShield>0.05</ArmorLingShield>
+				<TemperatureMaxAdd>30</TemperatureMaxAdd>
+				<TemperatureMinAdd>-20</TemperatureMinAdd>
+				<NpcMod>Mod/Npc/Human/NPC002/NPC.FBX</NpcMod>
+			</Equip>
+		</Item>
+	</ThingDef>
+	-->
+	<ThingDef Type="Item" Name="SoulColor_Dan_TXD" Parent="DanBase">
+		<ThingName>天心丹</ThingName>
+		<TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+		<Desc>永久提高心情、心境基础值200。</Desc>	
+		<Tags>
+			<Tag Name="PracticeFood" Level="2"/>
+		</Tags>
+		<Rate>6</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>SoulColor_TXD</Modifier>
+				<Fesistance>1</Fesistance>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>20</WorkToMake>
+				<CostItems>
+					<Item name = "Item_Water" count = "1"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>50</Value>
+			<Radius>2</Radius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingCloth">
+	<ThingName>灵布</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>灵石软化后制成的布料，可以用来制作衣物等。</Desc>
+	<MaxStack>500</MaxStack>
+	<Beauty>10</Beauty>
+	<Rate>6</Rate>	
+	<ElementKind>None</ElementKind>
+	<Color>E472F6FF</Color>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Item Lable="Cloth">
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<NotRandom>1</NotRandom>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMaterial>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<ClothesColorID>2</ClothesColorID>
+			
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>灵布</NamePrefix>
+			
+			<LingShieldWhenBeMain>0.05</LingShieldWhenBeMain>
+			<TemperatureMaxAddWhenBeMain>30</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-20</TemperatureMinAddWhenBeMain>
+			
+			<ColorWhenBeMain>E472F6FF</ColorWhenBeMain>
+			
+			<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+			<LingNumberRate>1</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MuLingStoneBlock" Parent="RockBlockBase">
+	<ThingName>木灵石砖</ThingName>
+	<TexPath>res\Sprs\object\object_brick03</TexPath>
+	<Desc>灵石切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<Color>6DC2CAFF</Color>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Item>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>木灵石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<MaxHitPointsPerNum>40</MaxHitPointsPerNum>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+			<ColorWhenBeMain>6DC2CAFF</ColorWhenBeMain>
+			
+			<CostMultiplier>2</CostMultiplier>
+			
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.6</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>20</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>92EDF4FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_TuLingStoneBlock" Parent="RockBlockBase">
+	<ThingName>土灵石砖</ThingName>
+	<Color>8C6F14FF</Color>
+	<TexPath>res\Sprs\object\object_brick03</TexPath>	
+	<Desc>灵石切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Tu</ElementKind>
+	<Item>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>土灵石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<MaxHitPointsPerNum>40</MaxHitPointsPerNum>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+			<ColorWhenBeMain>8C6F14FF</ColorWhenBeMain>
+			
+			<CostMultiplier>2</CostMultiplier>
+			
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.6</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>20</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>C0981CFF</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_JinLingStoneBlock" Parent="RockBlockBase">
+	<ThingName>金灵石砖</ThingName>
+	<Color>FFD700FF</Color>
+	<TexPath>res\Sprs\object\object_brick03</TexPath>	
+	<Desc>灵石切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Item>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>金灵石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<MaxHitPointsPerNum>40</MaxHitPointsPerNum>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+			<ColorWhenBeMain>FFD700FF</ColorWhenBeMain>
+			
+			<CostMultiplier>2</CostMultiplier>
+			
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.6</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>20</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>FFD700FF</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_HuoLingStoneBlock" Parent="RockBlockBase">
+	<ThingName>火灵石砖</ThingName>
+	<ThingName>9E5100FF</ThingName>
+	<TexPath>res\Sprs\object\object_brick03</TexPath>	
+	<Desc>灵石切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>火灵石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<MaxHitPointsPerNum>40</MaxHitPointsPerNum>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+			<ColorWhenBeMain>9E5100FF</ColorWhenBeMain>
+			
+			<CostMultiplier>2</CostMultiplier>
+			
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.6</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>20</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>D86F00FF</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_ShuiLingStoneBlock" Parent="RockBlockBase">
+	<ThingName>水灵石砖</ThingName>
+	<ThingName>D3F4FFFF</ThingName>
+	<TexPath>res\Sprs\object\object_brick03</TexPath>	
+	<Desc>灵石切割成的砖块，可以更有效的用来进行制作。</Desc>
+	<Rate>6</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard1</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>水灵石</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<MaxHitPointsPerNum>40</MaxHitPointsPerNum>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+			
+			<ColorWhenBeMain>D3F4FFFF</ColorWhenBeMain>
+			
+			<CostMultiplier>2</CostMultiplier>
+			
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.6</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Light>
+		<Value>20</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>94C8DAFF</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="SoulColor_Item_WoodRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>木灵石角料</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Desc>混杂了碎木的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>6FE1D8FF</Color>
+	
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	
+	<Item>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>木灵石</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_wood</StuffTexPath>
+			<ColorWhenBeFloor>6DC2CAFF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>5AF8FFFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>100</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="SoulColor_Item_BrownRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>土灵石角料</ThingName>
+	<ElementKind>Tu</ElementKind>
+	<Desc>混杂了碎棕石的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>CABD8FFF</Color>		
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>土灵石</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>DFCDA6FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>F0D998FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>100</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="SoulColor_Item_IronRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>金灵石角料</ThingName>
+	<ElementKind>Jin</ElementKind>
+	<Desc>混杂了碎铁屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>2E4244FF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>金灵石</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>456163FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>476D5FFF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>100</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="SoulColor_Item_CopperRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>火灵石角料</ThingName>
+	<ElementKind>Huo</ElementKind>
+	<Desc>混杂了火铜屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>524030FF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>火灵石</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_copper</StuffTexPath>
+			
+			<ColorWhenBeFloor>A59268FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>874345FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>100</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="SoulColor_Item_SilverRockLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>水灵石角料</ThingName>
+	<ElementKind>Shui</ElementKind>
+	<Desc>混杂了寒晶矿屑的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>5D6D70FF</Color>
+	<Flammability>
+		<BurningPoint>1200</BurningPoint>
+	</Flammability>
+	<Item>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>水灵石</NamePrefix>
+			<RateWhenBeMain>1</RateWhenBeMain>
+			
+			<ColorWhenBeFloor>5D6D70FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>446E98FF</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1200</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>100</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+</List></ThingDefs>

@@ -1,0 +1,68 @@
+<ZhenSuitDefs><List>
+
+	<Def Name="QiCaiLiuGuanZhen" DisplayName="七彩流光阵">
+		<Description></Description>
+		<NodeName>
+		</NodeName>
+		
+		<SuitEffect>
+			<li>
+				<RequireCount>2</RequireCount>
+				<DisplayName></DisplayName>
+				<Description>御器能力额外提高</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>FabaoAtkPowerAddv</TypeExtra>
+				<fParam1>25</fParam1>
+			</li>
+			<li>
+				<RequireCount>2</RequireCount>
+				<DisplayName></DisplayName>
+				<Description>护御能力额外提高</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>SheildAddv</TypeExtra>
+				<fParam1>25</fParam1>
+			</li>
+			<li>
+				<RequireCount>3</RequireCount>
+				<DisplayName></DisplayName>
+				<Description>稳定度</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>StabilityAddv</TypeExtra>
+				<fParam1>36</fParam1>
+			</li>
+			<li>
+				<RequireCount>3</RequireCount>
+				<DisplayName></DisplayName>
+				<Description>运转能力额外提高</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>SkillCooldownAddv</TypeExtra>
+				<fParam1>121</fParam1>
+			</li>
+			<li>
+				<RequireCount>3</RequireCount>
+				<DisplayName></DisplayName>
+				<Description>阵法效率额外提高</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>ReduceCostAddv</TypeExtra>
+				<fParam1>49</fParam1>
+			</li>
+			<li>
+				<RequireCount>4</RequireCount>
+				<DisplayName></DisplayName>
+				<Description>御器能力额外提高</Description>
+				<SuitType>AddZhenProperty</SuitType>
+				<TypeExtra>FabaoAtkPowerAddv</TypeExtra>
+				<fParam1>36</fParam1>
+			</li>
+			<li>
+				<RequireCount>5</RequireCount>
+				<DisplayName></DisplayName>
+				<Description>新增技能：诛仙</Description>
+				<SuitType>AddSkill</SuitType>
+				<SParam1>FightSkill_Zhen_ZhuXian</SParam1>
+				<Cost>5</Cost>
+			</li>
+		</SuitEffect>
+	</Def>
+	
+</List></ZhenSuitDefs>

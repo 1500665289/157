@@ -1,0 +1,80 @@
+<ThingDefs><List><!-- 1开启0关闭 -->
+	<ThingDef Type="Building" Name="Shenkeng"><!-- 建筑归类 -->
+	<TexPath>res/Sprs/building/building_bonfire1b</TexPath><!-- 图片路径 -->
+	<TexScale>1</TexScale><!-- 图片缩放 -->
+	<ThingName>神奇的坑</ThingName><!-- 名字 -->
+	<Desc>就是一个神奇的坑。</Desc><!-- 说明 -->
+	<!-- <SelectAble>1</SelectAble>选择能力 -->
+	<!-- <CastShadow>1</CastShadow>投射阴影 -->
+	<!-- <BlockLight>1</BlockLight>块光？ -->
+	<!-- <BlockMissile>1</BlockMissile>阻隔？ -->
+	<!-- <Beauty>100</Beauty>美观度 -->
+	<!-- <UseHitPoints>1</UseHitPoints>使用点？ -->
+	<!-- <MaxHitPoints>500</MaxHitPoints>最大生命值 -->
+	<!-- <GrowAble>0</GrowAble>成长率？ -->
+	<!-- <VisionRadius>5</VisionRadius>视野半径 -->
+	<!-- <ElementKind>Tu</ElementKind>建筑自带属性 -->
+	<!-- <ColliderKind>NoPass</ColliderKind>碰撞体积 -->
+	<!-- <Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>建筑可燃性 -->
+	<!-- <Tags>功能属性 -->
+		<!-- <Tag Name="ForFun" Level="0"/>娱乐 -->
+		<!-- <Tag Name="Refining" Level="1"/>炼器 -->
+		<!-- <Tag Name="RefiningDan" Level="1"/>炼丹 -->
+		<!--<Tag Name="Sleep" Level="15"/>睡觉-->
+		<!--<Tag Name="Practice" Level="15"/>修炼-->
+	<!-- </Tags> -->
+	<!-- <Collider>使用者属性 -->
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data><!-- 0无，1建筑占地，2不明，3工作占地，使用者占地，5不明，6忘记了，7人物可重叠 -->
+		[0,4,0],
+		[4,3,4],
+		[0,4,0]
+		</Data>
+		<WorkOffset><!-- 使用者朝向 -->
+			<li Index="0"  X="-0.05" Y="-0.16" Ang="180"/>
+			<li Index="1"  X="0.2" Y="0" Ang="90"/>
+			<li Index="2"  X="-0.2" Y="0" Ang="-90"/>
+			<li Index="3"  X="0" Y="0.45" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+	<Building><!-- 建筑属性 -->
+		<!-- <BuildMode>Single</BuildMode>构建模式 -->
+		<!-- <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>地形功能可见性需要 -->
+		<!-- <LeaveResourcesWhenKilled>1</LeaveResourcesWhenKilled>缺少资源时,建筑消失？ -->
+		<!-- <RemovePriceFactor>0.5</RemovePriceFactor>拆除亏损率 -->
+		<!-- <BePackage>0</BePackage>建筑可打包 -->
+		<!-- <IsVirtualBuilding>0</IsVirtualBuilding>是虚拟的建筑？ -->
+		<!-- <FloorDefName></FloorDefName>地板名字 -->
+		<!-- <RestEffectiveness>0</RestEffectiveness>其他有效性 -->
+		<ShowFree>1</ShowFree><!-- 显示免费？ -->
+		<NoFengshui>0</NoFengshui><!-- 无风水 -->
+		<NoFight>1</NoFight><!-- 无战斗 -->
+		<!-- <CanMakeRoom>0</CanMakeRoom>构成房间 -->
+		<!-- <SelectProduceStuff>1</SelectProduceStuff>选择生产东西 -->
+		<WorkAnimation>ketou</WorkAnimation><!-- 工作动画 -->
+		<BeMade>
+			<WorkToMake>30</WorkToMake><!-- 建造时间 -->
+			<Quality>12</Quality><!-- 质量 -->
+			<StuffCategories><!-- 材料类别 -->
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+		</BeMade>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Handwork</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_WeaponWoodBow</ThingDef>
+				<Display>木弓</Display>
+				<Count>1</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+</List></ThingDefs>

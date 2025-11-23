@@ -1,0 +1,266 @@
+<Stories><List>
+
+	<Story Name="SoulColor_gong_1"  Parent="BaseFillingStory">
+		<DisplayName>道统现世</DisplayName>
+		<Desc>[NAME]来到[PLACE]，发现此处竟然是《七彩琉璃经》的道统传承，传承被一座前古仙阵围绕，似乎是古代仙人为挑选适合道统的传承者而设置的封印。阵法之中电光流转，似乎蕴含莫大的神通法力。</Desc>
+		<Selections>
+			<li>
+				<Display>强行夺取</Display> 
+				<Condition>
+					me:GetGLevel() >= 10 and me:RandomInt(1, 3) == 1
+				</Condition>
+				<Tip>元神期及机缘</Tip>
+				<OKResult>
+					me:AddMsg(XT("[NAME]运转元神，以强横的修为暴力破解法阵，获取了其中的道统传承。"));me:AddSchoolScore(1,200);story:FinishSecret();me:DropAwardItem("Item_Dan_TreeEXP", 1);me:UnLockGong("SoulColor_1");   
+				</OKResult>
+				<NOResult>
+				if me:GetGLevel() >= 10 then
+					me:AddMsg(XT("[NAME]运转元神，以强横的修为暴力破解法阵，但似乎机缘差了些：法阵破灭的力量竟然波及到了传承本身一同毁灭，[NAME]暗叹一声，只得离开。"));me:AddSchoolScore(1,100);story:FinishSecret();
+				else				
+					me:AddMsg(XT("[NAME]试图暴力破解阵法，但是却太过不自量力，被阵法反击身负重伤，沦为修行界的笑柄。"));me:AddSchoolScore(1,-300);me:AddDamgeFromCache(story.DamageCache,4);story:FinishSecret();
+				end;
+				</NOResult>
+			</li>
+			<li>
+				<Display>接受传承</Display> 
+				<OKResult>
+				if me:GetMatchingWithGong("SoulColor_1") >= 1 then
+					me:AddMsg(XT("[NAME]上前接受阵法的检测，竟然非常适合这门道统，顺利接受了道统的传承。"));me:DropAwardItem("Item_Dan_TreeEXP", 1);me:UnLockGong("SoulColor_1");story:FinishSecret();   
+				else
+					me:AddMsg(XT("[NAME]上前接受阵法的检测，但可惜最终并没有通过阵法的检测，只能无奈离去"));
+				end
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，决定还是不冒险了，转身离去。"));
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="SoulColor_MoFaZhen"  Parent="BaseFillingStory">
+		<DisplayName>魔法阵</DisplayName>
+		<Desc>[NAME]开启了魔法阵。</Desc>
+		<Selections>
+			<li>
+				<Display>炼金术</Display>
+				<OKResult>
+					local xWindow = GameMain:GetMod("Windows"):GetWindow("MoFaZhenWindow");
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+  				xWindow:Hide();
+					xWindow:SetUpData(npc,npc.Equip,it);
+					xWindow:Show();
+				</OKResult>
+			</li>
+			<li>
+				<Display>祭天术</Display>
+				<OKResult>me:TriggerStory("SoulColor_JiTianShu");</OKResult>
+			</li>
+			<li>
+				<Display>点化仙缘</Display>
+				<OKResult>me:TriggerStory("SoulColor_DianHuaXianYuan");</OKResult>
+			</li>
+			<li>
+				<Display>关闭魔法阵</Display>
+				<OKResult>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="SoulColor_DianHuaXianYuan"  Parent="BaseFillingStory">
+		<DisplayName>点化仙缘</DisplayName>
+		<Desc>[NAME]通过魔法阵发现附近有一名天资绝佳的苗子，如要施展神通，点化这名凡人。需要消耗100万灵气，施展后这个凡人会尽快抵达宗门所在。</Desc>
+		<Kind>Join</Kind>
+		<Selections>
+			<li>
+				<Display>施展</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 1000000 then
+						if npc.LingV >= 1000000 then
+							npc:AddLing(-1000000);
+							local nN = me:RandomInt(5,15)
+							me:AddJoiners(1,nN,0,3,3,3,3,3);
+						else
+							it:AddLing(npc.LingV-1000000);
+							npc:AddLing(-npc.LingV);
+							local nN = me:RandomInt(5,15)
+							me:AddJoiners(1,nN,0,3,3,3,3,3);
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足100万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了</Display>
+				<OKResult>me:TriggerStory("SoulColor_MoFaZhen");</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="SoulColor_JiTianShu"  Parent="BaseFillingStory">
+		<DisplayName>祭天术</DisplayName>
+		<Desc>请选择您需要祈求的天气，使用祭天术需要消耗10万灵气。</Desc>
+		<Kind>HighFind</Kind>
+		<Selections>
+			<li>
+				<Display>晴天</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("SunnyDay")
+							world:ShowMsgBox("天气以变更");
+						else
+							it:AddLing(npc.LingV-100000);
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("SunnyDay")
+							world:ShowMsgBox("天气以变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>阴天</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("Overcast")
+							world:ShowMsgBox("天气以变更");
+						else
+							it:AddLing(npc.LingV-100000);
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("Overcast")
+							world:ShowMsgBox("天气以变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>小雨/雪</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain")
+							world:ShowMsgBox("天气以变更");
+						else
+							it:AddLing(npc.LingV-100000);
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain")
+							world:ShowMsgBox("天气以变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>大雨/雪</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("HeavyRain")
+							world:ShowMsgBox("天气以变更");
+						else
+							it:AddLing(npc.LingV-100000);
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("HeavyRain")
+							world:ShowMsgBox("天气以变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>大雾</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DenseFog")
+							world:ShowMsgBox("天气以变更");
+						else
+							it:AddLing(npc.LingV-100000);
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DenseFog")
+							world:ShowMsgBox("天气以变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>尘暴</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm")
+							world:ShowMsgBox("天气以变更");
+						else
+							it:AddLing(npc.LingV-100000);
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm")
+							world:ShowMsgBox("天气以变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>灵气爆发</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LingUpWave")
+							world:ShowMsgBox("天气以变更");
+						else
+							it:AddLing(npc.LingV-100000);
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LingUpWave")
+							world:ShowMsgBox("天气以变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了</Display>
+				<OKResult>me:TriggerStory("SoulColor_MoFaZhen");</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

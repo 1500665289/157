@@ -1,0 +1,33 @@
+﻿<FeatureDefs><List>
+
+	<Feature Name="SoulColor_XingTunEr" Type="Normal">
+		<DisplayName>幸运儿</DisplayName>
+		<Desc>此人天生的幸运儿，让人羡慕。</Desc>
+		<HideInUI>-1</HideInUI>
+		<ModifierDef>
+			<BaseFive>10,10,10,10,10</BaseFive>
+			<Skills>
+				<li Name="DouFa" Level="50"/><!-- 斗法 -->
+				<li Name="DanQi" Level="50"/><!-- 丹器 -->
+				<li Name="Fabao" Level="50"/><!-- 法宝 -->
+				<li Name="FightSkill" Level="50"/><!-- 术法 -->
+				<li Name="Barrier" Level="50"/><!-- 护体 -->
+				<li Name="Zhen" Level="50"/><!-- 阵法 -->
+				<li Name="Fight" Level="110"/><!-- 御物 -->
+				<li Name="Qi" Level="110"/><!-- 气感 -->
+				<li Name="SocialContact" Level="110"/><!-- 社交 -->
+				<li Name="Medicine" Level="110"/><!-- 岐黄 -->
+				<li Name="Cooking" Level="110"/><!-- 烹饪 -->
+				<li Name="Building" Level="110"/><!-- 建筑 -->
+				<li Name="Farming" Level="110"/><!-- 农事 -->
+				<li Name="Mining" Level="110"/><!-- 采掘 -->
+				<li Name="Art" Level="110"/><!-- 巧匠 -->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+			</Skills>
+			<Properties>
+				<li Name="PotentialOfBasepracticeAddValue" AddV="1.5"/>
+			</Properties>
+		</ModifierDef>
+	</Feature> 
+	
+</List></FeatureDefs>
