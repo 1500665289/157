@@ -8,8 +8,8 @@
 		<Sync>1</Sync>
 		<BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
 		<Properties>
-			<li Name="LingAbsorbSpeed" AddV="10"/>
-			<li Name="NpcLingMaxValue" BAddV="20"/>
+			<li Name="LingAbsorbSpeed" AddV="1"/>
+			<li Name="NpcLingMaxValue" BAddV="2"/>
 			<li Name="PotentialOfBasepracticeAddValue" AddV="1"/>
 		</Properties>
 	</Modifier>
@@ -22,8 +22,8 @@
 		<Sync>1</Sync>
 		<BaseFive>1.0,1.0,1.0,1.0,1.0</BaseFive>
 		<Properties>
-			<li Name="LingAbsorbSpeed" AddV="20"/>
-			<li Name="NpcLingMaxValue" BAddV="40"/>
+			<li Name="LingAbsorbSpeed" AddV="2"/>
+			<li Name="NpcLingMaxValue" BAddV="4"/>
 			<li Name="PotentialOfBasepracticeAddValue" AddV="2"/>
 		</Properties>
 	</Modifier> 
@@ -36,8 +36,8 @@
 		<Sync>1</Sync>
 		<BaseFive>1.5,1.5,1.5,1.5,1.5</BaseFive>
 		<Properties>
-			<li Name="LingAbsorbSpeed" AddV="40"/>
-			<li Name="NpcLingMaxValue" BAddV="80"/>
+			<li Name="LingAbsorbSpeed" AddV="4"/>
+			<li Name="NpcLingMaxValue" BAddV="8"/>
 			<li Name="PotentialOfBasepracticeAddValue" AddV="3"/>
 		</Properties>
 	</Modifier> 
@@ -49,8 +49,8 @@
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="NpcLingMaxValue" BAddV="20"/>
-			<li Name="LingAbsorbSpeed" AddP="10"/>
+			<li Name="NpcLingMaxValue" BAddV="2"/>
+			<li Name="LingAbsorbSpeed" AddP="1"/>
 		</Properties>
 	</Modifier>
 
@@ -61,10 +61,10 @@
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="MaxAge" AddV="100"/>
+			<li Name="MaxAge" AddV="10"/>
 			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5"/>
 			<li Name="NutritionWaterAutoRecover" AddV="0.3"/>
-			<li Name="LingAbsorbSpeed" AddP="10"/>
+			<li Name="LingAbsorbSpeed" AddP="1"/>
 		</Properties>
 	</Modifier>
 
@@ -76,14 +76,14 @@
 		<Sync>1</Sync>
 		<Properties>
 			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.5"/><!--护盾强度加成-->
-			<li Name="LingAbsorbSpeed" AddV="20"/><!--灵气恢复-->
-			<li Name="DanMake_SpeedAddV" AddV="10"/><!--丹药炼制速度-->
-			<li Name="DanMake_SuccessRate" AddV="20"/><!--炼丹技能炼制成功率，炼丹技能带来的成功率。-->
+			<li Name="LingAbsorbSpeed" AddV="2"/><!--灵气恢复-->
+			<li Name="DanMake_SpeedAddV" AddV="1"/><!--丹药炼制速度-->
+			<li Name="DanMake_SuccessRate" AddV="2"/><!--炼丹技能炼制成功率，炼丹技能带来的成功率。-->
 			<li Name="DanMake_Yield" AddV="5"/><!--炼丹技能炼制产量加成，炼丹技能带来的产量加成。-->
-			<li Name="ToleranceTMin" AddV="-100"/><!--最低极限温度-->
-			<li Name="ToleranceTMax" AddV="300"/><!--最高极限温度-->
-			<li Name="ComfyTMin" AddV="-100"/><!--最低舒适温度-->
-			<li Name="ComfyTMax" AddV="300"/><!--最高舒适温度-->
+			<li Name="ToleranceTMin" AddV="-10"/><!--最低极限温度-->
+			<li Name="ToleranceTMax" AddV="30"/><!--最高极限温度-->
+			<li Name="ComfyTMin" AddV="-10"/><!--最低舒适温度-->
+			<li Name="ComfyTMax" AddV="30"/><!--最高舒适温度-->
 		</Properties>
 	</Modifier>
 
@@ -95,9 +95,9 @@
 		<Sync>1</Sync>
 		<Properties>
 			<li Name="NpcFight_ShieldConversionRateAddP" AddV="1"/><!--护盾强度加成-->
-			<li Name="LingAbsorbSpeed" AddV="20"/><!--灵气恢复-->
-			<li Name="NpcFight_FabaoPowerAddP" AddP="25"/><!--法宝威力加成-->
-			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="30"/><!--法宝灵气恢复速度加成-->
+			<li Name="LingAbsorbSpeed" AddV="2"/><!--灵气恢复-->
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2"/><!--法宝威力加成-->
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="3"/><!--法宝灵气恢复速度加成-->
 		</Properties>
 	</Modifier>
 
@@ -145,7 +145,7 @@
 		<Sync>1</Sync>
 		<Properties>
 			<li Name="MaxAge" AddV="50"/><!--寿元-->
-			<li Name="LingAbsorbSpeed" AddP="15"/>
+			<li Name="LingAbsorbSpeed" AddP="1"/>
 		</Properties>
 	</Modifier>
 	
@@ -190,7 +190,7 @@
 		<Sync>1</Sync>
 		<BaseFive>0,0,2,0,0</BaseFive>
 		<Properties>
-			<li Name="LingAbsorbSpeed" AddP="20"/>
+			<li Name="LingAbsorbSpeed" AddP="2"/>
 		</Properties>
 	</Modifier>
 	
@@ -202,9 +202,9 @@
 		<Sync>1</Sync>
 		<BaseFive>0,2,0,0,0</BaseFive>
 		<Properties>
-			<li Name="MaxAge" AddV="500"/>
+			<li Name="MaxAge" AddV="50"/>
 			<li Name="FabaoMake_QualityAddV" AddV="0.3"/>
-			<li Name="FabaoMake_TwelveRateChance" AddV="40"/>
+			<li Name="FabaoMake_TwelveRateChance" AddV="4"/>
 			<li Name="DanMake_Yield" AddV="3"/>
 		</Properties>
 	</Modifier>
@@ -217,11 +217,11 @@
 		<Sync>1</Sync>
 		<BaseFive>0,0,0,0,0</BaseFive>
 		<Properties>
-			<li Name="FabaoMake_SpeedAddV" AddV="10"/><!--法宝炼制速度加值-->
-			<li Name="FabaoMake_SuccessRateAddV" AddV="100"/><!--法宝炼制成功率加值-->
-			<li Name="FabaoMake_LingInheritRateAddV" AddV="100"/><!--法宝炼制品阶加成，原材料灵气对法宝品阶加成的幅度。-->
-			<li Name="FabaoMake_QualityAddV" AddV="100"/><!--法宝炼制品质加值，成品品质的加值。-->
-			<li Name="FabaoMake_TwelveRateChance" AddV="40"/><!--神器炼成基础几率-->
+			<li Name="FabaoMake_SpeedAddV" AddV="1"/><!--法宝炼制速度加值-->
+			<li Name="FabaoMake_SuccessRateAddV" AddV="10"/><!--法宝炼制成功率加值-->
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="10"/><!--法宝炼制品阶加成，原材料灵气对法宝品阶加成的幅度。-->
+			<li Name="FabaoMake_QualityAddV" AddV="10"/><!--法宝炼制品质加值，成品品质的加值。-->
+			<li Name="FabaoMake_TwelveRateChance" AddV="4"/><!--神器炼成基础几率-->
 		</Properties>
 	</Modifier>
 	

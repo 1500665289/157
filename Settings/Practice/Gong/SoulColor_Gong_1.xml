@@ -20,7 +20,7 @@
 			<Stage Name="SoulColor1" Level="3">
 				<DisplayName>练气境</DisplayName>
 				<Desc>修行入门之境界，需下苦功宁神静坐。</Desc>
-				<Value>1200</Value>
+				<Value>52000</Value>
 				<Necks>
 					
 					<Neck Location="1" Kind="Chance">
@@ -37,7 +37,7 @@
 			<Stage Name="SoulColor2" Level="6">
 				<DisplayName>结丹境</DisplayName>
 				<Desc></Desc>
-				<Value>1800</Value>
+				<Value>108000</Value>
 				<Necks>
 					
 					<Neck Location="1" Kind="Gold">
@@ -52,7 +52,7 @@
 			<Stage Name="SoulColor3" Level="9">
 				<DisplayName>金丹境</DisplayName>
 				<Desc></Desc>
-				<Value>140000</Value>
+				<Value>240000</Value>
 				<Necks>
 					
 					<Neck Location="0.2" Kind="Thunder">
