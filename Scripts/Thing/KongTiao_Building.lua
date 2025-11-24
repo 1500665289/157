@@ -11,16 +11,16 @@ end
 
 function tbThing:OnStep(dt)
 	local it = self.it;
-	if it.BuildingState == g_emBuildingState.Working then
+	if it.BuildingState == CS.XiaWorld.g_emBuildingState.Working then  -- 修正：添加完整枚举路径
 		self.Time = self.Time + dt;
 		if (it.AtRoom ~= nil ) then
 			if (self.Time>=2) then
 				xlua.private_accessible(CS.XiaWorld.AreaRoom);
 				local MapWenDu = Map:GetGlobleTemperature();
-				local WuWenDu =it.AtRoom.m_fTemperatureWall;
+				local WuWenDu = it.AtRoom.m_fTemperatureWall;
 				print(WuWenDu);
 				local WenDuCha = self.WenDu - MapWenDu - WuWenDu;
-				setWenDu = WenDuCha * it.AtRoom.m_lisGrids.Count / 25;
+				local setWenDu = WenDuCha * it.AtRoom.m_lisGrids.Count / 25;  -- 修正：添加local声明
 				print(setWenDu);
 				it.def.Heat.RoomValue = setWenDu;
 				self.Time = 0;
