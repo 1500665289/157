@@ -1,11 +1,12 @@
-﻿<FeatureDefs><List>
+<FeatureDefs>
+<List>
 
 	<Feature Name="SoulColor_XingTunEr" Type="Normal">
 		<DisplayName>幸运儿</DisplayName>
 		<Desc>此人天生的幸运儿，让人羡慕。</Desc>
 		<HideInUI>-1</HideInUI>
 		<ModifierDef>
-			<BaseFive>10,10,10,10,10</BaseFive>
+			<BaseFive>10,10,10,10,10</BaseFive><!-- 五行属性全满 -->
 			<Skills>
 				<li Name="DouFa" Level="50"/><!-- 斗法 -->
 				<li Name="DanQi" Level="50"/><!-- 丹器 -->
@@ -25,9 +26,10 @@
 				<li Name="Manual" Level="110"/><!-- 制造 -->
 			</Skills>
 			<Properties>
-				<li Name="PotentialOfBasepracticeAddValue" AddV="1.5"/>
+				<li Name="PotentialOfBasepracticeAddValue" AddV="1.5"/><!-- 修炼潜力加成 -->
 			</Properties>
 		</ModifierDef>
 	</Feature> 
 	
-</List></FeatureDefs>
+</List>
+</FeatureDefs>
