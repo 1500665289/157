@@ -1,4 +1,4 @@
-﻿<SkillTree><List>	
+<SkillTree><List>	
 	<Node Name="SoulColor_a0" Gong="SoulColor_1">
 		<Esoterica>SoulColor_QiCaiXinFa1</Esoterica>
 		<DisplayName>三彩心法</DisplayName>
@@ -36,18 +36,13 @@
 		<Level>None</Level>
 	</Node>
 	
-	<Node Name="SoulColor_a1" Gong="SoulColor_1">
-		<Level>Qi</Level>
-		<Index>1</Index>
-		<Line>0,2,0,1,0,0,0,0</Line>	
-	</Node>
-	
+	<!-- 修正：删除重复的 SoulColor_a1 节点，合并为一个完整的节点 -->
 	<Node Name="SoulColor_a1" Gong="SoulColor_1">
 		<Esoterica>SoulColor_QiCaiMiXinZou1</Esoterica>
 		<DisplayName>困心咒</DisplayName>
 		<Level>Qi</Level>
 		<Index>1</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
+		<Line>0,2,0,1,0,0,0,0</Line>
 		<PreUnit>
 		<!--	<li></li>-->
 		</PreUnit>
@@ -55,9 +50,6 @@
 			<li>SoulColor_a1_1</li>
 			<li>SoulColor_a1_2</li>
 		</Layers>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
 		<MutexUnit>
 		<!--	<li></li>-->
 		</MutexUnit>
@@ -220,6 +212,7 @@
 		<GodCount>0</GodCount>
 	</Node>
 	
+	<!-- 修正：移除错误的前置条件，因为 SoulColor_b5 在后面定义 -->
 	<Node Name="SoulColor_b3" Gong="SoulColor_1">
 		<Esoterica>SoulColor_LingLongFenXinShu1</Esoterica>
 		<DisplayName>玲之心</DisplayName>
@@ -231,7 +224,7 @@
 			<li>SoulColor_b3_2</li>
 		</Layers>
 		<PreUnit>
-			<li>SoulColor_b5</li>
+			<!-- 移除错误的前置条件：<li>SoulColor_b5</li> -->
 		</PreUnit>
 		<MutexUnit>
 		<!--	<li></li>-->
@@ -750,4 +743,4 @@
 		<GodCount>0</GodCount>
 	</Node>
 	
-</List></SkillTree> 
+</List></SkillTree>
