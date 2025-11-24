@@ -1,746 +1,139 @@
-<SkillTree><List>	
-	<Node Name="SoulColor_a0" Gong="SoulColor_1">
-		<Esoterica>SoulColor_QiCaiXinFa1</Esoterica>
-		<DisplayName>三彩心法</DisplayName>
-		<Level>Qi</Level>
-		<Index>0</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<Layers>
-			<li>SoulColor_a0_1</li>
-			<li>SoulColor_a0_2</li>
-		</Layers>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_a0_1" Gong="SoulColor_1">
-		<Esoterica>SoulColor_QiCaiXinFa2</Esoterica>
-		<DisplayName>五彩心法</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_a0_2" Gong="SoulColor_1">
-		<Esoterica>SoulColor_QiCaiXinFa3</Esoterica>
-		<DisplayName>七彩心法</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<!-- 修正：删除重复的 SoulColor_a1 节点，合并为一个完整的节点 -->
-	<Node Name="SoulColor_a1" Gong="SoulColor_1">
-		<Esoterica>SoulColor_QiCaiMiXinZou1</Esoterica>
-		<DisplayName>困心咒</DisplayName>
-		<Level>Qi</Level>
-		<Index>1</Index>
-		<Line>0,2,0,1,0,0,0,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<Layers>
-			<li>SoulColor_a1_1</li>
-			<li>SoulColor_a1_2</li>
-		</Layers>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_a1_1" Gong="SoulColor_1">
-		<Esoterica>SoulColor_QiCaiMiXinZou2</Esoterica>
-		<DisplayName>离心咒</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_a1_2" Gong="SoulColor_1">
-		<Esoterica>SoulColor_QiCaiMiXinZou3</Esoterica>
-		<DisplayName>迷心咒</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_a3" Gong="SoulColor_1">
-		<Esoterica>Magic_MakePuppet</Esoterica>
-		<DisplayName>御灵术</DisplayName>
-		<Level>Qi</Level>
-		<Index>3</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_a5" Gong="SoulColor_1">
-		<Esoterica>SoulColor_XinYanZhou</Esoterica>
-		<DisplayName>心眼咒</DisplayName>
-		<Level>Qi</Level>
-		<Index>5</Index>
-		<Line>0,0,0,0,1,0,2,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
+<!-- 修正不完整的节点 -->
+<Node Name="SoulColor_a8" Gong="SoulColor_1">
+    <Esoterica>SoulColor_QiCaiMiShu</Esoterica>
+    <DisplayName>七彩秘术</DisplayName>
+    <Level>Qi</Level>
+    <Index>8</Index>
+    <Line>0,0,0,0,0,1,2,0</Line>
+    <PreUnit><!--<li></li>--></PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
 
-	<Node Name="SoulColor_a8" Gong="SoulColor_1">
-		<Level>Qi</Level>
-		<Index>8</Index>
-		<Line>0,0,0,0,0,1,2,0</Line>	
-	</Node>
-	
-	<Node Name="SoulColor_a9" Gong="SoulColor_1">
-		<Esoterica>SoulColor_YangShengFa</Esoterica>
-		<DisplayName>养生法</DisplayName>
-		<Level>Qi</Level>
-		<Index>9</Index>
-		<Line>0,0,0,0,1,1,0,1</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_a10" Gong="SoulColor_1">
-		<Level>Qi</Level>
-		<Index>10</Index>
-		<Line>0,0,0,0,0,0,2,1</Line>	
-	</Node>
+<Node Name="SoulColor_a10" Gong="SoulColor_1">
+    <Esoterica>SoulColor_LingYanJue</Esoterica>
+    <DisplayName>灵眼诀</DisplayName>
+    <Level>Qi</Level>
+    <Index>10</Index>
+    <Line>0,0,0,0,0,0,2,1</Line>
+    <PreUnit><!--<li></li>--></PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
 
-	<Node Name="SoulColor_a11" Gong="SoulColor_1">
-		<Esoterica>SoulColor_QiCaiLiuGuangZhen</Esoterica>
-		<DisplayName>流光阵</DisplayName>
-		<Level>Qi</Level>
-		<Index>11</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
+<Node Name="SoulColor_b4" Gong="SoulColor_1">
+    <Esoterica>SoulColor_TianYanTong</Esoterica>
+    <DisplayName>天眼通</DisplayName>
+    <Level>Dan1</Level>
+    <Index>4</Index>
+    <Line>0,1,0,2,0,1,2,1</Line>
+    <PreUnit><!--<li></li>--></PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
 
-	<Node Name="SoulColor_b0" Gong="SoulColor_1">
-		<Esoterica>Magic_Healing_Damage_1</Esoterica>
-		<DisplayName>化伤术</DisplayName>
-		<Level>Dan1</Level>
-		<Index>0</Index>
-		<Line>0,0,0,0,1,0,1,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_b2" Gong="SoulColor_1">
-		<Esoterica>SoulColor_LingRockMake</Esoterica>
-		<DisplayName>灵气炼制</DisplayName>
-		<Level>Dan1</Level>
-		<Index>2</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<!-- 修正：移除错误的前置条件，因为 SoulColor_b5 在后面定义 -->
-	<Node Name="SoulColor_b3" Gong="SoulColor_1">
-		<Esoterica>SoulColor_LingLongFenXinShu1</Esoterica>
-		<DisplayName>玲之心</DisplayName>
-		<Level>Dan1</Level>
-		<Index>3</Index>
-		<Line>0,0,0,0,0,1,2,0</Line>
-		<Layers>
-			<li>SoulColor_b3_1</li>
-			<li>SoulColor_b3_2</li>
-		</Layers>
-		<PreUnit>
-			<!-- 移除错误的前置条件：<li>SoulColor_b5</li> -->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_b3_1" Gong="SoulColor_1">
-		<Esoterica>SoulColor_LingLongFenXinShu2</Esoterica>
-		<DisplayName>珑之心</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_b3_2" Gong="SoulColor_1">
-		<Esoterica>SoulColor_LingLongFenXinShu3</Esoterica>
-		<DisplayName>玲珑心</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_b4" Gong="SoulColor_1">
-		<Level>Dan1</Level>
-		<Index>4</Index>
-		<Line>0,1,0,2,0,1,2,1</Line>	
-	</Node>
-	
-	<Node Name="SoulColor_b5" Gong="SoulColor_1">
-		<Esoterica>SoulColor_ShengSiLu</Esoterica>
-		<DisplayName>生死录</DisplayName>
-		<Level>Dan1</Level>
-		<Index>5</Index>
-		<Line>0,0,0,0,1,1,2,1</Line>
-		<PreUnit>
-			<li>SoulColor_a5</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_b6" Gong="SoulColor_1">
-		<Level>Dan1</Level>
-		<Index>6</Index>
-		<Line>0,0,0,0,0,1,2,1</Line>	
-	</Node>
-	
-	<Node Name="SoulColor_b7" Gong="SoulColor_1">
-		<Level>Dan1</Level>
-		<Index>7</Index>
-		<Line>0,0,0,0,0,1,2,1</Line>	
-	</Node>
-	
-	<Node Name="SoulColor_b8" Gong="SoulColor_1">
-		<Esoterica>Gong9_Esoterica_9</Esoterica>
-		<DisplayName>通息诀</DisplayName>
-		<Level>Dan1</Level>
-		<Index>8</Index>
-		<Line>0,0,0,0,0,0,2,1</Line>
-		<PreUnit>
-			<li>SoulColor_a9</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_b10" Gong="SoulColor_1">
-		<Esoterica>Gong9_Esoterica_8</Esoterica>
-		<DisplayName>合物志</DisplayName>
-		<Level>Dan1</Level>
-		<Index>10</Index>
-		<Line>0,0,0,0,1,0,2,0</Line>
-		<PreUnit>
-			<li>SoulColor_a9</li>
-		</PreUnit>
-		<MutexUnit>
-			<!--<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c0" Gong="SoulColor_1">
-		<Level>Dan2</Level>
-		<Index>0</Index>
-		<Line>1,0,1,0,1,0,2,0</Line>	
-	</Node>
-	
-	<Node Name="SoulColor_c1" Gong="SoulColor_1">
-		<Esoterica>Magic_RebornSelf</Esoterica>
-		<DisplayName>玄牝重生</DisplayName>
-		<Level>Dan2</Level>
-		<Index>1</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<Layers>
-		<!--	<li></li>-->
-		</Layers>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c3" Gong="SoulColor_1">
-		<Esoterica>Gong1_Esoterica_3</Esoterica>
-		<DisplayName>乘风诀</DisplayName>
-		<Level>Dan2</Level>
-		<Index>3</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<Layers>
-			<li>SoulColor_c3_1</li>
-		</Layers>
-		<PreUnit>
-			<li>SoulColor_b5</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c3_1" Gong="SoulColor_1">
-		<Esoterica>Gong1_LvUpEsoterica_4</Esoterica>
-		<DisplayName>同风诀</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_c4" Gong="SoulColor_1">
-		<Esoterica>Gong1_Esoterica_5</Esoterica>
-		<DisplayName>奔流诀</DisplayName>
-		<Level>Dan2</Level>
-		<Index>4</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-			<li>SoulColor_b5</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c5" Gong="SoulColor_1">
-		<Esoterica>SoulColor_LunHuiJing</Esoterica>
-		<DisplayName>轮回经</DisplayName>
-		<Level>Dan2</Level>
-		<Index>5</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-			<li>SoulColor_b5</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c6" Gong="SoulColor_1">
-		<Esoterica>SoulColor_GuLingLengHuo</Esoterica>
-		<DisplayName>骨灵冷火</DisplayName>
-		<Level>Dan2</Level>
-		<Index>6</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-			<li>SoulColor_b5</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c7" Gong="SoulColor_1">
-		<Esoterica>SoulColor_KongShuiShu</Esoterica>
-		<DisplayName>控水术</DisplayName>
-		<Level>Dan2</Level>
-		<Index>7</Index>
-		<Line>0,0,0,0,1,0,2,0</Line>
-		<PreUnit>
-			<li>SoulColor_b5</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c8" Gong="SoulColor_1">
-		<Esoterica>SoulColor_LunHuiLianQiShu</Esoterica>
-		<DisplayName>炼器术</DisplayName>
-		<Level>Dan2</Level>
-		<Index>8</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-			<li>SoulColor_b5</li>
-			<li>SoulColor_c10</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c9" Gong="SoulColor_1">
-		<Level>Dan2</Level>
-		<Index>9</Index>
-		<Line>0,1,0,2,0,1,2,0</Line>	
-	</Node>
-	
-	<Node Name="SoulColor_c10" Gong="SoulColor_1">
-		<Esoterica>Gong2_Esoterica_8</Esoterica>
-		<DisplayName>炼器十要</DisplayName>
-		<Level>Dan2</Level>
-		<Index>10</Index>
-		<Line>0,0,0,0,1,1,2,1</Line>
-		<PreUnit>
-			<li>SoulColor_b10</li>
-		</PreUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_c11" Gong="SoulColor_1">
-		<Esoterica>Magic_KongZhi1</Esoterica>
-		<DisplayName>灵犀咒</DisplayName>
-		<Level>Dan2</Level>
-		<Index>11</Index>
-		<Line>0,0,0,0,0,0,2,1</Line>
-		<PreUnit>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_d0" Gong="SoulColor_1">
-		<Esoterica>Magic_BuildBody_1</Esoterica>
-		<DisplayName>再造术</DisplayName>
-		<Level>God</Level>
-		<Index>0</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-			<li>SoulColor_b0</li>
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_d1" Gong="SoulColor_1">
-		<Esoterica>Magic_RobBodyHigh_1</Esoterica>
-		<DisplayName>阳神夺舍</DisplayName>
-		<Level>God</Level>
-		<Index>1</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-			<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-			<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_d7" Gong="SoulColor_1">
-		<Esoterica>SoulColor_ShuiYuanShen</Esoterica>
-		<DisplayName>水元神</DisplayName>
-		<Level>God</Level>
-		<Index>7</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<Layers>
-			<li>SoulColor_d7_1</li>
-		</Layers>
-		<PreUnit>
-			<li>SoulColor_c7</li>
-			<li>SoulColor_d9</li>
-		</PreUnit>
-		<MutexUnit>
-			<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_d7_1" Gong="SoulColor_1">
-		<Esoterica>SoulColor_ShengMingYuanShen</Esoterica>
-		<DisplayName>生命元神</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_d8" Gong="SoulColor_1">
-		<Level>God</Level>
-		<Index>8</Index>
-		<Line>0,1,0,2,0,0,0,0</Line>	
-	</Node>
-	
-	<Node Name="SoulColor_d9" Gong="SoulColor_1">
-		<Esoterica>Gong2_Esoterica_4</Esoterica>
-		<DisplayName>上清真焰</DisplayName>
-		<Level>God</Level>
-		<Index>9</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<Layers>
-			<li>SoulColor_d9_1</li>
-		</Layers>
-		<PreUnit>
-			<li>SoulColor_c10</li>
-		</PreUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_d9_1" Gong="SoulColor_1">
-		<Esoterica>Gong2_LvUpEsoterica_7</Esoterica>
-		<DisplayName>神火合一</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_d10" Gong="SoulColor_1">
-		<Esoterica>Gong2_Esoterica_3</Esoterica>
-		<DisplayName>丙丁雷火</DisplayName>
-		<Level>God</Level>
-		<Index>10</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<Layers>
-			<li>SoulColor_d10_1</li>
-		</Layers>
-		<PreUnit>
-			<li>SoulColor_c10</li>
-		</PreUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_d10_1" Gong="SoulColor_1">
-		<Esoterica>Gong2_LvUpEsoterica_6</Esoterica>
-		<DisplayName>神火合一</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_d11" Gong="SoulColor_1">
-		<Esoterica>Gong2_Esoterica_5</Esoterica>
-		<DisplayName>心焰</DisplayName>
-		<Level>God</Level>
-		<Index>11</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<Layers>
-			<li>SoulColor_d11_1</li>
-		</Layers>
-		<PreUnit>
-			<li>SoulColor_c10</li>
-		</PreUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<!--<li Name="" Level="1"/>-->
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_d11_1" Gong="SoulColor_1">
-		<Esoterica>Gong2_LvUpEsoterica_8</Esoterica>
-		<DisplayName>神火合一</DisplayName>
-		<Level>None</Level>
-	</Node>
-	
-	<Node Name="SoulColor_e4" Gong="SoulColor_1">
-		<Esoterica>God2_Dan</Esoterica>
-		<DisplayName>天道神丹</DisplayName>
-		<Level>God2</Level>
-		<Index>4</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<li Name="Medicine" Level="20"/>
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-	<Node Name="SoulColor_e8" Gong="SoulColor_1">
-		<Esoterica>God2_Fabao</Esoterica>
-		<DisplayName>天道神器</DisplayName>
-		<Level>God2</Level>
-		<Index>8</Index>
-		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
-		<MutexUnit>
-		<!--	<li></li>-->
-		</MutexUnit>
-		<FiveBase>0,0,0,0,0</FiveBase>
-		<Skills>
-			<li Name="Manual" Level="20"/>
-		</Skills>
-		<LingMax>0</LingMax>
-		<GoldLevel>0</GoldLevel>
-		<GodCount>0</GodCount>
-	</Node>
-	
-</List></SkillTree>
+<Node Name="SoulColor_b6" Gong="SoulColor_1">
+    <Esoterica>SoulColor_LingLiJiaCheng</Esoterica>
+    <DisplayName>灵力加成</DisplayName>
+    <Level>Dan1</Level>
+    <Index>6</Index>
+    <Line>0,0,0,0,0,1,2,1</Line>
+    <PreUnit><!--<li></li>--></PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
+
+<Node Name="SoulColor_b7" Gong="SoulColor_1">
+    <Esoterica>SoulColor_JingShenLiLiang</Esoterica>
+    <DisplayName>精神力量</DisplayName>
+    <Level>Dan1</Level>
+    <Index>7</Index>
+    <Line>0,0,0,0,0,1,2,1</Line>
+    <PreUnit><!--<li></li>--></PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
+
+<Node Name="SoulColor_c0" Gong="SoulColor_1">
+    <Esoterica>SoulColor_YuanShenChuTi</Esoterica>
+    <DisplayName>元神出体</DisplayName>
+    <Level>Dan2</Level>
+    <Index>0</Index>
+    <Line>1,0,1,0,1,0,2,0</Line>
+    <PreUnit><!--<li></li>--></PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
+
+<Node Name="SoulColor_c9" Gong="SoulColor_1">
+    <Esoterica>SoulColor_ShenTongJue</Esoterica>
+    <DisplayName>神通诀</DisplayName>
+    <Level>Dan2</Level>
+    <Index>9</Index>
+    <Line>0,1,0,2,0,1,2,0</Line>
+    <PreUnit><!--<li></li>--></PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
+
+<Node Name="SoulColor_d8" Gong="SoulColor_1">
+    <Esoterica>SoulColor_TianDaoZhenYan</Esoterica>
+    <DisplayName>天道真言</DisplayName>
+    <Level>God</Level>
+    <Index>8</Index>
+    <Line>0,1,0,2,0,0,0,0</Line>
+    <PreUnit><!--<li></li>--></PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
+
+<!-- 修正前置条件顺序问题（如果需要调整节点顺序） -->
+<Node Name="SoulColor_c8" Gong="SoulColor_1">
+    <Esoterica>SoulColor_LunHuiLianQiShu</Esoterica>
+    <DisplayName>炼器术</DisplayName>
+    <Level>Dan2</Level>
+    <Index>8</Index>
+    <Line>0,0,0,0,0,0,0,0</Line>
+    <PreUnit>
+        <li>SoulColor_b5</li>
+        <!-- 注意：SoulColor_c10 在 c8 之后定义，可能需要调整顺序 -->
+    </PreUnit>
+    <MutexUnit><!--<li></li>--></MutexUnit>
+    <FiveBase>0,0,0,0,0</FiveBase>
+    <Skills><!--<li Name="" Level="1"/>--></Skills>
+    <LingMax>0</LingMax>
+    <GoldLevel>0</GoldLevel>
+    <GodCount>0</GodCount>
+</Node>
