@@ -1,4 +1,5 @@
-﻿<Experiences><List>
+<Experiences>
+<List>
 
 	<Experience Name="SoulColor_CeShi">
 		<DisplayName>测试</DisplayName>
@@ -56,49 +57,50 @@
 		</Equips>	
 		<!--地上物品-->
 		<Items>
-			<li Name= "Item_BasePracticeDrug" Count="99"/><!-- 筑基丹 -->
-			<li Name= "Item_Dan_TreeEXP" Count="100"/><!-- 天道神丹 -->
-			<li Name= "SoulColor_Dan_TXD" Count="100"/><!-- 天心丹 -->
+			<li Name="Item_BasePracticeDrug" Count="99"/><!-- 筑基丹 -->
+			<li Name="Item_Dan_TreeEXP" Count="100"/><!-- 天道神丹 -->
+			<li Name="SoulColor_Dan_TXD" Count="100"/><!-- 天心丹 -->
 			
-			<li Name= "Item_LingCloth" Count="500"/><!-- 灵布 -->
+			<li Name="Item_LingCloth" Count="500"/><!-- 灵布 -->
 			
-			<li Name= "Item_MuLingStoneBlock" Count="500"/><!-- 木灵石砖 -->
-			<li Name= "Item_TuLingStoneBlock" Count="500"/><!-- 土灵石砖 -->
-			<li Name= "Item_JinLingStoneBlock" Count="500"/><!-- 金灵石砖 -->
-			<li Name= "Item_HuoLingStoneBlock" Count="500"/><!-- 火灵石砖 -->
-			<li Name= "Item_ShuiLingStoneBlock" Count="500"/><!-- 水灵石砖 -->
-			<li Name= "SoulColor_Item_WoodRockLeftover" Count="500"/><!-- 木灵石角料 -->
-			<li Name= "SoulColor_Item_BrownRockLeftover" Count="500"/><!-- 土灵石角料 -->
-			<li Name= "SoulColor_Item_IronRockLeftover" Count="500"/><!-- 金灵石角料 -->
-			<li Name= "SoulColor_Item_CopperRockLeftover" Count="500"/><!-- 火灵石角料 -->
-			<li Name= "SoulColor_Item_SilverRockLeftover" Count="500"/><!-- 水灵石角料 -->
+			<li Name="Item_MuLingStoneBlock" Count="500"/><!-- 木灵石砖 -->
+			<li Name="Item_TuLingStoneBlock" Count="500"/><!-- 土灵石砖 -->
+			<li Name="Item_JinLingStoneBlock" Count="500"/><!-- 金灵石砖 -->
+			<li Name="Item_HuoLingStoneBlock" Count="500"/><!-- 火灵石砖 -->
+			<li Name="Item_ShuiLingStoneBlock" Count="500"/><!-- 水灵石砖 -->
+			<li Name="SoulColor_Item_WoodRockLeftover" Count="500"/><!-- 木灵石角料 -->
+			<li Name="SoulColor_Item_BrownRockLeftover" Count="500"/><!-- 土灵石角料 -->
+			<li Name="SoulColor_Item_IronRockLeftover" Count="500"/><!-- 金灵石角料 -->
+			<li Name="SoulColor_Item_CopperRockLeftover" Count="500"/><!-- 火灵石角料 -->
+			<li Name="SoulColor_Item_SilverRockLeftover" Count="500"/><!-- 水灵石角料 -->
 			
-			<li Name= "Item_Jerky" Count="500"/><!-- 肉干 -->
-			<li Name= "Item_Water" Count="500"/><!-- 水 -->
+			<li Name="Item_Jerky" Count="500"/><!-- 肉干 -->
+			<li Name="Item_Water" Count="500"/><!-- 水 -->
 			
-			<li Name= "Item_RoughWoodBlock" Count="500"/><!--木料-->
-			<li Name= "Item_HardWoodBlock" Count="500"/><!--金丝木料-->
-			<li Name= "Item_ParasolWoodBlock" Count="500"/><!--梧桐木料-->
-			<li Name= "Item_LingWoodBlock" Count="500"/><!--灵木料-->
+			<li Name="Item_RoughWoodBlock" Count="500"/><!--木料-->
+			<li Name="Item_HardWoodBlock" Count="500"/><!--金丝木料-->
+			<li Name="Item_ParasolWoodBlock" Count="500"/><!--梧桐木料-->
+			<li Name="Item_LingWoodBlock" Count="500"/><!--灵木料-->
 			
-			<li Name= "Item_BrownRockBlock" Count="500"/><!--棕石砖-->
-			<li Name= "Item_GrayRockBlock" Count="500"/><!--灰石砖-->
-			<li Name= "Item_MarbleBlock" Count="500"/><!--大理石砖-->
-			<li Name= "Item_JadeBlock" Count="500"/><!--玉石砖-->
-			<li Name= "Item_SkyStoneBlock" Count="500"/><!--天柱石砖-->
-			<li Name= "Item_LingStoneBlock" Count="500"/><!--灵石砖-->
-			<li Name= "Item_LingCrystalBlock" Count="500"/><!--灵晶砖-->
+			<li Name="Item_BrownRockBlock" Count="500"/><!--棕石砖-->
+			<li Name="Item_GrayRockBlock" Count="500"/><!--灰石砖-->
+			<li Name="Item_MarbleBlock" Count="500"/><!--大理石砖-->
+			<li Name="Item_JadeBlock" Count="500"/><!--玉石砖-->
+			<li Name="Item_SkyStoneBlock" Count="500"/><!--天柱石砖-->
+			<li Name="Item_LingStoneBlock" Count="500"/><!--灵石砖-->
+			<li Name="Item_LingCrystalBlock" Count="500"/><!--灵晶砖-->
 			
-			<li Name= "Item_IronBlock" Count="500"/><!--铁锭-->
-			<li Name= "Item_CopperBlock" Count="500"/><!--火铜锭-->
-			<li Name= "Item_SilverBlock" Count="500"/><!--寒晶锭-->
-			<li Name= "Item_CopperBlock1" Count="500"/><!--火精锭-->
-			<li Name= "Item_SilverBlock1" Count="500"/><!--寒精锭-->
-			<li Name= "Item_DarksteelBlock" Count="500"/><!--玄铁锭-->
-			<li Name= "Item_StarEssenceBlock" Count="500"/><!--星髓锭-->
+			<li Name="Item_IronBlock" Count="500"/><!--铁锭-->
+			<li Name="Item_CopperBlock" Count="500"/><!--火铜锭-->
+			<li Name="Item_SilverBlock" Count="500"/><!--寒晶锭-->
+			<li Name="Item_CopperBlock1" Count="500"/><!--火精锭-->
+			<li Name="Item_SilverBlock1" Count="500"/><!--寒精锭-->
+			<li Name="Item_DarksteelBlock" Count="500"/><!--玄铁锭-->
+			<li Name="Item_StarEssenceBlock" Count="500"/><!--星髓锭-->
 			
-			<li Name= "Item_LingStone" Count="500"/><!--灵石-->
-			<li Name= "Item_LingCrystal" Count="500"/><!--灵晶-->
+			<li Name="Item_LingStone" Count="500"/><!--灵石-->
+			<li Name="Item_LingCrystal" Count="500"/><!--灵晶-->
 		</Items>
 	</Experience>
-</List></Experiences>
+</List>
+</Experiences>
