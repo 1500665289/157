@@ -1,292 +1,390 @@
-﻿<Esotericas><List>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 
+  修真模拟器功法配置文件 - SoulColor_Gong_1.xml
+  文件说明：定义七彩琉璃谷系列功法的属性和效果
+  版本：1.0
+  作者：七彩琉璃谷
+-->
 
-	<Esoterica Name="SoulColor_QiCaiXinFa1">
-		<DisplayName>三彩心法</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>1</Difficulty>
-		<Desc>七彩琉璃谷传世入门心法。</Desc>
-		<GLevel>Qi</GLevel>
-		<Element>None</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]提升属性0.5点\n提升潜力1\n提升灵气回复速度\n从根本上提高灵气最大值\n习得秘宝：\n百灵斩仙剑[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_QiCaiXinFa1</Modifier>
-		<Fabaos>
-			<li>MiBaoFormula_BaiLingZhanXianSword</li>
-		</Fabaos>
-	</Esoterica>
-	
-		<Esoterica Name="SoulColor_QiCaiXinFa2">
-		<DisplayName>五彩心法</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>1</Difficulty>
-		<Desc>七彩琉璃谷传世进阶心法。</Desc>
-		<GLevel>Dan1</GLevel>
-		<Element>None</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]提升属性1点\n提升潜力2\n提升灵气回复速度\n从根本上提高灵气最大值\n习得秘宝：\n神农鼎[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_QiCaiXinFa2</Modifier>
-		<Fabaos>
-			<li>MiBaoFormula_ShenNongDing</li>
-		</Fabaos>
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_QiCaiXinFa3">
-		<DisplayName>七彩心法</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>2</StarLevel>
-		<Difficulty>1</Difficulty>
-		<Desc>七彩琉璃谷传世顶级心法。</Desc>
-		<GLevel>Dan2</GLevel>
-		<Element>None</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]提升属性1.5点\n提升潜力3\n提升灵气回复速度\n从根本上提高灵气最大值\n习得秘宝：\n五毒诛仙剑[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_QiCaiXinFa3</Modifier>
-		<Fabaos>
-			<li>MiBaoFormula_WuDuZhuXianSword</li>
-		</Fabaos>
-	</Esoterica>
+<Esotericas>
+  <List>
+    <!-- 
+      七彩琉璃谷基础心法三部曲：三彩心法 → 五彩心法 → 七彩心法
+      修炼等级递进：Qi(气) → Dan1(丹一) → Dan2(丹二)
+    -->
+    
+    <Esoterica Name="SoulColor_QiCaiXinFa1">
+      <!-- 基础属性定义 -->
+      <DisplayName>三彩心法</DisplayName>                    <!-- 显示名称 -->
+      <Icon>res/Sprs/ui/icon_jichu</Icon>                  <!-- 图标路径 -->
+      <StarLevel>0</StarLevel>                             <!-- 星级：0星入门 -->
+      <Difficulty>1</Difficulty>                           <!-- 修炼难度：1级 -->
+      <Desc>七彩琉璃谷传世入门心法。</Desc>                <!-- 功法描述 -->
+      <GLevel>Qi</GLevel>                                  <!-- 修炼等级要求：气境 -->
+      <Element>None</Element>                              <!-- 元素属性：无 -->
+      <Type>Gong</Type>                                    <!-- 类型：功法 -->
+      
+      <!-- 效果描述（使用富文本格式） -->
+      <EffectDesc>[size=10][color=#D06508]提升属性0.5点
+提升潜力1
+提升灵气回复速度
+从根本上提高灵气最大值
+习得秘宝：
+百灵斩仙剑[/color][/size]</EffectDesc>
+      
+      <Modifier>SoulColor_QiCaiXinFa1</Modifier>           <!-- 关联的修饰器 -->
+      
+      <!-- 可习得的秘宝 -->
+      <Fabaos>
+        <li>MiBaoFormula_BaiLingZhanXianSword</li>         <!-- 百灵斩仙剑配方 -->
+      </Fabaos>
+    </Esoterica>
+    
+    <Esoterica Name="SoulColor_QiCaiXinFa2">
+      <DisplayName>五彩心法</DisplayName>                  <!-- 进阶心法 -->
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>                             <!-- 星级提升至1星 -->
+      <Difficulty>1</Difficulty>
+      <Desc>七彩琉璃谷传世进阶心法。</Desc>
+      <GLevel>Dan1</GLevel>                                <!-- 等级要求：丹一境 -->
+      <Element>None</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]提升属性1点
+提升潜力2
+提升灵气回复速度
+从根本上提高灵气最大值
+习得秘宝：
+神农鼎[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_QiCaiXinFa2</Modifier>
+      <Fabaos>
+        <li>MiBaoFormula_ShenNongDing</li>                 <!-- 神农鼎配方 -->
+      </Fabaos>
+    </Esoterica>
+    
+    <Esoterica Name="SoulColor_QiCaiXinFa3">
+      <DisplayName>七彩心法</DisplayName>                  <!-- 顶级心法 -->
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>2</StarLevel>                             <!-- 最高2星 -->
+      <Difficulty>1</Difficulty>
+      <Desc>七彩琉璃谷传世顶级心法。</Desc>
+      <GLevel>Dan2</GLevel>                                <!-- 等级要求：丹二境 -->
+      <Element>None</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]提升属性1.5点
+提升潜力3
+提升灵气回复速度
+从根本上提高灵气最大值
+习得秘宝：
+五毒诛仙剑[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_QiCaiXinFa3</Modifier>
+      <Fabaos>
+        <li>MiBaoFormula_WuDuZhuXianSword</li>            <!-- 五毒诛仙剑配方 -->
+      </Fabaos>
+    </Esoterica>
 
-	<Esoterica Name="SoulColor_QiCaiMiXinZou1">
-		<DisplayName>困心咒</DisplayName>
-		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>2</Difficulty>
-		<Desc>使用心法困惑自身心神以降低道行。</Desc>
-		<GLevel>Qi</GLevel>
-		<Element>None</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]降低自身道行15[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_QiCaiMiXinZou1</Modifier>
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_QiCaiMiXinZou2">
-		<DisplayName>离心咒</DisplayName>
-		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>2</Difficulty>
-		<Desc>使用心法疑惑自身心神以降低道行。</Desc>
-		<GLevel>Dan1</GLevel>
-		<Element>None</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]降低自身道行35[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_QiCaiMiXinZou2</Modifier>
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_QiCaiMiXinZou3">
-		<DisplayName>迷心咒</DisplayName>
-		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
-		<StarLevel>2</StarLevel>
-		<Difficulty>2</Difficulty>
-		<Desc>使用心法迷惑自身心神以降低道行。</Desc>
-		<GLevel>Dan2</GLevel>
-		<Element>None</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]降低自身道行50[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_QiCaiMiXinZou3</Modifier>
-	</Esoterica>
+    <!-- 
+      迷心咒系列：通过降低道行来获得特殊效果
+      困心咒 → 离心咒 → 迷心咒
+    -->
+    
+    <Esoterica Name="SoulColor_QiCaiMiXinZou1">
+      <DisplayName>困心咒</DisplayName>
+      <Icon>res/Sprs/ui/icon_zhandoufashu</Icon>          <!-- 战斗法术图标 -->
+      <StarLevel>0</StarLevel>
+      <Difficulty>2</Difficulty>                           <!-- 难度较高 -->
+      <Desc>使用心法困惑自身心神以降低道行。</Desc>
+      <GLevel>Qi</GLevel>
+      <Element>None</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]降低自身道行15[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_QiCaiMiXinZou1</Modifier>
+    </Esoterica>
+    
+    <Esoterica Name="SoulColor_QiCaiMiXinZou2">
+      <DisplayName>离心咒</DisplayName>
+      <Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>2</Difficulty>
+      <Desc>使用心法疑惑自身心神以降低道行。</Desc>
+      <GLevel>Dan1</GLevel>
+      <Element>None</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]降低自身道行35[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_QiCaiMiXinZou2</Modifier>
+    </Esoterica>
+    
+    <Esoterica Name="SoulColor_QiCaiMiXinZou3">
+      <DisplayName>迷心咒</DisplayName>
+      <Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+      <StarLevel>2</StarLevel>
+      <Difficulty>2</Difficulty>
+      <Desc>使用心法迷惑自身心神以降低道行。</Desc>
+      <GLevel>Dan2</GLevel>
+      <Element>None</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]降低自身道行50[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_QiCaiMiXinZou3</Modifier>
+    </Esoterica>
 
-	<Esoterica Name="SoulColor_XinYanZhou">
-		<DisplayName>心眼咒</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>1</Difficulty>
-		<Desc></Desc>
-		<GLevel>Qi</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<EffectDesc>七彩琉璃谷入门咒法，可以打开心眼。\n[size=10][color=#D06508]提高灵气恢复速度\n从根本上提高灵气最大值[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_XinYanZhou</Modifier>
-	</Esoterica>
+    <!-- 辅助类功法 -->
+    
+    <Esoterica Name="SoulColor_XinYanZhou">
+      <DisplayName>心眼咒</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>0</StarLevel>
+      <Difficulty>1</Difficulty>
+      <Desc></Desc>
+      <GLevel>Qi</GLevel>
+      <Element>Shui</Element>                              <!-- 水属性 -->
+      <Type>Gong</Type>
+      <EffectDesc>七彩琉璃谷入门咒法，可以打开心眼。
+[size=10][color=#D06508]提高灵气恢复速度
+从根本上提高灵气最大值[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_XinYanZhou</Modifier>
+    </Esoterica>
 
-	<Esoterica Name="SoulColor_YangShengFa">
-		<DisplayName>养生法</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>5</Difficulty>
-		<Desc>七彩琉璃谷传承养生之术，吸收天地之气补充自身。</Desc>
-		<GLevel>Qi</GLevel>
-		<Element>Mu</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]提高寿命\n提高修炼速度\n提高饮气效率\n提高灵气恢复速度[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_YangShengFa</Modifier>
-	</Esoterica>
+    <Esoterica Name="SoulColor_YangShengFa">
+      <DisplayName>养生法</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>5</Difficulty>                           <!-- 高难度养生功法 -->
+      <Desc>七彩琉璃谷传承养生之术，吸收天地之气补充自身。</Desc>
+      <GLevel>Qi</GLevel>
+      <Element>Mu</Element>                                <!-- 木属性（生命相关） -->
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]提高寿命
+提高修炼速度
+提高饮气效率
+提高灵气恢复速度[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_YangShengFa</Modifier>
+    </Esoterica>
 
-	<Esoterica Name="SoulColor_QiCaiLiuGuangZhen">
-		<DisplayName>七彩流光阵</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>5</Difficulty>
-		<Desc>七彩琉璃谷护谷阵法。</Desc>
-		<GLevel>Qi</GLevel>
-		<Element>None</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]习得阵法：\n七彩流光阵[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_YangShengFa</Modifier>
-		<ZhenNodes>
-			<li>SoulColor_QiCaiLiuGuangZhen</li>
-			<li>SoulColor_LiuGuang_1</li>
-			<li>SoulColor_LiuGuang_2</li>
-			<li>SoulColor_LiuGuang_3</li>
-			<li>SoulColor_LiuGuang_4</li>
-		</ZhenNodes>
-		<ZhenShapes>
-			<li Name="七彩流光阵"> 
-				<ShapeInfo>10|9|0|SoulColor_QiCaiLiuGuangZhen|11|10|2|SoulColor_LiuGuang_3|11|9|0|SoulColor_LiuGuang_4|9|9|5|SoulColor_LiuGuang_1|9|8|0|SoulColor_LiuGuang_2</ShapeInfo>
-				<Descript>七彩琉璃谷传承阵法，七彩环绕幻化世间。</Descript>
-			</li>
-		</ZhenShapes>
-	</Esoterica>
+    <!-- 阵法类功法 -->
+    
+    <Esoterica Name="SoulColor_QiCaiLiuGuangZhen">
+      <DisplayName>七彩流光阵</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>5</Difficulty>
+      <Desc>七彩琉璃谷护谷阵法。</Desc>
+      <GLevel>Qi</GLevel>
+      <Element>None</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]习得阵法：
+七彩流光阵[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_YangShengFa</Modifier>
+      
+      <!-- 阵法节点定义 -->
+      <ZhenNodes>
+        <li>SoulColor_QiCaiLiuGuangZhen</li>               <!-- 主节点 -->
+        <li>SoulColor_LiuGuang_1</li>                      <!-- 辅助节点1 -->
+        <li>SoulColor_LiuGuang_2</li>                      <!-- 辅助节点2 -->
+        <li>SoulColor_LiuGuang_3</li>                      <!-- 辅助节点3 -->
+        <li>SoulColor_LiuGuang_4</li>                      <!-- 辅助节点4 -->
+      </ZhenNodes>
+      
+      <!-- 阵法形状配置 -->
+      <ZhenShapes>
+        <li Name="七彩流光阵"> 
+          <!-- 阵法坐标和节点连接关系 -->
+          <ShapeInfo>10|9|0|SoulColor_QiCaiLiuGuangZhen|11|10|2|SoulColor_LiuGuang_3|11|9|0|SoulColor_LiuGuang_4|9|9|5|SoulColor_LiuGuang_1|9|8|0|SoulColor_LiuGuang_2</ShapeInfo>
+          <Descript>七彩琉璃谷传承阵法，七彩环绕幻化世间。</Descript>
+        </li>
+      </ZhenShapes>
+    </Esoterica>
 
-	<Esoterica Name="SoulColor_LingRockMake">
-		<DisplayName>灵气炼制</DisplayName>
-		<Icon>res/Sprs/ui/icon_lingjshi01</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>3</Difficulty>
-		<!--<Desc>将灵气凝结为灵石或灵晶。</Desc>-->
-		<GLevel>Dan1</GLevel>
-		<Element>None</Element>
-		<EffectDesc>[size=10][color=#D06508]习得神通：炼制灵石\n习得神通：炼制灵晶[/color][/size]</EffectDesc>
-		<Magics>
-			<li>LingStoneMake</li>
-			<li>LingCrystalMake</li>
-		</Magics>
-	</Esoterica>
+    <!-- 炼制类技能 -->
+    
+    <Esoterica Name="SoulColor_LingRockMake">
+      <DisplayName>灵气炼制</DisplayName>
+      <Icon>res/Sprs/ui/icon_lingjshi01</Icon>            <!-- 灵石图标 -->
+      <StarLevel>1</StarLevel>
+      <Difficulty>3</Difficulty>
+      <!--<Desc>将灵气凝结为灵石或灵晶。</Desc>-->          <!-- 注释掉的描述 -->
+      <GLevel>Dan1</GLevel>
+      <Element>None</Element>
+      <EffectDesc>[size=10][color=#D06508]习得神通：炼制灵石
+习得神通：炼制灵晶[/color][/size]</EffectDesc>
+      
+      <!-- 关联的神通技能 -->
+      <Magics>
+        <li>LingStoneMake</li>                            <!-- 炼制灵石神通 -->
+        <li>LingCrystalMake</li>                          <!-- 炼制灵晶神通 -->
+      </Magics>
+    </Esoterica>
 
-	<Esoterica Name="SoulColor_LingLongFenXinShu1">
-		<DisplayName>玲之心</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>3</Difficulty>
-		<Desc>玲珑分心术-玲之心</Desc>
-		<GLevel>Dan1</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]法宝数量加一\n降低自身道行30[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_LingLongFenXinShu1</Modifier>
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_LingLongFenXinShu2">
-		<DisplayName>珑之心</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>4</Difficulty>
-		<Desc>玲珑分心术-珑之心</Desc>
-		<GLevel>Dan2</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]法宝数量加一\n降低自身道行40[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_LingLongFenXinShu2</Modifier>
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_LingLongFenXinShu3">
-		<DisplayName>玲珑心</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>2</StarLevel>
-		<Difficulty>5</Difficulty>
-		<Desc>玲珑分心术-玲珑心</Desc>
-		<GLevel>God</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]法宝数量加二\n降低自身道行50[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_LingLongFenXinShu3</Modifier>
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_ShengSiLu">
-		<DisplayName>生死录</DisplayName>
-		<Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>1</Difficulty>
-		<Desc>记载生死之间转化的道理之秘册，传自古仙归真子。修习此册可增加寿命，提高灵气恢复速度。</Desc>
-		<GLevel>Dan1</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]增加寿命\n提高灵气恢复速度[/color][/size][/color][/size]</EffectDesc>
-		<Modifier>SoulColor_ShengSiLu</Modifier>
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_LunHuiJing">
-		<DisplayName>轮回经</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>5</Difficulty>
-		<Desc>传自地府之秘法，乃是长生轮回经之核心根基。修习此法可从根本上提高灵气最大值。</Desc>
-		<GLevel>Dan2</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]从根本上提高灵气最大值[/color][/size]</EffectDesc>
-		<Modifier>Gong9_Esoterica_6</Modifier>	
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_GuLingLengHuo">
-		<DisplayName>骨灵冷火</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>5</Difficulty>
-		<Desc>七彩琉璃谷传承火焰，极寒与极热相结合的奇特火焰，只有在每百年，日月交替之时，方才能够在极寒与极阴之地遇见。</Desc>
-		<GLevel>Dan2</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]提高护盾强度\n大幅提高灵气恢复速度\n大幅提高炼丹速度\n大幅提高炼丹成功率\n大幅提高炼丹产量\n大幅提高温度适应性[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_GuLingLengHuo</Modifier>
-	</Esoterica>
+    <!-- 玲珑分心术系列：增加法宝操控数量 -->
+    
+    <Esoterica Name="SoulColor_LingLongFenXinShu1">
+      <DisplayName>玲之心</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>0</StarLevel>
+      <Difficulty>3</Difficulty>
+      <Desc>玲珑分心术-玲之心</Desc>
+      <GLevel>Dan1</GLevel>
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]法宝数量加一
+降低自身道行30[/color][/size]</EffectDesc>              <!-- 代价：降低道行 -->
+      <Modifier>SoulColor_LingLongFenXinShu1</Modifier>
+    </Esoterica>
+    
+    <Esoterica Name="SoulColor_LingLongFenXinShu2">
+      <DisplayName>珑之心</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>4</Difficulty>
+      <Desc>玲珑分心术-珑之心</Desc>
+      <GLevel>Dan2</GLevel>
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]法宝数量加一
+降低自身道行40[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_LingLongFenXinShu2</Modifier>
+    </Esoterica>
+    
+    <Esoterica Name="SoulColor_LingLongFenXinShu3">
+      <DisplayName>玲珑心</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>2</StarLevel>
+      <Difficulty>5</Difficulty>
+      <Desc>玲珑分心术-玲珑心</Desc>
+      <GLevel>God</GLevel>                                <!-- 神级要求 -->
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]法宝数量加二
+降低自身道行50[/color][/size]</EffectDesc>              <!-- 效果更强，代价更大 -->
+      <Modifier>SoulColor_LingLongFenXinShu3</Modifier>
+    </Esoterica>
+    
+    <!-- 生死轮回系列功法 -->
+    
+    <Esoterica Name="SoulColor_ShengSiLu">
+      <DisplayName>生死录</DisplayName>
+      <Icon>res/Sprs/ui/icon_zhandoufashu</Icon>
+      <StarLevel>0</StarLevel>
+      <Difficulty>1</Difficulty>
+      <Desc>记载生死之间转化的道理之秘册，传自古仙归真子。修习此册可增加寿命，提高灵气恢复速度。</Desc>
+      <GLevel>Dan1</GLevel>
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]增加寿命
+提高灵气恢复速度[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_ShengSiLu</Modifier>
+    </Esoterica>
+    
+    <Esoterica Name="SoulColor_LunHuiJing">
+      <DisplayName>轮回经</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>5</Difficulty>
+      <Desc>传自地府之秘法，乃是长生轮回经之核心根基。修习此法可从根本上提高灵气最大值。</Desc>
+      <GLevel>Dan2</GLevel>
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]从根本上提高灵气最大值[/color][/size]</EffectDesc>
+      <Modifier>Gong9_Esoterica_6</Modifier>             <!-- 引用其他修饰器 -->
+    </Esoterica>
+    
+    <!-- 特殊火焰功法 -->
+    
+    <Esoterica Name="SoulColor_GuLingLengHuo">
+      <DisplayName>骨灵冷火</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>5</Difficulty>
+      <Desc>七彩琉璃谷传承火焰，极寒与极热相结合的奇特火焰，只有在每百年，日月交替之时，方才能够在极寒与极阴之地遇见。</Desc>
+      <GLevel>Dan2</GLevel>
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]提高护盾强度
+大幅提高灵气恢复速度
+大幅提高炼丹速度
+大幅提高炼丹成功率
+大幅提高炼丹产量
+大幅提高温度适应性[/color][/size]</EffectDesc>        <!-- 全方位提升炼丹能力 -->
+      <Modifier>SoulColor_GuLingLengHuo</Modifier>
+    </Esoterica>
 
-	<Esoterica Name="SoulColor_KongShuiShu">
-		<DisplayName>控水术</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>5</Difficulty>
-		<Desc>七彩琉璃经中控水法决，增加自身水系亲和力已达到攻防之效。</Desc>
-		<GLevel>Dan2</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<EffectDesc>[size=10][color=#D06508]大幅提高护盾强度\n大幅提高灵气恢复速度\n大幅提高法宝威力\n大幅提高法宝灵气恢复速度[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_KongShuiShu</Modifier>
-	</Esoterica>
+    <!-- 控水系列功法 -->
+    
+    <Esoterica Name="SoulColor_KongShuiShu">
+      <DisplayName>控水术</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>5</Difficulty>
+      <Desc>七彩琉璃经中控水法决，增加自身水系亲和力已达到攻防之效。</Desc>
+      <GLevel>Dan2</GLevel>
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <EffectDesc>[size=10][color=#D06508]大幅提高护盾强度
+大幅提高灵气恢复速度
+大幅提高法宝威力
+大幅提高法宝灵气恢复速度[/color][/size]</EffectDesc>  <!-- 强化法宝相关能力 -->
+      <Modifier>SoulColor_KongShuiShu</Modifier>
+    </Esoterica>
 
-	<Esoterica Name="SoulColor_LunHuiLianQiShu">
-		<DisplayName>轮回炼器术</DisplayName>
-		<Icon>res/Sprs/ui/icon_shentong</Icon>
-		<StarLevel>0</StarLevel>
-		<Difficulty>5</Difficulty>
-		<Desc>生死录中参悟的轮回炼器之法。</Desc>
-		<GLevel>Dan2</GLevel>
-		<Element>Mu</Element>
-		<Type>Refining</Type>
-		<EffectDesc>[size=10][color=#D06508]大幅提高炼器速度\n大幅提高炼器成功率\n大幅提高炼器品阶\n大幅提高炼器品质\n大幅提高神器炼成几率[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_LunHuiLianQiShu</Modifier>
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_ShuiYuanShen">
-		<DisplayName>水元神</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>7</Difficulty>
-		<Desc>凝练水元神，提高魅力，提高灵气恢复速度，且可以水之道为引，分化一条元神分神。</Desc>
-		<GLevel>God</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<GodSoulCount>1</GodSoulCount>
-		<EffectDesc>[size=10][color=#D06508]提高魅力2点\n提高灵气恢复速度\n增加一条元神分身[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_ShuiYuanShen</Modifier>	
-	</Esoterica>
-	
-	<Esoterica Name="SoulColor_ShengMingYuanShen">
-		<DisplayName>生命元神</DisplayName>
-		<Icon>res/Sprs/ui/icon_jichu</Icon>
-		<StarLevel>1</StarLevel>
-		<Difficulty>10</Difficulty>
-		<Desc>凝练生命元神，提高根骨，大幅提高寿命，且可以生命之道为引，分化一条元神分神。</Desc>
-		<GLevel>God</GLevel>
-		<Element>Shui</Element>
-		<Type>Gong</Type>
-		<GodSoulCount>1</GodSoulCount>
-		<EffectDesc>[size=10][color=#D06508]提高根骨2点\n大幅提高寿命\n提高炼器质量\n大幅提高神器练成几率\n提高炼丹产量\n增加一条元神分身\n习得神通：生命呼唤\n[/color][/size]</EffectDesc>
-		<Modifier>SoulColor_ShengMingYuanShen</Modifier>
-		<Magics>
-			<li>SoulColor_Magic_3</li>
-		</Magics>
-	</Esoterica>
-	
-</List></Esotericas>
+    <!-- 专业技能功法 -->
+    
+    <Esoterica Name="SoulColor_LunHuiLianQiShu">
+      <DisplayName>轮回炼器术</DisplayName>
+      <Icon>res/Sprs/ui/icon_shentong</Icon>              <!-- 神通图标 -->
+      <StarLevel>0</StarLevel>
+      <Difficulty>5</Difficulty>
+      <Desc>生死录中参悟的轮回炼器之法。</Desc>
+      <GLevel>Dan2</GLevel>
+      <Element>Mu</Element>
+      <Type>Refining</Type>                               <!-- 类型：炼器 -->
+      <EffectDesc>[size=10][color=#D06508]大幅提高炼器速度
+大幅提高炼器成功率
+大幅提高炼器品阶
+大幅提高炼器品质
+大幅提高神器炼成几率[/color][/size]</EffectDesc>      <!-- 炼器全方位提升 -->
+      <Modifier>SoulColor_LunHuiLianQiShu</Modifier>
+    </Esoterica>
+    
+    <!-- 元神修炼功法（神级） -->
+    
+    <Esoterica Name="SoulColor_ShuiYuanShen">
+      <DisplayName>水元神</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>7</Difficulty>                           <!-- 极高难度 -->
+      <Desc>凝练水元神，提高魅力，提高灵气恢复速度，且可以水之道为引，分化一条元神分神。</Desc>
+      <GLevel>God</GLevel>                                  <!-- 神级要求 -->
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <GodSoulCount>1</GodSoulCount>                       <!-- 增加1个元神分身 -->
+      <EffectDesc>[size=10][color=#D06508]提高魅力2点
+提高灵气恢复速度
+增加一条元神分身[/color][/size]</EffectDesc>
+      <Modifier>SoulColor_ShuiYuanShen</Modifier> 
+    </Esoterica>
+    
+    <Esoterica Name="SoulColor_ShengMingYuanShen">
+      <DisplayName>生命元神</DisplayName>
+      <Icon>res/Sprs/ui/icon_jichu</Icon>
+      <StarLevel>1</StarLevel>
+      <Difficulty>10</Difficulty>                          <!-- 最高难度 -->
+      <Desc>凝练生命元神，提高根骨，大幅提高寿命，且可以生命之道为引，分化一条元神分神。</Desc>
+      <GLevel>God</GLevel>
+      <Element>Shui</Element>
+      <Type>Gong</Type>
+      <GodSoulCount>1</GodSoulCount>
+      <EffectDesc>[size=10][color=#D06508]提高根骨2点
+大幅提高寿命
+提高炼器质量
+大幅提高神器练成几率
+提高炼丹产量
+增加一条元神分身
+习得神通：生命呼唤
+[/color][/size]</EffectDesc>                            <!-- 综合能力全面提升 -->
+      <Modifier>SoulColor_ShengMingYuanShen</Modifier>
+      
+      <!-- 关联的特殊神通 -->
+      <Magics>
+        <li>SoulColor_Magic_3</li>                         <!-- 生命呼唤神通 -->
+      </Magics>
+    </Esoterica>
+  </List>
+</Esotericas>
