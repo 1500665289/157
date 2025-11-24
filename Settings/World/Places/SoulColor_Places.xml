@@ -8,40 +8,85 @@
 		<DisplayName>七彩山</DisplayName>
 		<Desc>夕阳照耀下湖水反射七彩环绕犹如仙境，灵气十足、物产丰富乃世外桃源之地。</Desc>
 		<Icon>res/Sprs/map/map_shan02</Icon>
+		
+		<!-- 添加必要的标签 -->
+		<Level>2</Level>
+		<DangerLevel>0</DangerLevel>
+		<ExploreCost>10</ExploreCost>
+		<MaxExplorer>3</MaxExplorer>
+		<ExploreTime>24</ExploreTime>
+		
 		<Events>
-			<li Name="Find" Rate="10"/>
+			<li Name="Find" Rate="10" Weight="1">
+				<DisplayName>发现宝物</DisplayName>
+				<Desc>在七彩山中发现了一些珍贵的资源</Desc>
+				<Rewards>
+					<Item name="Item_LingStone" count="5" rate="1.0"/>
+				</Rewards>
+			</li>
+			<li Name="Encounter" Rate="5" Weight="1">
+				<DisplayName>遭遇灵兽</DisplayName>
+				<Desc>在探索过程中遇到了一只温和的灵兽</Desc>
+			</li>
 		</Events>
+		
 		<Produce>
 			<li>
 				<ThingDef>Item_MagicHerb</ThingDef>
 				<Count>20</Count>
 				<Rate>0.5</Rate>
+				<Season>All</Season>
 			</li>
 			<li>
 				<ThingDef>Item_Mint</ThingDef>
 				<Count>20</Count>
 				<Rate>0.5</Rate>
+				<Season>All</Season>
 			</li>
 			<li>
 				<ThingDef>Item_ChickenMeat</ThingDef>
 				<Count>20</Count>
 				<Rate>0.5</Rate>
+				<Season>All</Season>
 			</li>
 			<li>
 				<ThingDef>Item_FishMeat</ThingDef>
 				<Count>20</Count>
 				<Rate>0.5</Rate>
+				<Season>All</Season>
 			</li>
 			<li>
 				<ThingDef>Item_RabbitMeat</ThingDef>
 				<Count>20</Count>
 				<Rate>0.5</Rate>
+				<Season>All</Season>
 			</li>
 			<li>
 				<ThingDef>Item_LingStone</ThingDef>
 				<Count>40</Count>
 				<Rate>0.5</Rate>
+				<Season>All</Season>
 			</li>
 		</Produce>
+		
+		<!-- 添加环境效果 -->
+		<Environment>
+			<LingValue>50</LingValue>
+			<LingRadius>5</LingRadius>
+			<Beauty>30</Beauty>
+			<TemperatureModifier>5</TemperatureModifier>
+		</Environment>
+		
+		<!-- 添加探索条件 -->
+		<Requirements>
+			<li Type="Skill" Name="Exploring" Level="2"/>
+			<li Type="Item" Name="Food" Count="5"/>
+		</Requirements>
+		
+		<!-- 添加NPC信息 -->
+		<Residents>
+			<li Type="Friendly" Count="0-2"/>
+		</Residents>
+		
 	</Place>
 </List></Places>
