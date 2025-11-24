@@ -1,8 +1,9 @@
 <ZhenNodeDefs><List>
 	<!-- 阵枢 -->
 	<Def Name="SoulColor_QiCaiLiuGuangZhen" DisplayName="七彩流光阵" Main="1" Base="0">
+		<!-- 修正：移除错误的SlotSuits引用或修正为正确名称 -->
 		<SlotSuits>
-			<li>SoulColor_QiCaiLiuGuan</li>
+			<li>QiCaiLiuGuangZhen</li>
 		</SlotSuits>
 		<Lv>5</Lv>
 		<Slot>
@@ -15,19 +16,17 @@
 		<Suit>
 			<li>
 				<Condition>
-					<!--激活条件-->
 					<li>
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>0</V>
 			</li>
 		</Suit>
 	</Def>
 	
 	<!-- 阵眼 -->
-	
 	<Def Name="SoulColor_LiuGuang_1" DisplayName="光界" Main="0" Base="0">		
 		<Lv>5</Lv>
 		<Slot>
@@ -42,11 +41,12 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>1</V>
 			</li>
 		</Suit>
 	</Def>
+	
 	<Def Name="SoulColor_LiuGuang_2" DisplayName="彩界" Main="0" Base="0">		
 		<Lv>5</Lv>
 		<Slot>
@@ -61,17 +61,19 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>2</V>
 			</li>
 		</Suit>
 	</Def>
+	
 	<Def Name="SoulColor_LiuGuang_3" DisplayName="暗界" Main="0" Base="0">		
 		<Lv>5</Lv>
 		<Slot>
 			<li SlotName="Lv3_Yin" Pos="1"/>
 			<li SlotName="Lv3_Sheng" Pos="2"/>
 		</Slot>
+		
 		<Suit>
 			<li>
 				<Condition>
@@ -79,17 +81,19 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>3</V>
 			</li>
 		</Suit>
 	</Def>
+	
 	<Def Name="SoulColor_LiuGuang_4" DisplayName="幻界" Main="0" Base="0">	
 		<Lv>5</Lv>
 		<Slot>
 			<li SlotName="Lv3_Yin" Pos="0"/>
 			<li SlotName="Lv3_Mie" Pos="3"/>
-		</Slot>	
+		</Slot>
+		
 		<Suit>
 			<li>
 				<Condition>
@@ -97,7 +101,7 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>4</V>
 			</li>
 		</Suit>
