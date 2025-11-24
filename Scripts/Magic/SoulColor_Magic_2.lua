@@ -2,8 +2,6 @@
 local tbTable = GameMain:GetMod("MagicHelper");--获取神通模块 这里不要动
 local tbMagic = tbTable:GetMagic("SoulColor_Magic_2");--创建一个新的神通class
 
-local Count;
-
 --注意-
 --神通脚本运行的时候有两个固定变量
 --self.bind 执行神通的npcObj
