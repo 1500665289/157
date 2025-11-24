@@ -1,65 +1,68 @@
-<Magics><List>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Magics>
+  <List>
+    <!-- 生命之泉魔法 -->
+    <Magic Name="SoulColor_Magic_3" Type="Class">
+      <DisplayName>生命之泉</DisplayName>
+      <Desc>使用生命元神消耗灵气凝聚生命之泉，可强行回复弥留状态。</Desc>
+      <Icon>res\Sprs\ui\icon_yinshen01</Icon>
+      <Kind>Good</Kind>
+      <CastFavour>ThankTreat</CastFavour>
+      <TargetMood>BuildBody</TargetMood>
+      <Param1>20</Param1>
+      <CostLing>50000</CostLing>
+      <Penalty>0</Penalty>
+      <SelectMode>Single</SelectMode>
+      <ClassName>SoulColor_Magic_3</ClassName>
+      <SelectTarget>Npc</SelectTarget>
+      <TargetDesc>请选择一名弥留的角色。</TargetDesc>
+    </Magic>
 
-	<Magic Name="SoulColor_Magic_3" Type="Class">
-		<DisplayName>生命之泉</DisplayName>
-		<Desc>使用生命元神消耗灵气凝聚生命之泉，可强行回复弥留状态。</Desc>
-		<Icon>res\Sprs\ui\icon_yinshen01</Icon>
-		<Kind>Good</Kind>
-		<CastFavour>ThankTreat</CastFavour>
-		<TargetMood>BuildBody</TargetMood>
-		<Param1>20</Param1>
-		<CostLing>50000</CostLing>
-		<Penalty>0</Penalty>
-		<SelectMode>Single</SelectMode>
-		<ClassName>SoulColor_Magic_3</ClassName>
-		<SelectTarget>Npc</SelectTarget>
-		<TargetDesc>请选择一名弥留的角色。</TargetDesc>
-	</Magic>
+    <!-- 炼制灵石魔法 -->
+    <Magic Name="LingStoneMake" Type="Class">
+      <DisplayName>炼制灵石</DisplayName>
+      <Desc>将灵气凝结为灵石。</Desc>
+      <Icon>res\Sprs\ui\icon_lingjshi01</Icon>
+      <Ani>dazuo</Ani>
+      <Param1>5</Param1>
+      <Kind>None</Kind>
+      <CostLing>500</CostLing>
+      <CostAge>0</CostAge>
+      <Penalty>0</Penalty>
+      <ScoreGood>0</ScoreGood>
+      <SelectMode>None</SelectMode>
+      <SelectTarget>None</SelectTarget>
+      <ClassName>SoulColor_Magic_1</ClassName>
+    </Magic>
 
-<!--覆盖官方-->
+    <!-- 炼制灵晶魔法 -->
+    <Magic Name="LingCrystalMake" Type="Class">
+      <DisplayName>炼制灵晶</DisplayName>
+      <Desc>将灵气凝结为灵晶。</Desc>
+      <Icon>res\Sprs\ui\icon_lingjing01</Icon>
+      <Ani>dazuo</Ani>
+      <Param1>5</Param1>
+      <Kind>None</Kind>
+      <CostLing>20000</CostLing>
+      <CostAge>0</CostAge>
+      <Penalty>0</Penalty>
+      <ScoreGood>0</ScoreGood>
+      <SelectMode>None</SelectMode>
+      <SelectTarget>None</SelectTarget>
+      <ClassName>SoulColor_Magic_2</ClassName>
+    </Magic>
 
-	<Magic Name="LingStoneMake" Type="Class">
-		<DisplayName>炼制灵石</DisplayName>
-		<Desc>将灵气凝结为灵石。</Desc>
-		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
-		<Ani>dazuo</Ani>
-		<Param1>5</Param1>
-		<Kind>None</Kind>
-		<CostLing>500</CostLing>
-		<CostAge>0</CostAge>
-		<Penalty>0</Penalty>
-		<ScoreGood>0</ScoreGood>
-		<SelectMode>None</SelectMode>
-		<SelectTarget>None</SelectTarget>
-		<ClassName>SoulColor_Magic_1</ClassName>
-	</Magic>
-	
-	<Magic Name="LingCrystalMake" Type="Class">
-		<DisplayName>炼制灵晶</DisplayName>
-		<Desc>将灵气凝结为灵晶。</Desc>
-		<Icon>res\Sprs\ui\icon_lingjing01</Icon>
-		<Ani>dazuo</Ani>
-		<Param1>5</Param1>
-		<Kind>None</Kind>
-		<CostLing>20000</CostLing>
-		<CostAge>0</CostAge>
-		<Penalty>0</Penalty>
-		<ScoreGood>0</ScoreGood>
-		<SelectMode>None</SelectMode>
-		<SelectTarget>None</SelectTarget>
-		<ClassName>SoulColor_Magic_2</ClassName>
-	</Magic>
-
-	<Magic Name="MakePuppet">
-		<DisplayName>御灵术</DisplayName>
-		<Desc>对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。\n[color=#D06508]每个修行者只可操纵一个傀儡[/color]</Desc>
-		<Icon>res\Sprs\ui\icon_yushi01</Icon>
-		<Param1>10</Param1><!--所需时间-->
-		<CostLing>1000</CostLing>
-		<Penalty>0</Penalty>
-		<CMD>MakePuppet</CMD>
-		<SelectType>MakePuppet</SelectType>
-	</Magic>
-	
-
-</List></Magics>
+    <!-- 御灵术魔法（修正：添加Type属性） -->
+    <Magic Name="MakePuppet" Type="Skill">
+      <DisplayName>御灵术</DisplayName>
+      <Desc>对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。
+[color=#D06508]每个修行者只可操纵一个傀儡[/color]</Desc>
+      <Icon>res\Sprs\ui\icon_yushi01</Icon>
+      <Param1>10</Param1>
+      <CostLing>1000</CostLing>
+      <Penalty>0</Penalty>
+      <CMD>MakePuppet</CMD>
+      <SelectType>MakePuppet</SelectType>
+    </Magic>
+  </List>
+</Magics>
