@@ -2,8 +2,6 @@
 local tbTable = GameMain:GetMod("MagicHelper");--获取神通模块 这里不要动
 local tbMagic = tbTable:GetMagic("SoulColor_Magic_1");--创建一个新的神通class
 
-local Count;
-
 --注意-
 --神通脚本运行的时候有两个固定变量
 --self.bind 执行神通的npcObj
@@ -27,15 +25,14 @@ end
 
 --开始施展神通
 function tbMagic:MagicEnter(IDs, IsThing)
-	self.Count = 0;
-	self.bind:AddLing(self.magic.CostLing);
+	self.Count = 0;  -- 修正：使用self.Count而不是Count
 end
 
 --神通施展过程中，需要返回值
 --返回值  0继续 1成功并结束 -1失败并结束
 function tbMagic:MagicStep(dt,duration)
 	--self:SetProgress(durationf.magic.Param1);--设置施展进度 主要用于UI显示 这里使用了参数1作为施法时间
-	self.Count = self.Count + 1;
+	self.Count = self.Count + 1;  -- 修正：使用self.Count而不是Count
 	if self.Count == 150 then
 		local item = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone");--读取物品
 		item.FSItemState = -1;--镇物状态0未知 -1无 1有未鉴定 2有已鉴定
@@ -46,7 +43,7 @@ function tbMagic:MagicStep(dt,duration)
 		if self.bind.LingV < self.magic.CostLing then
 			return 1;
 		end
-		self.Count = 0;
+		self.Count = 0;  -- 修正：使用self.Count而不是Count
 	end
 	return 0;
 end
