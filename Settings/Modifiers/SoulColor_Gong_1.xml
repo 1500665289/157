@@ -1,7 +1,8 @@
-<ModifierDefs><List>
+<ModifierDefs>
+<List>
 
 	<Modifier Name="SoulColor_QiCaiXinFa1" Type="Normal">
-		<DisplayName>Èý²ÊÐÄ·¨</DisplayName>
+		<DisplayName>ä¸‰å½©å¿ƒæ³•</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -15,7 +16,7 @@
 	</Modifier>
 	
 	<Modifier Name="SoulColor_QiCaiXinFa2" Type="Normal">
-		<DisplayName>Îå²ÊÐÄ·¨</DisplayName>
+		<DisplayName>äº”å½©å¿ƒæ³•</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -29,7 +30,7 @@
 	</Modifier> 
 	
 	<Modifier Name="SoulColor_QiCaiXinFa3" Type="Normal">
-		<DisplayName>Æß²ÊÐÄ·¨</DisplayName>
+		<DisplayName>ä¸ƒå½©å¿ƒæ³•</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -43,7 +44,7 @@
 	</Modifier> 
 
 	<Modifier Name="SoulColor_XinYanZhou" Type="Normal">
-		<DisplayName>ÐÄÑÛÖä</DisplayName>
+		<DisplayName>å¿ƒçœ¼å’’</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -55,7 +56,7 @@
 	</Modifier>
 
 	<Modifier Name="SoulColor_YangShengFa" Type="Normal">
-		<DisplayName>ÑøÉú·¨</DisplayName>
+		<DisplayName>å…»ç”Ÿæ³•</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -69,40 +70,40 @@
 	</Modifier>
 
 	<Modifier Name="SoulColor_GuLingLengHuo" Type="Normal">
-		<DisplayName>¹ÇÁéÀä»ð</DisplayName>
+		<DisplayName>éª¨çµå†·ç«</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.5"/><!--»¤¶ÜÇ¿¶È¼Ó³É-->
-			<li Name="LingAbsorbSpeed" AddV="2"/><!--ÁéÆø»Ö¸´-->
-			<li Name="DanMake_SpeedAddV" AddV="1"/><!--µ¤Ò©Á¶ÖÆËÙ¶È-->
-			<li Name="DanMake_SuccessRate" AddV="2"/><!--Á¶µ¤¼¼ÄÜÁ¶ÖÆ³É¹¦ÂÊ£¬Á¶µ¤¼¼ÄÜ´øÀ´µÄ³É¹¦ÂÊ¡£-->
-			<li Name="DanMake_Yield" AddV="5"/><!--Á¶µ¤¼¼ÄÜÁ¶ÖÆ²úÁ¿¼Ó³É£¬Á¶µ¤¼¼ÄÜ´øÀ´µÄ²úÁ¿¼Ó³É¡£-->
-			<li Name="ToleranceTMin" AddV="-10"/><!--×îµÍ¼«ÏÞÎÂ¶È-->
-			<li Name="ToleranceTMax" AddV="30"/><!--×î¸ß¼«ÏÞÎÂ¶È-->
-			<li Name="ComfyTMin" AddV="-10"/><!--×îµÍÊæÊÊÎÂ¶È-->
-			<li Name="ComfyTMax" AddV="30"/><!--×î¸ßÊæÊÊÎÂ¶È-->
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.5"/><!--æŠ¤ç›¾å¼ºåº¦åŠ æˆ-->
+			<li Name="LingAbsorbSpeed" AddV="2"/><!--çµæ°”æ¢å¤-->
+			<li Name="DanMake_SpeedAddV" AddV="1"/><!--ä¸¹è¯ç‚¼åˆ¶é€Ÿåº¦-->
+			<li Name="DanMake_SuccessRateAddP" AddP="2"/><!--ä¿®æ­£ï¼šç»Ÿä¸€å±žæ€§åç§°-->
+			<li Name="DanMake_Yield" AddV="5"/><!--ç‚¼ä¸¹æŠ€èƒ½ç‚¼åˆ¶äº§é‡åŠ æˆï¼Œç‚¼ä¸¹æŠ€èƒ½å¸¦æ¥çš„äº§é‡åŠ æˆã€‚-->
+			<li Name="ToleranceTMin" AddV="-10"/><!--æœ€ä½Žæžé™æ¸©åº¦-->
+			<li Name="ToleranceTMax" AddV="30"/><!--æœ€é«˜æžé™æ¸©åº¦-->
+			<li Name="ComfyTMin" AddV="-10"/><!--æœ€ä½Žèˆ’é€‚æ¸©åº¦-->
+			<li Name="ComfyTMax" AddV="30"/><!--æœ€é«˜èˆ’é€‚æ¸©åº¦-->
 		</Properties>
 	</Modifier>
 
 	<Modifier Name="SoulColor_KongShuiShu" Type="Normal">
-		<DisplayName>¿ØË®Êõ</DisplayName>
+		<DisplayName>æŽ§æ°´æœ¯</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="NpcFight_ShieldConversionRateAddP" AddV="1"/><!--»¤¶ÜÇ¿¶È¼Ó³É-->
-			<li Name="LingAbsorbSpeed" AddV="2"/><!--ÁéÆø»Ö¸´-->
-			<li Name="NpcFight_FabaoPowerAddP" AddP="2"/><!--·¨±¦ÍþÁ¦¼Ó³É-->
-			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="3"/><!--·¨±¦ÁéÆø»Ö¸´ËÙ¶È¼Ó³É-->
+			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.5"/><!--ä¿®æ­£ï¼šè°ƒæ•´æŠ¤ç›¾å¼ºåº¦åŠ æˆ-->
+			<li Name="LingAbsorbSpeed" AddV="2"/><!--çµæ°”æ¢å¤-->
+			<li Name="NpcFight_FabaoPowerAddP" AddP="2"/><!--æ³•å®å¨åŠ›åŠ æˆ-->
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="3"/><!--æ³•å®çµæ°”æ¢å¤é€Ÿåº¦åŠ æˆ-->
 		</Properties>
 	</Modifier>
 
 	<Modifier Name="SoulColor_LingLongFenXinShu1" Type="Normal">
-		<DisplayName>ÁáÖ®ÐÄ</DisplayName>
+		<DisplayName>çŽ²ä¹‹å¿ƒ</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -114,7 +115,7 @@
 	</Modifier>
 
 	<Modifier Name="SoulColor_LingLongFenXinShu2" Type="Normal">
-		<DisplayName>ççÖ®ÐÄ</DisplayName>
+		<DisplayName>ç‘ä¹‹å¿ƒ</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -126,7 +127,7 @@
 	</Modifier>
 	
 	<Modifier Name="SoulColor_LingLongFenXinShu3" Type="Normal">
-		<DisplayName>ÁáççÐÄ</DisplayName>
+		<DisplayName>çŽ²ç‘å¿ƒ</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -138,19 +139,19 @@
 	</Modifier>
 	
 	<Modifier Name="SoulColor_ShengSiLu" Type="Normal">
-		<DisplayName>ÉúËÀÂ¼</DisplayName>
+		<DisplayName>ç”Ÿæ­»å½•</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="MaxAge" AddV="50"/><!--ÊÙÔª-->
+			<li Name="MaxAge" AddV="50"/><!--å¯¿å…ƒ-->
 			<li Name="LingAbsorbSpeed" AddP="1"/>
 		</Properties>
 	</Modifier>
 	
 	<Modifier Name="SoulColor_QiCaiMiXinZou1" Type="Normal">
-		<DisplayName>À§ÐÄÖä</DisplayName>
+		<DisplayName>å›°å¿ƒå’’</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -161,7 +162,7 @@
 	</Modifier> 
 	
 	<Modifier Name="SoulColor_QiCaiMiXinZou2" Type="Normal">
-		<DisplayName>ÀëÐÄÖä</DisplayName>
+		<DisplayName>ç¦»å¿ƒå’’</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -172,7 +173,7 @@
 	</Modifier> 
 	
 	<Modifier Name="SoulColor_QiCaiMiXinZou3" Type="Normal">
-		<DisplayName>ÃÔÐÄÖä</DisplayName>
+		<DisplayName>è¿·å¿ƒå’’</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -183,7 +184,7 @@
 	</Modifier>
 
 	<Modifier Name="SoulColor_ShuiYuanShen" Type="Normal">
-		<DisplayName>Ë®ÔªÉñ</DisplayName>
+		<DisplayName>æ°´å…ƒç¥ž</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -195,7 +196,7 @@
 	</Modifier>
 	
 	<Modifier Name="SoulColor_ShengMingYuanShen" Type="Normal">
-		<DisplayName>ÉúÃüÔªÉñ</DisplayName>
+		<DisplayName>ç”Ÿå‘½å…ƒç¥ž</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -210,19 +211,20 @@
 	</Modifier>
 	
 	<Modifier Name="SoulColor_LunHuiLianQiShu" Type="Normal">
-		<DisplayName>ÂÖ»ØÁ¶Æ÷Êõ</DisplayName>
+		<DisplayName>è½®å›žç‚¼å™¨æœ¯</DisplayName>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<BaseFive>0,0,0,0,0</BaseFive>
 		<Properties>
-			<li Name="FabaoMake_SpeedAddV" AddV="1"/><!--·¨±¦Á¶ÖÆËÙ¶È¼ÓÖµ-->
-			<li Name="FabaoMake_SuccessRateAddV" AddV="10"/><!--·¨±¦Á¶ÖÆ³É¹¦ÂÊ¼ÓÖµ-->
-			<li Name="FabaoMake_LingInheritRateAddV" AddV="10"/><!--·¨±¦Á¶ÖÆÆ·½×¼Ó³É£¬Ô­²ÄÁÏÁéÆø¶Ô·¨±¦Æ·½×¼Ó³ÉµÄ·ù¶È¡£-->
-			<li Name="FabaoMake_QualityAddV" AddV="10"/><!--·¨±¦Á¶ÖÆÆ·ÖÊ¼ÓÖµ£¬³ÉÆ·Æ·ÖÊµÄ¼ÓÖµ¡£-->
-			<li Name="FabaoMake_TwelveRateChance" AddV="4"/><!--ÉñÆ÷Á¶³É»ù´¡¼¸ÂÊ-->
+			<li Name="FabaoMake_SpeedAddV" AddV="1"/><!--æ³•å®ç‚¼åˆ¶é€Ÿåº¦åŠ å€¼-->
+			<li Name="FabaoMake_SuccessRateAddV" AddV="10"/><!--æ³•å®ç‚¼åˆ¶æˆåŠŸçŽ‡åŠ å€¼-->
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="10"/><!--æ³•å®ç‚¼åˆ¶å“é˜¶åŠ æˆï¼ŒåŽŸææ–™çµæ°”å¯¹æ³•å®å“é˜¶åŠ æˆçš„å¹…åº¦ã€‚-->
+			<li Name="FabaoMake_QualityAddV" AddV="10"/><!--æ³•å®ç‚¼åˆ¶å“è´¨åŠ å€¼ï¼Œæˆå“å“è´¨çš„åŠ å€¼ã€‚-->
+			<li Name="FabaoMake_TwelveRateChance" AddV="4"/><!--ç¥žå™¨ç‚¼æˆåŸºç¡€å‡ çŽ‡-->
 		</Properties>
 	</Modifier>
 	
-</List></ModifierDefs>
+</List>
+</ModifierDefs>
