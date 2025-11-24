@@ -1,4 +1,4 @@
-﻿--演示神通
+--演示神通
 local tbTable = GameMain:GetMod("MagicHelper");--获取神通模块 这里不要动
 local tbMagic = tbTable:GetMagic("SoulColor_Magic_3");--创建一个新的神通class
 
@@ -25,7 +25,11 @@ end
 
 --开始施展神通
 function tbMagic:MagicEnter(IDs, IsThing)
-	self.targetId = IDs[0];--获取目标信息
+	if IDs ~= nil and IDs.Count > 0 then  -- 添加安全检查
+		self.targetId = IDs[0];--获取目标信息
+	else
+		self.targetId = nil;
+	end
 end
 
 --神通施展过程中，需要返回值
@@ -41,23 +45,23 @@ end
 --施展完成/失败 success是否成功
 function tbMagic:MagicLeave(success)
 	if success == true then
-		local npc = ThingMgr:FindThingByID(self.targetId);
-		if npc ~= nil then
-			local save = npc.PropertyMgr:GetSaveData();
-			save.BodyData.Dead = false
-			save.BodyData.Dying = false
-			save.BodyData.HealthValue = 300
-			save.BodyData.DID = 1
-			save.BodyData.Damages:Clear()
-			save.BodyData.RemoveParts:Clear()
-			npc.PropertyMgr.BodyData:AfterLoad(save)
-			npc.DieCause = nil
-			npc.CorpseTime = 0;
+		if self.targetId ~= nil then  -- 添加安全检查
+			local npc = ThingMgr:FindThingByID(self.targetId);
+			if npc ~= nil then
+				local save = npc.PropertyMgr:GetSaveData();
+				save.BodyData.Dead = false
+				save.BodyData.Dying = false
+				save.BodyData.HealthValue = 300
+				save.BodyData.DID = 1
+				save.BodyData.Damages:Clear()
+				save.BodyData.RemoveParts:Clear()
+				npc.PropertyMgr.BodyData:AfterLoad(save)
+				npc.DieCause = nil
+				npc.CorpseTime = 0;
+			end
 		end
 	end
 end
-
-
 
 --存档 如果没有返回空 有就返回Table(KV)
 function tbMagic:OnGetSaveData()
@@ -66,5 +70,9 @@ end
 
 --读档 tbData是存档数据 IDs和IsThing同进入
 function tbMagic:OnLoadData(tbData,IDs, IsThing)	
-	self.targetId = IDs[0];--获取目标信息
+	if IDs ~= nil and IDs.Count > 0 then  -- 添加安全检查
+		self.targetId = IDs[0];--获取目标信息
+	else
+		self.targetId = nil;
+	end
 end
