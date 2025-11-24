@@ -1,4 +1,5 @@
-﻿<Experiences><List>
+<Experiences>
+<List>
 
 	<Experience Name="SoulColor_QuanNengRenCai">
 		<DisplayName>全能人才</DisplayName>
@@ -53,6 +54,15 @@
 		<ModifierDef>
 			<NoFog>1</NoFog>
 		</ModifierDef>
+		<!--保持结构一致性，添加空标签-->
+		<Gongs>
+		</Gongs>
+		<Esoterics>
+		</Esoterics>
+		<Equips>
+		</Equips>	
+		<Items>
+		</Items>
 	</Experience>
 	
 	<Experience Name="SoulColor_1">
@@ -60,20 +70,20 @@
 		<Desc>你进入太一门之前就机缘巧合得到过《七彩琉璃经》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《七彩琉璃经》[/color]\n此功法开局简单，建议初始选择。[/size]</Desc>
 		<Point>5</Point><!--消耗点数-->
 		<Recommend>1</Recommend><!-- 推荐星级 -->
-		<!--扩展属性-->
-		<Properties>
-				<!--<li Name="MaxAge" AddV="0"/>-->
-		</Properties>
-		<!--功法-->
-		<Gongs>
-			<li>SoulColor_1</li><!--七彩琉璃经-->
-		</Gongs>
 		<ModifierDef>
 			<!--技能-->
 			<Skills>
 				<!--<li Name="Fabao" Level="5"/>-->
 			</Skills>
+			<!--修正：将Properties移到ModifierDef内部-->
+			<Properties>
+				<!--<li Name="MaxAge" AddV="0"/>-->
+			</Properties>
 		</ModifierDef>
+		<!--功法-->
+		<Gongs>
+			<li>SoulColor_1</li><!--七彩琉璃经-->
+		</Gongs>
 		<!--秘籍-->
 		<Esoterics>
 		</Esoterics>
@@ -85,4 +95,5 @@
 		</Items>
 	</Experience>
 	
-</List></Experiences>
+</List>
+</Experiences>
