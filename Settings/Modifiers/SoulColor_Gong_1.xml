@@ -1,4 +1,5 @@
-<ModifierDefs><List>
+<ModifierDefs>
+	<List>
 
 	<Modifier Name="SoulColor_QiCaiXinFa1" Type="Normal">
 		<DisplayName>三彩心法</DisplayName>
@@ -76,14 +77,14 @@
 		<Sync>1</Sync>
 		<Properties>
 			<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.5"/><!--护盾强度加成-->
-			<li Name="LingAbsorbSpeed" AddV="2"/><!--灵气恢复-->
-			<li Name="DanMake_SpeedAddV" AddV="1"/><!--丹药炼制速度-->
-			<li Name="DanMake_SuccessRate" AddV="2"/><!--炼丹技能炼制成功率，炼丹技能带来的成功率。-->
-			<li Name="DanMake_Yield" AddV="5"/><!--炼丹技能炼制产量加成，炼丹技能带来的产量加成。-->
-			<li Name="ToleranceTMin" AddV="-10"/><!--最低极限温度-->
-			<li Name="ToleranceTMax" AddV="30"/><!--最高极限温度-->
-			<li Name="ComfyTMin" AddV="-10"/><!--最低舒适温度-->
-			<li Name="ComfyTMax" AddV="30"/><!--最高舒适温度-->
+			<li Name="LingAbsorbSpeed" AddV="2"/><!--灵气吸收速度-->
+			<li Name="DanMake_SpeedAddV" AddV="1"/><!--炼丹速度-->
+			<li Name="DanMake_SuccessRate" AddV="2"/><!--炼丹成功率-->
+			<li Name="DanMake_Yield" AddV="5"/><!--炼丹产量-->
+			<li Name="ToleranceTMin" AddV="-10"/><!--最低耐受温度-->
+			<li Name="ToleranceTMax" AddV="30"/><!--最高耐受温度-->
+			<li Name="ComfyTMin" AddV="-10"/><!--舒适温度下限-->
+			<li Name="ComfyTMax" AddV="30"/><!--舒适温度上限-->
 		</Properties>
 	</Modifier>
 
@@ -95,7 +96,7 @@
 		<Sync>1</Sync>
 		<Properties>
 			<li Name="NpcFight_ShieldConversionRateAddP" AddV="1"/><!--护盾强度加成-->
-			<li Name="LingAbsorbSpeed" AddV="2"/><!--灵气恢复-->
+			<li Name="LingAbsorbSpeed" AddV="2"/><!--灵气吸收速度-->
 			<li Name="NpcFight_FabaoPowerAddP" AddP="2"/><!--法宝威力加成-->
 			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="3"/><!--法宝灵气恢复速度加成-->
 		</Properties>
@@ -144,8 +145,8 @@
 		<Display>0</Display>
 		<Sync>1</Sync>
 		<Properties>
-			<li Name="MaxAge" AddV="50"/><!--寿元-->
-			<li Name="LingAbsorbSpeed" AddP="1"/>
+			<li Name="MaxAge" AddV="50"/><!--增加寿命-->
+			<li Name="LingAbsorbSpeed" AddP="1"/><!--灵气吸收速度-->
 		</Properties>
 	</Modifier>
 	
@@ -217,12 +218,13 @@
 		<Sync>1</Sync>
 		<BaseFive>0,0,0,0,0</BaseFive>
 		<Properties>
-			<li Name="FabaoMake_SpeedAddV" AddV="1"/><!--法宝炼制速度加值-->
-			<li Name="FabaoMake_SuccessRateAddV" AddV="10"/><!--法宝炼制成功率加值-->
-			<li Name="FabaoMake_LingInheritRateAddV" AddV="10"/><!--法宝炼制品阶加成，原材料灵气对法宝品阶加成的幅度。-->
-			<li Name="FabaoMake_QualityAddV" AddV="10"/><!--法宝炼制品质加值，成品品质的加值。-->
-			<li Name="FabaoMake_TwelveRateChance" AddV="4"/><!--神器炼成基础几率-->
+			<li Name="FabaoMake_SpeedAddV" AddV="1"/><!--炼器速度加成-->
+			<li Name="FabaoMake_SuccessRateAddV" AddV="10"/><!--炼器成功率-->
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="10"/><!--灵气继承率-->
+			<li Name="FabaoMake_QualityAddV" AddV="10"/><!--炼器品质加成-->
+			<li Name="FabaoMake_TwelveRateChance" AddV="4"/><!--神器炼成几率-->
 		</Properties>
 	</Modifier>
 	
-</List></ModifierDefs>
+	</List>
+</ModifierDefs>

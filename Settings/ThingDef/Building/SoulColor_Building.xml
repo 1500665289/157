@@ -1,252 +1,253 @@
-<ThingDefs><List>
+<ThingDefs>
+	<List>
 
-	<ThingDef Type="Building" Name="SoulColor_MoFaZhen"  Parent="ProductionBase">
-	<ThingName>魔法阵</ThingName>
-	<Desc>按一定规则搭建的魔法阵，可以生产物品、存储灵气、与使用特定魔法。</Desc>
-	<TexPath>Spr/Object/wuquan01.png</TexPath>
-	<TexScale>0.4</TexScale>
-	<SelectAble>1</SelectAble>
-	<ClassName>MoFaZhen_Building</ClassName>
-	<CastShadow>0</CastShadow>
-	<BlockMissile>1</BlockMissile>
-	<Beauty>100</Beauty>
-	<BlockLight>0</BlockLight>
-	<MaxHitPoints>100</MaxHitPoints>
-	<ColliderKind>None</ColliderKind>
-	<VisionRadius>0</VisionRadius>
-	
-	<Flammability>
-		<Flammability>-1</Flammability>
-	</Flammability>
-	
-	<Collider>
-		<Data>
-		[6],
-		</Data>
-		<WorkOffset>
-			<li Index="0"  X="0" Y="0" Ang="1"/>
-		</WorkOffset>
-	</Collider>
-	
-	<Light>
-		<Value>40</Value>
-		<Failing>0.6</Failing>
-		<FailRadius>5</FailRadius>
-		<Radius>10</Radius>
-		<Color>FFDEBCFF</Color>
-	</Light>
-	
-	<Building>
-		<RoomKind>None</RoomKind>
-		<ShowFree>0</ShowFree>
-		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
-		<CanMakeRoom>0</CanMakeRoom>
-		<WorkAnimation>produce</WorkAnimation>
-		<BePackage>1</BePackage>
-		<NoFengshui>1</NoFengshui>
-		<NoFight>1</NoFight>
-		<BeMade>
-			<WorkToMake>100</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "WoodBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>1</CostStuffCount>
-		</BeMade>
-		<SnowRenderData>
-			<x>3.3</x>
-			<y>4</y>
-			<z>1</z>
-		</SnowRenderData>
-		<ProducePriority>1</ProducePriority>
-		<ProduceKind>Handwork</ProduceKind>
-		<Produces>
-			<Produce>
-				<ThingDef>SoulColor_Sword_GuiRen</ThingDef>
-				<Display>聚灵剑</Display>
-				<Count>1</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>SoulColor_Dan_TXD</ThingDef>
-				<Display>天心丹</Display>
-				<Count>1</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_LingCloth</ThingDef>
-				<Display>灵布</Display>
-				<Count>5</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_JinLingStoneBlock</ThingDef>
-				<Display>金灵石砖</Display>
-				<Count>5</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_MuLingStoneBlock</ThingDef>
-				<Display>木灵石砖</Display>
-				<Count>5</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_ShuiLingStoneBlock</ThingDef>
-				<Display>水灵石砖</Display>
-				<Count>5</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_HuoLingStoneBlock</ThingDef>
-				<Display>火灵石砖</Display>
-				<Count>5</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>Item_TuLingStoneBlock</ThingDef>
-				<Display>土灵石砖</Display>
-				<Count>5</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>SoulColor_Item_IronRockLeftover</ThingDef>
-				<Display>金灵石角料</Display>
-				<Count>100</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>SoulColor_Item_WoodRockLeftover</ThingDef>
-				<Display>木灵石角料</Display>
-				<Count>100</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>SoulColor_Item_SilverRockLeftover</ThingDef>
-				<Display>水灵石角料</Display>
-				<Count>100</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>SoulColor_Item_CopperRockLeftover</ThingDef>
-				<Display>火灵石角料</Display>
-				<Count>100</Count>
-			</Produce>
-			<Produce>
-				<ThingDef>SoulColor_Item_BrownRockLeftover</ThingDef>
-				<Display>土灵石角料</Display>
-				<Count>100</Count>
-			</Produce>
-		</Produces>
-	</Building>
-	<StoryBnts>
-		<li Name="开启" Desc="开启魔法阵" Appoint="3" Story="SoulColor_MoFaZhen" Cost="5"/>
-	</StoryBnts>
+	<ThingDef Type="Building" Name="SoulColor_MoFaZhen" Parent="ProductionBase">
+		<ThingName>魔法阵</ThingName>
+		<Desc>按一定规则搭建的魔法阵，可以生产物品、存储灵气、与使用特定魔法。</Desc>
+		<TexPath>Spr/Object/wuquan01.png</TexPath>
+		<TexScale>0.4</TexScale>
+		<SelectAble>1</SelectAble>
+		<ClassName>MoFaZhen_Building</ClassName>
+		<CastShadow>0</CastShadow>
+		<BlockMissile>1</BlockMissile>
+		<Beauty>100</Beauty>
+		<BlockLight>0</BlockLight>
+		<MaxHitPoints>100</MaxHitPoints>
+		<ColliderKind>None</ColliderKind>
+		<VisionRadius>0</VisionRadius>
+		
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		
+		<Collider>
+			<Data>
+			[6],
+			</Data>
+			<WorkOffset>
+				<li Index="0" X="0" Y="0" Ang="1"/>
+			</WorkOffset>
+		</Collider>
+		
+		<Light>
+			<Value>40</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>5</FailRadius>
+			<Radius>10</Radius>
+			<Color>FFDEBCFF</Color>
+		</Light>
+		
+		<Building>
+			<RoomKind>None</RoomKind>
+			<ShowFree>0</ShowFree>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<CanMakeRoom>0</CanMakeRoom>
+			<WorkAnimation>produce</WorkAnimation>
+			<BePackage>1</BePackage>
+			<NoFengshui>1</NoFengshui>
+			<NoFight>1</NoFight>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name="MetalBlock"/>
+					<Stuff name="WoodBlock"/>
+					<Stuff name="RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>1</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>3.3</x>
+				<y>4</y>
+				<z>1</z>
+			</SnowRenderData>
+			<ProducePriority>1</ProducePriority>
+			<ProduceKind>Handwork</ProduceKind>
+			<Produces>
+				<Produce>
+					<ThingDef>SoulColor_Sword_GuiRen</ThingDef>
+					<Display>聚灵剑</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>SoulColor_Dan_TXD</ThingDef>
+					<Display>天心丹</Display>
+					<Count>1</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_LingCloth</ThingDef>
+					<Display>灵布</Display>
+					<Count>5</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_JinLingStoneBlock</ThingDef>
+					<Display>金灵石砖</Display>
+					<Count>5</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_MuLingStoneBlock</ThingDef>
+					<Display>木灵石砖</Display>
+					<Count>5</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_ShuiLingStoneBlock</ThingDef>
+					<Display>水灵石砖</Display>
+					<Count>5</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_HuoLingStoneBlock</ThingDef>
+					<Display>火灵石砖</Display>
+					<Count>5</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>Item_TuLingStoneBlock</ThingDef>
+					<Display>土灵石砖</Display>
+					<Count>5</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>SoulColor_Item_IronRockLeftover</ThingDef>
+					<Display>金灵石角料</Display>
+					<Count>100</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>SoulColor_Item_WoodRockLeftover</ThingDef>
+					<Display>木灵石角料</Display>
+					<Count>100</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>SoulColor_Item_SilverRockLeftover</ThingDef>
+					<Display>水灵石角料</Display>
+					<Count>100</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>SoulColor_Item_CopperRockLeftover</ThingDef>
+					<Display>火灵石角料</Display>
+					<Count>100</Count>
+				</Produce>
+				<Produce>
+					<ThingDef>SoulColor_Item_BrownRockLeftover</ThingDef>
+					<Display>土灵石角料</Display>
+					<Count>100</Count>
+				</Produce>
+			</Produces>
+		</Building>
+		<StoryBnts>
+			<li Name="开启" Desc="开启魔法阵" Appoint="3" Story="SoulColor_MoFaZhen" Cost="5"/>
+		</StoryBnts>
 	</ThingDef>
 	
 	<ThingDef Type="Building" Name="SoulColor_KongTiao" Parent="OrnamentBase">
-	<TexPath>res\Sprs\buildingnew\building_smallxianglu02</TexPath>
-	<TexScale>0.8</TexScale>
-	<ThingName>温度香炉</ThingName>
-	<Desc>用特殊材料制作的香炉，散发的香气可以达到控制房间温度的神奇效果。</Desc>
-	<ClassName>KongTiao_Building</ClassName>
-	<Tags>
-		<Tag Name="XiangLu_FSZW" Level="1"/>
-	</Tags>
-	<ColliderKind>ThrowOver</ColliderKind>
-	<ShadowSize>
-		<x>0.7</x>
-		<y>0.7</y>
-	</ShadowSize>
-	<Collider>
-		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
-		<Data>
-		[3],
-		</Data>
-		<OffsetGroup>
-			<li><x>0</x><y>0.3</y></li>
-			<li><x>0</x><y>0.3</y></li>
-			<li><x>0</x><y>0.3</y></li>
-			<li><x>0</x><y>0.3</y></li>
-		</OffsetGroup>
-	</Collider>
-	<Flammability>
-		<Flammability>0</Flammability>
-	</Flammability>
-	<Building>
-		<Orientation>F,R</Orientation>
-		<BeMade>
-			<WorkToMake>100</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "WoodBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>6</CostStuffCount>
-		</BeMade>
-		<SnowRenderData>
-			<x>2.3</x>
-			<y>3.5</y>
-			<z>1</z>
-		</SnowRenderData>		
-	</Building>
-	<Heat>
-		<Value>0</Value>
-		<Radius>5</Radius>
-		<RoomValue>0</RoomValue>
-		<Failing>1</Failing>
-		<FailRadius>1</FailRadius>
-	</Heat>
+		<TexPath>res/Sprs/buildingnew/building_smallxianglu02</TexPath>
+		<TexScale>0.8</TexScale>
+		<ThingName>温度香炉</ThingName>
+		<Desc>用特殊材料制作的香炉，散发的香气可以达到控制房间温度的神奇效果。</Desc>
+		<ClassName>KongTiao_Building</ClassName>
+		<Tags>
+			<Tag Name="XiangLu_FSZW" Level="1"/>
+		</Tags>
+		<ColliderKind>ThrowOver</ColliderKind>
+		<ShadowSize>
+			<x>0.7</x>
+			<y>0.7</y>
+		</ShadowSize>
+		<Collider>
+			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+			<Data>
+			[3],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0.3</y></li>
+				<li><x>0</x><y>0.3</y></li>
+				<li><x>0</x><y>0.3</y></li>
+				<li><x>0</x><y>0.3</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Building>
+			<Orientation>F,R</Orientation>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name="MetalBlock"/>
+					<Stuff name="WoodBlock"/>
+					<Stuff name="RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>6</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.3</x>
+				<y>3.5</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Heat>
+			<Value>0</Value>
+			<Radius>5</Radius>
+			<RoomValue>0</RoomValue>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Heat>
 	</ThingDef>	
 	
 	<ThingDef Type="Building" Name="SoulColor_MagicCushion" Parent="FurnitureBase">
-	<ThingName>修炼法座</ThingName>	
-	<Desc>修炼专用的法座，能聚集灵气。</Desc>
-	<Tags>
-		<Tag Name="Sitable" Level="1"/>
-		<Tag Name="Practice" Level="15"/>
-	</Tags>
-	<TexScale>0.9</TexScale>
-	<TexPath>res/Sprs/buildingnew/building_fazuo01</TexPath>
-	<SelectAble>1</SelectAble>	
-	<CastShadow>0</CastShadow>
-	<BlockLight>0</BlockLight>	
-	<Collider>
-		<Data>
-		[6],
-		</Data>
-		<WorkOffset>
-			<li Index="0"  X="0" Y="0" Ang="181"/>
-		</WorkOffset>
-	</Collider>
+		<ThingName>修炼法座</ThingName>	
+		<Desc>修炼专用的法座，能聚集灵气。</Desc>
+		<Tags>
+			<Tag Name="Sitable" Level="1"/>
+			<Tag Name="Practice" Level="15"/>
+		</Tags>
+		<TexScale>0.9</TexScale>
+		<TexPath>res/Sprs/buildingnew/building_fazuo01</TexPath>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>0</BlockLight>	
+		<Collider>
+			<Data>
+			[6],
+			</Data>
+			<WorkOffset>
+				<li Index="0" X="0" Y="0" Ang="181"/>
+			</WorkOffset>
+		</Collider>
 
-	<Building>
-		<OwnerCount>1</OwnerCount>
-		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
-		<BePackage>1</BePackage>
-		<WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath>
-		<Perfab>Building/Prefabs/RefiningCushion</Perfab><!--使用特效-->
-		<PracticeEffectiveness>1</PracticeEffectiveness>
-		<BeMade>
-			<WorkToMake>50</WorkToMake>
-			<Quality>0</Quality>
-			<StuffCategories>
-				<Stuff name = "MetalBlock"/>
-				<Stuff name = "WoodBlock"/>
-				<Stuff name = "RockBlock"/>
-			</StuffCategories>
-			<CostStuffCount>20</CostStuffCount>
-			<CostItems>
-			</CostItems>
-		</BeMade>
-		<SnowRenderData>
-			<x>2.4</x>
-			<y>3.55</y>
-			<z>1</z>
-		</SnowRenderData>
-	</Building>
-	<Ling>
-		<AddionLing>240</AddionLing>
-		<AddionRadius>1</AddionRadius>
-		<AddionFailing>0</AddionFailing>
-		<AddionFailRadius>0</AddionFailRadius>
-		
-		<Attenuation>0</Attenuation>
-		<Absorption>0</Absorption>
-		<Accommodate>0</Accommodate>
-	</Ling>
+		<Building>
+			<OwnerCount>1</OwnerCount>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BePackage>1</BePackage>
+			<WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath>
+			<Perfab>Building/Prefabs/RefiningCushion</Perfab><!--使用特效-->
+			<PracticeEffectiveness>1</PracticeEffectiveness>
+			<BeMade>
+				<WorkToMake>50</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name="MetalBlock"/>
+					<Stuff name="WoodBlock"/>
+					<Stuff name="RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>20</CostStuffCount>
+				<CostItems>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.4</x>
+				<y>3.55</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		<Ling>
+			<AddionLing>240</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
 	</ThingDef>	
 
 	<ThingDef Type="Building" Name="SoulColor_TuDi" Parent="FillBase">	 
@@ -379,4 +380,5 @@
 		</Building>
 	</ThingDef>
 
-	</List></ThingDefs>
+	</List>
+</ThingDefs>

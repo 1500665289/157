@@ -1,4 +1,5 @@
-﻿<SkillTree><List>	
+﻿<SkillTree>
+	<List>	
 	<Node Name="SoulColor_a0" Gong="SoulColor_1">
 		<Esoterica>SoulColor_QiCaiXinFa1</Esoterica>
 		<DisplayName>三彩心法</DisplayName>
@@ -37,20 +38,11 @@
 	</Node>
 	
 	<Node Name="SoulColor_a1" Gong="SoulColor_1">
-		<Level>Qi</Level>
-		<Index>1</Index>
-		<Line>0,2,0,1,0,0,0,0</Line>	
-	</Node>
-	
-	<Node Name="SoulColor_a1" Gong="SoulColor_1">
 		<Esoterica>SoulColor_QiCaiMiXinZou1</Esoterica>
 		<DisplayName>困心咒</DisplayName>
 		<Level>Qi</Level>
 		<Index>1</Index>
 		<Line>0,0,0,0,0,0,0,0</Line>
-		<PreUnit>
-		<!--	<li></li>-->
-		</PreUnit>
 		<Layers>
 			<li>SoulColor_a1_1</li>
 			<li>SoulColor_a1_2</li>
@@ -80,6 +72,12 @@
 		<Esoterica>SoulColor_QiCaiMiXinZou3</Esoterica>
 		<DisplayName>迷心咒</DisplayName>
 		<Level>None</Level>
+	</Node>
+	
+	<Node Name="SoulColor_a2" Gong="SoulColor_1">
+		<Level>Qi</Level>
+		<Index>2</Index>
+		<Line>0,2,0,1,0,0,0,0</Line>	
 	</Node>
 	
 	<Node Name="SoulColor_a3" Gong="SoulColor_1">
@@ -750,4 +748,5 @@
 		<GodCount>0</GodCount>
 	</Node>
 	
-</List></SkillTree> 
+	</List>
+</SkillTree>

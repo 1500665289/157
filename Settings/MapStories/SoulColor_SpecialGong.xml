@@ -1,6 +1,7 @@
-<Stories><List>
+<Stories>
+	<List>
 
-	<Story Name="SoulColor_gong_1"  Parent="BaseFillingStory">
+	<Story Name="SoulColor_gong_1" Parent="BaseFillingStory">
 		<DisplayName>道统现世</DisplayName>
 		<Desc>[NAME]来到[PLACE]，发现此处竟然是《七彩琉璃经》的道统传承，传承被一座前古仙阵围绕，似乎是古代仙人为挑选适合道统的传承者而设置的封印。阵法之中电光流转，似乎蕴含莫大的神通法力。</Desc>
 		<Selections>
@@ -40,7 +41,7 @@
 		</Selections>
 	</Story>
 	
-	<Story Name="SoulColor_MoFaZhen"  Parent="BaseFillingStory">
+	<Story Name="SoulColor_MoFaZhen" Parent="BaseFillingStory">
 		<DisplayName>魔法阵</DisplayName>
 		<Desc>[NAME]开启了魔法阵。</Desc>
 		<Selections>
@@ -50,7 +51,7 @@
 					local xWindow = GameMain:GetMod("Windows"):GetWindow("MoFaZhenWindow");
 					local npc = me.npcObj;
 					local it = story:GetBindThing();
-  				xWindow:Hide();
+  					xWindow:Hide();
 					xWindow:SetUpData(npc,npc.Equip,it);
 					xWindow:Show();
 				</OKResult>
@@ -71,7 +72,7 @@
 		</Selections>
 	</Story>
 	
-	<Story Name="SoulColor_DianHuaXianYuan"  Parent="BaseFillingStory">
+	<Story Name="SoulColor_DianHuaXianYuan" Parent="BaseFillingStory">
 		<DisplayName>点化仙缘</DisplayName>
 		<Desc>[NAME]通过魔法阵发现附近有一名天资绝佳的苗子，如要施展神通，点化这名凡人。需要消耗100万灵气，施展后这个凡人会尽快抵达宗门所在。</Desc>
 		<Kind>Join</Kind>
@@ -84,12 +85,12 @@
 					if npc.LingV + it.LingV >= 1000000 then
 						if npc.LingV >= 1000000 then
 							npc:AddLing(-1000000);
-							local nN = me:RandomInt(5,15)
+							local nN = me:RandomInt(5,15);
 							me:AddJoiners(1,nN,0,3,3,3,3,3);
 						else
-							it:AddLing(npc.LingV-1000000);
+							it:AddLing(-(1000000 - npc.LingV));
 							npc:AddLing(-npc.LingV);
-							local nN = me:RandomInt(5,15)
+							local nN = me:RandomInt(5,15);
 							me:AddJoiners(1,nN,0,3,3,3,3,3);
 						end
 					else
@@ -104,7 +105,7 @@
 		</Selections>
 	</Story>
 	
-	<Story Name="SoulColor_JiTianShu"  Parent="BaseFillingStory">
+	<Story Name="SoulColor_JiTianShu" Parent="BaseFillingStory">
 		<DisplayName>祭天术</DisplayName>
 		<Desc>请选择您需要祈求的天气，使用祭天术需要消耗10万灵气。</Desc>
 		<Kind>HighFind</Kind>
@@ -117,13 +118,13 @@
 					if npc.LingV + it.LingV >= 100000 then
 						if npc.LingV >= 100000 then
 							npc:AddLing(-100000);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("SunnyDay")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("SunnyDay");
+							world:ShowMsgBox("天气已变更");
 						else
-							it:AddLing(npc.LingV-100000);
+							it:AddLing(-(100000 - npc.LingV));
 							npc:AddLing(-npc.LingV);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("SunnyDay")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("SunnyDay");
+							world:ShowMsgBox("天气已变更");
 						end
 					else
 						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
@@ -138,13 +139,13 @@
 					if npc.LingV + it.LingV >= 100000 then
 						if npc.LingV >= 100000 then
 							npc:AddLing(-100000);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("Overcast")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("Overcast");
+							world:ShowMsgBox("天气已变更");
 						else
-							it:AddLing(npc.LingV-100000);
+							it:AddLing(-(100000 - npc.LingV));
 							npc:AddLing(-npc.LingV);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("Overcast")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("Overcast");
+							world:ShowMsgBox("天气已变更");
 						end
 					else
 						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
@@ -159,13 +160,13 @@
 					if npc.LingV + it.LingV >= 100000 then
 						if npc.LingV >= 100000 then
 							npc:AddLing(-100000);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain");
+							world:ShowMsgBox("天气已变更");
 						else
-							it:AddLing(npc.LingV-100000);
+							it:AddLing(-(100000 - npc.LingV));
 							npc:AddLing(-npc.LingV);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain");
+							world:ShowMsgBox("天气已变更");
 						end
 					else
 						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
@@ -180,13 +181,13 @@
 					if npc.LingV + it.LingV >= 100000 then
 						if npc.LingV >= 100000 then
 							npc:AddLing(-100000);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("HeavyRain")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("HeavyRain");
+							world:ShowMsgBox("天气已变更");
 						else
-							it:AddLing(npc.LingV-100000);
+							it:AddLing(-(100000 - npc.LingV));
 							npc:AddLing(-npc.LingV);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("HeavyRain")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("HeavyRain");
+							world:ShowMsgBox("天气已变更");
 						end
 					else
 						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
@@ -201,13 +202,13 @@
 					if npc.LingV + it.LingV >= 100000 then
 						if npc.LingV >= 100000 then
 							npc:AddLing(-100000);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DenseFog")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DenseFog");
+							world:ShowMsgBox("天气已变更");
 						else
-							it:AddLing(npc.LingV-100000);
+							it:AddLing(-(100000 - npc.LingV));
 							npc:AddLing(-npc.LingV);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DenseFog")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DenseFog");
+							world:ShowMsgBox("天气已变更");
 						end
 					else
 						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
@@ -222,13 +223,13 @@
 					if npc.LingV + it.LingV >= 100000 then
 						if npc.LingV >= 100000 then
 							npc:AddLing(-100000);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm");
+							world:ShowMsgBox("天气已变更");
 						else
-							it:AddLing(npc.LingV-100000);
+							it:AddLing(-(100000 - npc.LingV));
 							npc:AddLing(-npc.LingV);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm");
+							world:ShowMsgBox("天气已变更");
 						end
 					else
 						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
@@ -243,13 +244,13 @@
 					if npc.LingV + it.LingV >= 100000 then
 						if npc.LingV >= 100000 then
 							npc:AddLing(-100000);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LingUpWave")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LingUpWave");
+							world:ShowMsgBox("天气已变更");
 						else
-							it:AddLing(npc.LingV-100000);
+							it:AddLing(-(100000 - npc.LingV));
 							npc:AddLing(-npc.LingV);
-							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LingUpWave")
-							world:ShowMsgBox("天气以变更");
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("LingUpWave");
+							world:ShowMsgBox("天气已变更");
 						end
 					else
 						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
@@ -263,4 +264,5 @@
 		</Selections>
 	</Story>
 	
-</List></Stories>
+	</List>
+</Stories>

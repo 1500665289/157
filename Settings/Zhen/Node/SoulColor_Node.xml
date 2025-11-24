@@ -20,14 +20,13 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>0</V>
 			</li>
 		</Suit>
 	</Def>
 	
 	<!-- 阵眼 -->
-	
 	<Def Name="SoulColor_LiuGuang_1" DisplayName="光界" Main="0" Base="0">		
 		<Lv>5</Lv>
 		<Slot>
@@ -42,7 +41,7 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>1</V>
 			</li>
 		</Suit>
@@ -61,7 +60,7 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>2</V>
 			</li>
 		</Suit>
@@ -79,7 +78,7 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>3</V>
 			</li>
 		</Suit>
@@ -97,7 +96,7 @@
 						<GongLevelNeed>Qi</GongLevelNeed>
 					</li>
 				</Condition>
-				<SuitName>QiCaiLiuGuanZhen</SuitName>
+				<SuitName>QiCaiLiuGuangZhen</SuitName>
 				<V>4</V>
 			</li>
 		</Suit>

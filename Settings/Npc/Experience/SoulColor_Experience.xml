@@ -1,8 +1,9 @@
-﻿<Experiences><List>
+﻿<Experiences>
+	<List>
 
 	<Experience Name="SoulColor_QuanNengRenCai">
 		<DisplayName>全能人才</DisplayName>
-		<Desc>人物属性全满，建议初始选择。[/size]</Desc>
+		<Desc>人物属性全满，建议初始选择。</Desc>
 		<Point>0</Point><!--消耗点数-->
 		<Recommend>1</Recommend><!-- 推荐星级 -->
 		<ModifierDef>
@@ -47,7 +48,7 @@
 	
 	<Experience Name="SoulColor_Map">
 		<DisplayName>显示全图</DisplayName>
-		<Desc>[size=10][color=#D06508]开启：全地图[/color][/size]</Desc>
+		<Desc>开启：全地图</Desc>
 		<Point>0</Point>
 		<Recommend>1</Recommend>
 		<ModifierDef>
@@ -57,13 +58,9 @@
 	
 	<Experience Name="SoulColor_1">
 		<DisplayName>七彩传承</DisplayName>
-		<Desc>你进入太一门之前就机缘巧合得到过《七彩琉璃经》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n[size=10]解锁功法：[color=#D06508]《七彩琉璃经》[/color]\n此功法开局简单，建议初始选择。[/size]</Desc>
+		<Desc>你进入太一门之前就机缘巧合得到过《七彩琉璃经》的传承，因此你这些年担惊受怕，不敢引起任何人的注意。\n\n\n解锁功法：《七彩琉璃经》\n此功法开局简单，建议初始选择。</Desc>
 		<Point>5</Point><!--消耗点数-->
 		<Recommend>1</Recommend><!-- 推荐星级 -->
-		<!--扩展属性-->
-		<Properties>
-				<!--<li Name="MaxAge" AddV="0"/>-->
-		</Properties>
 		<!--功法-->
 		<Gongs>
 			<li>SoulColor_1</li><!--七彩琉璃经-->
@@ -85,4 +82,5 @@
 		</Items>
 	</Experience>
 	
-</List></Experiences>
+	</List>
+</Experiences>

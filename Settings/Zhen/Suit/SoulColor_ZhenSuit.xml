@@ -19,7 +19,7 @@
 				<DisplayName></DisplayName>
 				<Description>护御能力额外提高</Description>
 				<SuitType>AddZhenProperty</SuitType>
-				<TypeExtra>SheildAddv</TypeExtra>
+				<TypeExtra>ShieldAddv</TypeExtra>
 				<fParam1>25</fParam1>
 			</li>
 			<li>
@@ -35,7 +35,7 @@
 				<DisplayName></DisplayName>
 				<Description>运转能力额外提高</Description>
 				<SuitType>AddZhenProperty</SuitType>
-				<TypeExtra>SkillCooldownAddv</TypeExtra>
+				<TypeExtra>SkillCoolDownAddv</TypeExtra>
 				<fParam1>121</fParam1>
 			</li>
 			<li>

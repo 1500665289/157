@@ -1,15 +1,17 @@
-<MainList><List>
-	<Data Kind="Builds" Type="建设" Unlock="0"  CMDType="Build" Name="SoulColor_MoFaZhen"/>
-	<Data Kind="Builds" Type="建设" Unlock="0"  CMDType="Build" Name="SoulColor_KongTiao"/>
-	<Data Kind="Builds" Type="建设" Unlock="0"  CMDType="Build" Name="SoulColor_MagicCushion"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_TuDi"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_NiDi"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_ShiDi"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_WoTu"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_YanShiDiBiao"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_ShaDi"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_LingTu"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_QianShui"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_XueShui"/>
-	<Data Kind="Builds" Type="土地改造" Unlock="0"  CMDType="Build" Name="SoulColor_LingShui"/>
-</List></MainList>
+<MainList>
+	<List>
+		<Data Kind="Builds" Type="建设" Unlock="0" CMDType="Build" Name="SoulColor_MoFaZhen"/>
+		<Data Kind="Builds" Type="建设" Unlock="0" CMDType="Build" Name="SoulColor_KongTiao"/>
+		<Data Kind="Builds" Type="建设" Unlock="0" CMDType="Build" Name="SoulColor_MagicCushion"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_TuDi"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_NiDi"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_ShiDi"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_WoTu"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_YanShiDiBiao"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_ShaDi"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_LingTu"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_QianShui"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_XueShui"/>
+		<Data Kind="Builds" Type="土地改造" Unlock="0" CMDType="Build" Name="SoulColor_LingShui"/>
+	</List>
+</MainList>
