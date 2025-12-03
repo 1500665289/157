@@ -47,14 +47,14 @@
 			<NoFengshui>1</NoFengshui>
 			<NoFight>1</NoFight>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 				<Quality>0</Quality>
 				<StuffCategories>
 					<Stuff name="MetalBlock"/>
 					<Stuff name="WoodBlock"/>
 					<Stuff name="RockBlock"/>
 				</StuffCategories>
-				<CostStuffCount>1</CostStuffCount>
+				<CostStuffCount>10</CostStuffCount>
 			</BeMade>
 			<SnowRenderData>
 				<x>3.3</x>
@@ -151,7 +151,6 @@
 			<y>0.7</y>
 		</ShadowSize>
 		<Collider>
-			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
 			<Data>
 			[3],
 			</Data>
@@ -168,14 +167,14 @@
 		<Building>
 			<Orientation>F,R</Orientation>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 				<Quality>0</Quality>
 				<StuffCategories>
 					<Stuff name="MetalBlock"/>
 					<Stuff name="WoodBlock"/>
 					<Stuff name="RockBlock"/>
 				</StuffCategories>
-				<CostStuffCount>6</CostStuffCount>
+				<CostStuffCount>60</CostStuffCount>
 			</BeMade>
 			<SnowRenderData>
 				<x>2.3</x>
@@ -218,17 +217,17 @@
 			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
 			<BePackage>1</BePackage>
 			<WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath>
-			<Perfab>Building/Prefabs/RefiningCushion</Perfab><!--使用特效-->
+			<Perfab>Building/Prefabs/RefiningCushion</Perfab>
 			<PracticeEffectiveness>1</PracticeEffectiveness>
 			<BeMade>
-				<WorkToMake>50</WorkToMake>
+				<WorkToMake>250</WorkToMake>
 				<Quality>0</Quality>
 				<StuffCategories>
 					<Stuff name="MetalBlock"/>
 					<Stuff name="WoodBlock"/>
 					<Stuff name="RockBlock"/>
 				</StuffCategories>
-				<CostStuffCount>20</CostStuffCount>
+				<CostStuffCount>200</CostStuffCount>
 				<CostItems>
 				</CostItems>
 			</BeMade>
@@ -239,8 +238,8 @@
 			</SnowRenderData>
 		</Building>
 		<Ling>
-			<AddionLing>240</AddionLing>
-			<AddionRadius>1</AddionRadius>
+			<AddionLing>200</AddionLing>
+			<AddionRadius>1.5</AddionRadius>
 			<AddionFailing>0</AddionFailing>
 			<AddionFailRadius>0</AddionFailRadius>
 			
@@ -258,7 +257,7 @@
 			<FillTarrain>Soil</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -271,7 +270,7 @@
 			<FillTarrain>Mud</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -284,7 +283,7 @@
 			<FillTarrain>WetLand</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -297,7 +296,7 @@
 			<FillTarrain>FertileSoil</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -310,7 +309,7 @@
 			<FillTarrain>StoneLand</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -323,7 +322,7 @@
 			<FillTarrain>SandLand</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -336,7 +335,7 @@
 			<FillTarrain>LingSoil</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -349,7 +348,7 @@
 			<FillTarrain>ShallowWater</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -362,7 +361,7 @@
 			<FillTarrain>BloodWater</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
@@ -375,7 +374,7 @@
 			<FillTarrain>LingWater</FillTarrain>
 			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>500</WorkToMake>
 			</BeMade>
 		</Building>
 	</ThingDef>
