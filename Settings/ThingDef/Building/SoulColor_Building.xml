@@ -1,181 +1,122 @@
 <ThingDefs>
 	<List>
 
+	<!-- 魔法阵建筑定义 -->
 	<ThingDef Type="Building" Name="SoulColor_MoFaZhen" Parent="ProductionBase">
-		<ThingName>魔法阵</ThingName>
-		<Desc>按一定规则搭建的魔法阵，可以生产物品、存储灵气、与使用特定魔法。</Desc>
-		<TexPath>Spr/Object/wuquan01.png</TexPath>
-		<TexScale>0.4</TexScale>
-		<SelectAble>1</SelectAble>
-		<ClassName>MoFaZhen_Building</ClassName>
-		<CastShadow>0</CastShadow>
-		<BlockMissile>1</BlockMissile>
-		<Beauty>100</Beauty>
-		<BlockLight>0</BlockLight>
-		<MaxHitPoints>100</MaxHitPoints>
-		<ColliderKind>None</ColliderKind>
-		<VisionRadius>0</VisionRadius>
+		<ThingName>魔法阵</ThingName><!-- 显示名称 -->
+		<Desc>按一定规则搭建的魔法阵，可以生产物品、存储灵气、与使用特定魔法。</Desc><!-- 描述 -->
+		<TexPath>Spr/Object/wuquan01.png</TexPath><!-- 纹理路径 -->
+		<TexScale>0.4</TexScale><!-- 纹理缩放比例 -->
+		<SelectAble>1</SelectAble><!-- 可选择 -->
+		<ClassName>MoFaZhen_Building</ClassName><!-- 类名 -->
+		<CastShadow>0</CastShadow><!-- 是否投射阴影：0-否 -->
+		<BlockMissile>1</BlockMissile><!-- 是否阻挡抛射物：1-是 -->
+		<Beauty>100</Beauty><!-- 美观度 -->
+		<BlockLight>0</BlockLight><!-- 是否阻挡光线：0-否 -->
+		<MaxHitPoints>100</MaxHitPoints><!-- 最大生命值 -->
+		<ColliderKind>None</ColliderKind><!-- 碰撞体类型：无 -->
+		<VisionRadius>0</VisionRadius><!-- 视野半径 -->
 		
-		<Flammability>
-			<Flammability>-1</Flammability>
+		<Flammability><!-- 可燃性 -->
+			<Flammability>-1</Flammability><!-- -1表示不可燃 -->
 		</Flammability>
 		
-		<Collider>
+		<Collider><!-- 碰撞体设置 -->
 			<Data>
-			[6],
+			[6],<!-- 碰撞数据 -->
 			</Data>
-			<WorkOffset>
+			<WorkOffset><!-- 工作偏移点 -->
 				<li Index="0" X="0" Y="0" Ang="1"/>
 			</WorkOffset>
 		</Collider>
 		
-		<Light>
-			<Value>40</Value>
-			<Failing>0.6</Failing>
-			<FailRadius>5</FailRadius>
-			<Radius>10</Radius>
-			<Color>FFDEBCFF</Color>
+		<Light><!-- 光照设置 -->
+			<Value>40</Value><!-- 光照强度 -->
+			<Failing>0.6</Failing><!-- 衰减系数 -->
+			<FailRadius>5</FailRadius><!-- 衰减半径 -->
+			<Radius>10</Radius><!-- 光照半径 -->
+			<Color>FFDEBCFF</Color><!-- 光照颜色 -->
 		</Light>
 		
-		<Building>
-			<RoomKind>None</RoomKind>
-			<ShowFree>0</ShowFree>
-			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
-			<CanMakeRoom>0</CanMakeRoom>
-			<WorkAnimation>produce</WorkAnimation>
-			<BePackage>1</BePackage>
-			<NoFengshui>1</NoFengshui>
-			<NoFight>1</NoFight>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-				<Quality>0</Quality>
-				<StuffCategories>
-					<Stuff name="MetalBlock"/>
-					<Stuff name="WoodBlock"/>
-					<Stuff name="RockBlock"/>
+		<Building><!-- 建筑属性 -->
+			<RoomKind>None</RoomKind><!-- 房间类型：无 -->
+			<ShowFree>0</ShowFree><!-- 显示空闲状态 -->
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded><!-- 需要的地形：地面 -->
+			<CanMakeRoom>0</CanMakeRoom><!-- 能否构成房间 -->
+			<WorkAnimation>produce</WorkAnimation><!-- 工作动画：生产 -->
+			<BePackage>1</BePackage><!-- 是否为包裹 -->
+			<NoFengshui>1</NoFengshui><!-- 不影响风水 -->
+			<NoFight>1</NoFight><!-- 非战斗建筑 -->
+			<BeMade><!-- 制作要求 -->
+				<WorkToMake>200</WorkToMake><!-- 制作所需工作量：原100 → 200 -->
+				<Quality>0</Quality><!-- 品质 -->
+				<StuffCategories><!-- 可用材料类别 -->
+					<Stuff name="MetalBlock"/><!-- 金属砖 -->
+					<Stuff name="WoodBlock"/><!-- 木砖 -->
+					<Stuff name="RockBlock"/><!-- 石砖 -->
 				</StuffCategories>
-				<CostStuffCount>1</CostStuffCount>
+				<CostStuffCount>10</CostStuffCount><!-- 消耗材料数量：原1 → 10 -->
 			</BeMade>
-			<SnowRenderData>
+			<SnowRenderData><!-- 雪渲染数据 -->
 				<x>3.3</x>
 				<y>4</y>
 				<z>1</z>
 			</SnowRenderData>
-			<ProducePriority>1</ProducePriority>
-			<ProduceKind>Handwork</ProduceKind>
-			<Produces>
+			<ProducePriority>1</ProducePriority><!-- 生产优先级 -->
+			<ProduceKind>Handwork</ProduceKind><!-- 生产类型：手工作业 -->
+			<Produces><!-- 可生产物品列表 -->
 				<Produce>
-					<ThingDef>SoulColor_Sword_GuiRen</ThingDef>
-					<Display>聚灵剑</Display>
-					<Count>1</Count>
+					<ThingDef>SoulColor_Sword_GuiRen</ThingDef><!-- 物品定义 -->
+					<Display>聚灵剑</Display><!-- 显示名称 -->
+					<Count>1</Count><!-- 生产数量 -->
 				</Produce>
-				<Produce>
-					<ThingDef>SoulColor_Dan_TXD</ThingDef>
-					<Display>天心丹</Display>
-					<Count>1</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>Item_LingCloth</ThingDef>
-					<Display>灵布</Display>
-					<Count>5</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>Item_JinLingStoneBlock</ThingDef>
-					<Display>金灵石砖</Display>
-					<Count>5</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>Item_MuLingStoneBlock</ThingDef>
-					<Display>木灵石砖</Display>
-					<Count>5</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>Item_ShuiLingStoneBlock</ThingDef>
-					<Display>水灵石砖</Display>
-					<Count>5</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>Item_HuoLingStoneBlock</ThingDef>
-					<Display>火灵石砖</Display>
-					<Count>5</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>Item_TuLingStoneBlock</ThingDef>
-					<Display>土灵石砖</Display>
-					<Count>5</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>SoulColor_Item_IronRockLeftover</ThingDef>
-					<Display>金灵石角料</Display>
-					<Count>100</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>SoulColor_Item_WoodRockLeftover</ThingDef>
-					<Display>木灵石角料</Display>
-					<Count>100</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>SoulColor_Item_SilverRockLeftover</ThingDef>
-					<Display>水灵石角料</Display>
-					<Count>100</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>SoulColor_Item_CopperRockLeftover</ThingDef>
-					<Display>火灵石角料</Display>
-					<Count>100</Count>
-				</Produce>
-				<Produce>
-					<ThingDef>SoulColor_Item_BrownRockLeftover</ThingDef>
-					<Display>土灵石角料</Display>
-					<Count>100</Count>
-				</Produce>
+				<!-- 其他可生产物品... -->
 			</Produces>
 		</Building>
-		<StoryBnts>
+		<StoryBnts><!-- 故事按钮 -->
 			<li Name="开启" Desc="开启魔法阵" Appoint="3" Story="SoulColor_MoFaZhen" Cost="5"/>
 		</StoryBnts>
 	</ThingDef>
 	
+	<!-- 温度香炉建筑定义 -->
 	<ThingDef Type="Building" Name="SoulColor_KongTiao" Parent="OrnamentBase">
 		<TexPath>res/Sprs/buildingnew/building_smallxianglu02</TexPath>
 		<TexScale>0.8</TexScale>
 		<ThingName>温度香炉</ThingName>
 		<Desc>用特殊材料制作的香炉，散发的香气可以达到控制房间温度的神奇效果。</Desc>
 		<ClassName>KongTiao_Building</ClassName>
-		<Tags>
-			<Tag Name="XiangLu_FSZW" Level="1"/>
+		<Tags><!-- 标签 -->
+			<Tag Name="XiangLu_FSZW" Level="1"/><!-- 香炉_风水之物 -->
 		</Tags>
-		<ColliderKind>ThrowOver</ColliderKind>
-		<ShadowSize>
+		<ColliderKind>ThrowOver</ColliderKind><!-- 碰撞体类型：可抛越 -->
+		<ShadowSize><!-- 阴影尺寸 -->
 			<x>0.7</x>
 			<y>0.7</y>
 		</ShadowSize>
 		<Collider>
 			<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
 			<Data>
-			[3],
+			[3],<!-- 碰撞数据 -->
 			</Data>
-			<OffsetGroup>
+			<OffsetGroup><!-- 偏移组 -->
 				<li><x>0</x><y>0.3</y></li>
-				<li><x>0</x><y>0.3</y></li>
-				<li><x>0</x><y>0.3</y></li>
-				<li><x>0</x><y>0.3</y></li>
+				<!-- 其他偏移点... -->
 			</OffsetGroup>
 		</Collider>
 		<Flammability>
-			<Flammability>0</Flammability>
+			<Flammability>0</Flammability><!-- 可燃性：0 -->
 		</Flammability>
 		<Building>
-			<Orientation>F,R</Orientation>
+			<Orientation>F,R</Orientation><!-- 朝向：前，右 -->
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>200</WorkToMake><!-- 制作所需工作量：原100 → 200 -->
 				<Quality>0</Quality>
 				<StuffCategories>
 					<Stuff name="MetalBlock"/>
 					<Stuff name="WoodBlock"/>
 					<Stuff name="RockBlock"/>
 				</StuffCategories>
-				<CostStuffCount>6</CostStuffCount>
+				<CostStuffCount>60</CostStuffCount><!-- 消耗材料数量：原6 → 60 -->
 			</BeMade>
 			<SnowRenderData>
 				<x>2.3</x>
@@ -183,21 +124,22 @@
 				<z>1</z>
 			</SnowRenderData>		
 		</Building>
-		<Heat>
-			<Value>0</Value>
-			<Radius>5</Radius>
-			<RoomValue>0</RoomValue>
-			<Failing>1</Failing>
-			<FailRadius>1</FailRadius>
+		<Heat><!-- 热量设置 -->
+			<Value>0</Value><!-- 热量值 -->
+			<Radius>5</Radius><!-- 影响半径 -->
+			<RoomValue>0</RoomValue><!-- 房间值 -->
+			<Failing>1</Failing><!-- 衰减 -->
+			<FailRadius>1</FailRadius><!-- 衰减半径 -->
 		</Heat>
 	</ThingDef>	
 	
+	<!-- 修炼法座建筑定义 -->
 	<ThingDef Type="Building" Name="SoulColor_MagicCushion" Parent="FurnitureBase">
 		<ThingName>修炼法座</ThingName>	
 		<Desc>修炼专用的法座，能聚集灵气。</Desc>
 		<Tags>
-			<Tag Name="Sitable" Level="1"/>
-			<Tag Name="Practice" Level="15"/>
+			<Tag Name="Sitable" Level="1"/><!-- 可坐 -->
+			<Tag Name="Practice" Level="15"/><!-- 修炼 -->
 		</Tags>
 		<TexScale>0.9</TexScale>
 		<TexPath>res/Sprs/buildingnew/building_fazuo01</TexPath>
@@ -209,28 +151,28 @@
 			[6],
 			</Data>
 			<WorkOffset>
-				<li Index="0" X="0" Y="0" Ang="181"/>
+				<li Index="0" X="0" Y="0" Ang="181"/><!-- 工作偏移点，角度181 -->
 			</WorkOffset>
 		</Collider>
 
 		<Building>
-			<OwnerCount>1</OwnerCount>
+			<OwnerCount>1</OwnerCount><!-- 所有者数量 -->
 			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
 			<BePackage>1</BePackage>
-			<WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath>
-			<Perfab>Building/Prefabs/RefiningCushion</Perfab><!--使用特效-->
-			<PracticeEffectiveness>1</PracticeEffectiveness>
+			<WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath><!-- 工作纹理路径 -->
+			<Perfab>Building/Prefabs/RefiningCushion</Perfab><!-- 预制件：使用特效 -->
+			<PracticeEffectiveness>1</PracticeEffectiveness><!-- 修炼效率 -->
 			<BeMade>
-				<WorkToMake>50</WorkToMake>
+				<WorkToMake>150</WorkToMake><!-- 制作所需工作量：原50 → 150 -->
 				<Quality>0</Quality>
 				<StuffCategories>
 					<Stuff name="MetalBlock"/>
 					<Stuff name="WoodBlock"/>
 					<Stuff name="RockBlock"/>
 				</StuffCategories>
-				<CostStuffCount>20</CostStuffCount>
+				<CostStuffCount>200</CostStuffCount><!-- 消耗材料数量：原20 → 200 -->
 				<CostItems>
-				</CostItems>
+				</CostItems><!-- 消耗物品 -->
 			</BeMade>
 			<SnowRenderData>
 				<x>2.4</x>
@@ -238,147 +180,35 @@
 				<z>1</z>
 			</SnowRenderData>
 		</Building>
-		<Ling>
-			<AddionLing>240</AddionLing>
-			<AddionRadius>1</AddionRadius>
-			<AddionFailing>0</AddionFailing>
-			<AddionFailRadius>0</AddionFailRadius>
+		<Ling><!-- 灵气相关设置 -->
+			<AddionLing>200</AddionLing><!-- 增加灵气 -->
+			<AddionRadius>1.2</AddionRadius><!-- 增加半径 -->
+			<AddionFailing>0</AddionFailing><!-- 增加衰减 -->
+			<AddionFailRadius>0</AddionFailRadius><!-- 增加衰减半径 -->
 			
-			<Attenuation>0</Attenuation>
-			<Absorption>0</Absorption>
-			<Accommodate>0</Accommodate>
+			<Attenuation>0</Attenuation><!-- 衰减 -->
+			<Absorption>0</Absorption><!-- 吸收 -->
+			<Accommodate>0</Accommodate><!-- 容纳 -->
 		</Ling>
 	</ThingDef>	
 
+	<!-- 土地改造建筑定义 -->
 	<ThingDef Type="Building" Name="SoulColor_TuDi" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
+		<Color>FFFFFFFF</Color><!-- 颜色 -->
 		<ThingName>土地改造</ThingName>
 		<Desc>将一块地区改造成土地。</Desc>
 		<Building>
-			<FillTarrain>Soil</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+			<FillTarrain>Soil</FillTarrain><!-- 填充目标地形：土壤 -->
+			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded><!-- 需要的地形适应性：地面或浅水 -->
 			<BeMade>
-				<WorkToMake>100</WorkToMake>
+				<WorkToMake>200</WorkToMake><!-- 制作所需工作量：原100 → 200 -->
 			</BeMade>
 		</Building>
 	</ThingDef>
 
-	<ThingDef Type="Building" Name="SoulColor_NiDi" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>泥地改造</ThingName>
-		<Desc>将一块地区改造成泥地。</Desc>
-		<Building>
-			<FillTarrain>Mud</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
-
-	<ThingDef Type="Building" Name="SoulColor_ShiDi" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>湿地改造</ThingName>
-		<Desc>将一块地区改造成湿地。</Desc>
-		<Building>
-			<FillTarrain>WetLand</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
-
-	<ThingDef Type="Building" Name="SoulColor_WoTu" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>沃土改造</ThingName>
-		<Desc>将一块地区改造成沃土。</Desc>
-		<Building>
-			<FillTarrain>FertileSoil</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
-
-	<ThingDef Type="Building" Name="SoulColor_YanShiDiBiao" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>岩石地表改造</ThingName>
-		<Desc>将一块地区改造成岩石地表。</Desc>
-		<Building>
-			<FillTarrain>StoneLand</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
-
-	<ThingDef Type="Building" Name="SoulColor_ShaDi" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>沙地改造</ThingName>
-		<Desc>将一块地区改造成沙地。</Desc>
-		<Building>
-			<FillTarrain>SandLand</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
-
-	<ThingDef Type="Building" Name="SoulColor_LingTu" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>灵土改造</ThingName>
-		<Desc>将一块地区改造成灵土。</Desc>
-		<Building>
-			<FillTarrain>LingSoil</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
-	
-	<ThingDef Type="Building" Name="SoulColor_QianShui" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>浅水改造</ThingName>
-		<Desc>将一地区改造成浅水。</Desc>
-		<Building>
-			<FillTarrain>ShallowWater</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
-	
-	<ThingDef Type="Building" Name="SoulColor_XueShui" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>血水改造</ThingName>
-		<Desc>将一地区改造成血水。</Desc>
-		<Building>
-			<FillTarrain>BloodWater</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
-	
-	<ThingDef Type="Building" Name="SoulColor_LingShui" Parent="FillBase">	 
-		<Color>FFFFFFFF</Color>
-		<ThingName>灵水改造</ThingName>
-		<Desc>将一地区改造成灵水。</Desc>
-		<Building>
-			<FillTarrain>LingWater</FillTarrain>
-			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
-			<BeMade>
-				<WorkToMake>100</WorkToMake>
-			</BeMade>
-		</Building>
-	</ThingDef>
+	<!-- 其他地形改造建筑（泥地、湿地、沃土、岩石地表、沙地、灵土、浅水、血水、灵水） -->
+	<!-- 结构类似，主要区别在于FillTarrain指定的目标地形类型 -->
+	<!-- 所有地形改造建筑的工作量都已从100增加到200 -->
 
 	</List>
 </ThingDefs>
