@@ -258,6 +258,48 @@
 				</OKResult>
 			</li>
 			<li>
+				<Display>丰收的气息</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("HarvestAir");
+							world:ShowMsgBox("天气已变更");
+						else
+							it:AddLing(-(100000 - npc.LingV));
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("HarvestAir");
+							world:ShowMsgBox("天气已变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
+				<Display>仙界气息</Display>
+				<OKResult>
+					local npc = me.npcObj;
+					local it = story:GetBindThing();
+					if npc.LingV + it.LingV >= 100000 then
+						if npc.LingV >= 100000 then
+							npc:AddLing(-100000);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("ZuShiBiHu");
+							world:ShowMsgBox("天气已变更");
+						else
+							it:AddLing(-(100000 - npc.LingV));
+							npc:AddLing(-npc.LingV);
+							GameMain:GetMod("BuildModeHelper"):ChangeWeather("ZuShiBiHu");
+							world:ShowMsgBox("天气已变更");
+						end
+					else
+						world:ShowMsgBox("人物灵气+建筑灵气不足10万灵气");
+					end
+				</OKResult>
+			</li>
+			<li>
 				<Display>算了</Display>
 				<OKResult>me:TriggerStory("SoulColor_MoFaZhen");</OKResult>
 			</li>
