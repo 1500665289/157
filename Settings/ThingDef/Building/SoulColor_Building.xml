@@ -131,6 +131,18 @@
 				</Produce>
 			</Produces>
 		</Building>
+
+<Ling>
+			<AddionLing>2</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+
 		<StoryBnts>
 			<li Name="开启" Desc="开启魔法阵" Appoint="3" Story="SoulColor_MoFaZhen" Cost="5"/>
 		</StoryBnts>
