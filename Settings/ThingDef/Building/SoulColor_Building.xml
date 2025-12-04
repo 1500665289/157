@@ -132,7 +132,7 @@
 			</Produces>
 		</Building>
 <Ling>
-			<AddionLing>10</AddionLing>
+			<AddionLing>200</AddionLing>
 			<AddionRadius>1</AddionRadius>
 			<AddionFailing>0</AddionFailing>
 			<AddionFailRadius>0</AddionFailRadius>
@@ -249,8 +249,8 @@
 			</SnowRenderData>
 		</Building>
 		<Ling>
-			<AddionLing>100</AddionLing>
-			<AddionRadius>1</AddionRadius>
+			<AddionLing>200</AddionLing>
+			<AddionRadius>2</AddionRadius>
 			<AddionFailing>0</AddionFailing>
 			<AddionFailRadius>0</AddionFailRadius>
 			
