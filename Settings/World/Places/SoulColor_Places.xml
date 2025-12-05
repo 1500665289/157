@@ -10,11 +10,11 @@
             <Desc>夕阳照耀下湖水反射七彩环绕犹如仙境，灵气十足、物产丰富乃世外桃源之地。</Desc>
             <Icon>res/Sprs/map/map_shan02</Icon>
             <Events>
-                <li>
-                    <Name>Find</Name>
-                    <Rate>10</Rate>
-                </li>
-            </Events>
+    <Event>
+        <Name>Find</Name>
+        <Rate>10</Rate>
+    </Event>
+</Events>
             <Produce>
                 <li>
                     <ThingDef>Item_MagicHerb</ThingDef>
