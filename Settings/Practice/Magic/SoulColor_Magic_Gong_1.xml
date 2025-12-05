@@ -9,7 +9,7 @@
 		<CastFavour>ThankTreat</CastFavour>
 		<TargetMood>BuildBody</TargetMood>
 		<Param1>20</Param1>
-		<CostLing>50000</CostLing>
+		<CostLing>1000000</CostLing>
 		<Penalty>0</Penalty>
 		<SelectMode>Single</SelectMode>
 		<ClassName>SoulColor_Magic_3</ClassName>
@@ -26,7 +26,7 @@
 		<Ani>dazuo</Ani>
 		<Param1>5</Param1>
 		<Kind>None</Kind>
-		<CostLing>500</CostLing>
+		<CostLing>1000</CostLing>
 		<CostAge>0</CostAge>
 		<Penalty>0</Penalty>
 		<ScoreGood>0</ScoreGood>
@@ -42,7 +42,7 @@
 		<Ani>dazuo</Ani>
 		<Param1>5</Param1>
 		<Kind>None</Kind>
-		<CostLing>20000</CostLing>
+		<CostLing>50000</CostLing>
 		<CostAge>0</CostAge>
 		<Penalty>0</Penalty>
 		<ScoreGood>0</ScoreGood>
@@ -56,7 +56,7 @@
 		<Desc>对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。\n[color=#D06508]每个修行者只可操纵一个傀儡[/color]</Desc>
 		<Icon>res/Sprs/ui/icon_yushi01</Icon>
 		<Param1>10</Param1><!--所需时间-->
-		<CostLing>1000</CostLing>
+		<CostLing>10000</CostLing>
 		<Penalty>0</Penalty>
 		<CMD>MakePuppet</CMD>
 		<SelectType>MakePuppet</SelectType>
