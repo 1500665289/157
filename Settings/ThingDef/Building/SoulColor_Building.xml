@@ -132,8 +132,8 @@
 			</Produces>
 		</Building>
 <Ling>
-			<AddionLing>200</AddionLing>
-			<AddionRadius>1</AddionRadius>
+			<AddionLing>500</AddionLing>
+			<AddionRadius>5</AddionRadius>
 			<AddionFailing>0</AddionFailing>
 			<AddionFailRadius>0</AddionFailRadius>
 			
