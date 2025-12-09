@@ -26,7 +26,7 @@ end
 --开始施展神通
 function tbMagic:MagicEnter(IDs, IsThing)
 	self.Count = 0;
-	self.bind:AddLing(-self.magic.CostLing);
+	self.bind:AddLing(self.magic.CostLing);
 	-- 记录施法者当前位置
 	targetKey = self.bind.Key;
 end
