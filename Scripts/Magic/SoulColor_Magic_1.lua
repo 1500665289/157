@@ -6,8 +6,8 @@ local Count
 local itemGenerated = false  -- 标记灵石是否已生成
 
 function tbMagic:Init()
-    self.requiredLing = self.magic.CostLing or 100  -- 默认消耗100灵气
-    self.castTime = self.magic.Param1 or 5  -- 施法时间，单位：秒
+    self.requiredLing = self.magic.CostLing or 1000  -- 默认消耗100灵气
+    self.castTime = self.magic.Param1 or 3  -- 施法时间，单位：秒
     self.frameCount = 0
     self.totalFrames = self.castTime * 30  -- 假设30帧/秒
 end
