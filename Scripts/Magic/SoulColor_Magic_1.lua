@@ -3,7 +3,7 @@ local tbTable = GameMain:GetMod("MagicHelper")
 local tbMagic = tbTable:GetMagic("SoulColor_Magic_1")
 
 -- 常量定义
-local GENERATION_INTERVAL = 150     -- 灵石生成间隔帧数
+local GENERATION_INTERVAL = 15     -- 灵石生成间隔帧数
 local MIN_LING_REQUIRED = 0         -- 最小灵气需求
 
 -- 内部状态枚举
