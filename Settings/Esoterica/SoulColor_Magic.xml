@@ -1,4 +1,4 @@
-﻿<Esotericas>
+<Esotericas>
 	<List>
 
 		<Esoterica Name="Magic_LingStoneMake_1">
@@ -10,7 +10,7 @@
 			<GLevel>Qi</GLevel>
 			<Element>None</Element>
 			<Type>Refining</Type>
-			<EffectDesc>[size=10][color=#D06508]习得神通：炼制灵石\n将灵气凝结为灵石。[/color][/size]</EffectDesc>
+			<EffectDesc>[size=20][color=#D06508]习得神通：炼制灵石\n将灵气凝结为灵石。[/color][/size]</EffectDesc>
 			<Magics>
 				<li>SoulColor_Magic_1</li>
 			</Magics>
@@ -40,7 +40,7 @@
 			<GLevel>Qi</GLevel>
 			<Element>None</Element>
 			<Type>Magic</Type>
-			<EffectDesc>[size=10][color=#D06508]习得神通：御灵术\n对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。[/color][/size]</EffectDesc>
+			<EffectDesc>[size=20][color=#D06508]习得神通：御灵术\n对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。[/color][/size]</EffectDesc>
 			<Magics>
 				<li>MakePuppet</li>
 			</Magics>
