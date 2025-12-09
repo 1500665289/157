@@ -18,7 +18,7 @@
 
 <!--覆盖官方-->
 
-	<Magic Name="LingStoneMake" Type="Class">
+	<Magic Name="SoulColor_Magic_1" Type="Class">
 		<DisplayName>炼制灵石</DisplayName>
 		<Desc>将灵气凝结为灵石。</Desc>
 		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
