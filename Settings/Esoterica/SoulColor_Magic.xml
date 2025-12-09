@@ -1,42 +1,46 @@
-<Esotericas>
-    <List>
-        <Esoterica Name="Magic_LingStoneMake_1">
-            <DisplayName>炼制灵石之术</DisplayName>
-            <Icon>res/Sprs/ui/icon_lingjshi01</Icon>
-            <StarLevel>0</StarLevel>
-            <Difficulty>2</Difficulty>
-            <GLevel>Qi</GLevel>
-            <Element>None</Element>
-            <EffectDesc>[size=10][color=#D06508]习得神通：炼制灵石\n将灵气凝结为灵石。[/color][/size]</EffectDesc>
-            <Magics>
-                <li>LingStoneMake</li>
-            </Magics>
-        </Esoterica>
-        
-        <Esoterica Name="Magic_LingCrystalMake_1">
-            <DisplayName>炼制灵晶之术</DisplayName>
-            <Icon>res/Sprs/ui/icon_lingjing01</Icon>
-            <StarLevel>1</StarLevel>
-            <Difficulty>5</Difficulty>
-            <GLevel>Qi</GLevel>
-            <Element>None</Element>
-            <EffectDesc>[size=10][color=#D06508]习得神通：炼制灵晶\n将灵气凝结为灵晶。[/color][/size]</EffectDesc>
-            <Magics>
-                <li>LingCrystalMake</li>
-            </Magics>
-        </Esoterica>
-        
-        <Esoterica Name="Magic_MakePuppet">
-            <DisplayName>御灵术</DisplayName>
-            <Icon>res/Sprs/ui/icon_souhun01</Icon>
-            <StarLevel>1</StarLevel>
-            <Difficulty>3</Difficulty>
-            <GLevel>Qi</GLevel>
-            <Element>None</Element>
-            <EffectDesc>[size=10][color=#D06508]习得神通：御灵术\n对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。[/color][/size]</EffectDesc>
-            <Magics>
-                <li>MakePuppet</li>
-            </Magics>
-        </Esoterica>
-    </List>
-</Esotericas>
+<Esotericas><List>
+
+	<Esoterica Name="Magic_LingStoneMake_1">
+		<DisplayName>炼制灵石之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_lingjshi01</Icon>
+		<StarLevel>0</StarLevel>
+		<Difficulty>2</Difficulty>
+		<!--<Desc>将灵气凝结为灵石。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：炼制灵石\n将灵气凝结为灵石。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>SoulColor_Magic_1</li>
+		</Magics>
+	</Esoterica>
+	<Esoterica Name="Magic_LingCrystalMake_1">
+		<DisplayName>炼制灵晶之术</DisplayName>
+		<Icon>res/Sprs/ui/icon_lingjing01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>5</Difficulty>
+		<!--<Desc>将灵气凝结为灵晶。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		
+		<EffectDesc>[size=10][color=#D06508]习得神通：炼制灵晶\n将灵气凝结为灵晶。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>SoulColor_Magic_2</li>
+		</Magics>
+	</Esoterica>
+
+	<Esoterica Name="Magic_MakePuppet">
+		<DisplayName>御灵术</DisplayName>
+		<Icon>res/Sprs/ui/icon_souhun01</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>3</Difficulty>
+		<!--<Desc>对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。</Desc>-->
+		<GLevel>Qi</GLevel>
+		<Element>None</Element>
+		<EffectDesc>[size=10][color=#D06508]习得神通：御灵术\n对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。[/color][/size]</EffectDesc>
+		<Magics>
+			<li>MakePuppet</li>
+		</Magics>
+	</Esoterica>
+
+</List></Esotericas>
