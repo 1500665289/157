@@ -1,123 +1,59 @@
 --炼制灵石
-local tbTable = GameMain:GetMod("MagicHelper")
-local tbMagic = tbTable:GetMagic("SoulColor_Magic_1")
+local tbTable = GameMain:GetMod("MagicHelper");--获取神通模块 这里不要动
+local tbMagic = tbTable:GetMagic("SoulColor_Magic_1");--创建一个新的神通class
 
-local Count
-local itemGenerated = false  -- 标记灵石是否已生成
+local Count;
+
+--注意-
+--神通脚本运行的时候有两个固定变量
+--self.bind 执行神通的npcObj
+--self.magic 当前神通的数据，也就是定义在xml里的数据
 
 function tbMagic:Init()
-    self.requiredLing = self.magic.CostLing or 1000  -- 默认消耗100灵气
-    self.castTime = self.magic.Param1 or 3  -- 施法时间，单位：秒
-    self.frameCount = 0
-    self.totalFrames = self.castTime * 30  -- 假设30帧/秒
 end
 
+--神通是否可用
 function tbMagic:EnableCheck(npc)
-    -- 检查是否有足够灵气
-    if npc.LingV < self.requiredLing then
-        return false, "灵气不足"
-    end
-    return true
+	return true;
 end
 
+--目标合法检测 首先会通过magic的SelectTarget过滤，然后再通过这里过滤
+--IDs是一个List<int> 如果目标是非对象，里面的值就是地点key，如果目标是物体，值就是对象ID，否则为nil
+--IsThing 目标类型是否为物体
 function tbMagic:TargetCheck(key, t)
-    -- 可以在特定地点炼制，比如炼器室
-    local room = self.bind.Room
-    if room and room.RoomType == "ForgeRoom" then
-        return true
-    end
-    return true  -- 或者返回false限制只能在炼器室
+	return true
 end
 
+--开始施展神通
 function tbMagic:MagicEnter(IDs, IsThing)
-    self.frameCount = 0
-    self.itemGenerated = false
-    
-    -- 立即扣除灵气
-    local success = self.bind:AddLing(-self.requiredLing)
-    if not success then
-        return -1  -- 失败
-    end
-    
-    print(string.format("开始炼制灵石，消耗灵气: %d", self.requiredLing))
-    return 0
+	self.Count = 0;
+	-- 移除增加的灵力操作，改为在施法过程中检查灵力是否足够
 end
 
-function tbMagic:MagicStep(dt, duration)
-    self.frameCount = self.frameCount + 1
-    
-    -- 更新施法进度
-    local progress = self.frameCount / self.totalFrames
-    self:SetProgress(progress)
-    
-    -- 在施法结束时生成灵石
-    if not self.itemGenerated and self.frameCount >= self.totalFrames then
-        self:GenerateLingStone()
-        self.itemGenerated = true
-        return 1  -- 成功结束
-    end
-    
-    -- 中途可以取消的检查
-    if self.bind.HP <= 0 or self.bind.Death then
-        return -1  -- 角色死亡，施法失败
-    end
-    
-    return 0
+--神通施展过程中，需要返回值
+--返回值  0继续 1成功并结束 -1失败并结束
+function tbMagic:MagicStep(dt,duration)
+	--self:SetProgress(durationf.magic.Param1);--设置施展进度 主要用于UI显示 这里使用了参数1作为施法时间
+	self.Count = self.Count + 1;
+	if self.Count == 150 then
+		-- 检查灵力是否足够
+		if self.bind.LingV >= self.magic.CostLing then
+			local item = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone");--读取物品
+			item.FSItemState = -1;--镇物状态0未知 -1无 1有未鉴定 2有已鉴定
+			self.bind.map:DropItem(item,self.bind.Key,true,true,false,false,0,false);--地图掉落物品方法：物品、地点、是否可见、是否携带、没有自我、需要点击、等待、分散。
+			print(self.bind.LingV);
+			print(self.bind);
+			self.bind:AddLing(-self.magic.CostLing);--消耗灵力
+			self.Count = 0;
+			return 0;--继续施法
+		else
+			-- 灵力不足，结束施法
+			return 1;
+		end
+	end
+	return 0;
 end
 
-function tbMagic:GenerateLingStone()
-    -- 生成灵石
-    local item = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone")
-    
-    -- 设置灵石属性
-    item.FSItemState = -1
-    
-    -- 在角色所在位置生成灵石
-    local success = self.bind.map:DropItem(
-        item, 
-        self.bind.Key,  -- 掉落位置
-        true,           -- 是否可见
-        true,           -- 是否可拾取
-        false,          -- 没有自我
-        false,          -- 需要点击
-        0,              -- 等待时间
-        false           -- 是否分散
-    )
-    
-    if success then
-        print("炼制成功！获得灵石")
-        
-        -- 可选：增加炼制技能经验
-        if self.bind.SkillMgr then
-            self.bind.SkillMgr:AddExp("Forge", 10)
-        end
-    else
-        print("炼制失败：物品生成失败")
-    end
-    
-    return success
-end
-
+--施展完成/失败 success是否成功
 function tbMagic:MagicLeave(success)
-    if success then
-        print("灵石炼制完成")
-    else
-        print("灵石炼制中断")
-        
-        -- 如果中断，可以返还部分灵气
-        if not self.itemGenerated and self.bind then
-            local refund = math.floor(self.requiredLing * 0.5)  -- 返还50%
-            self.bind:AddLing(refund)
-            print(string.format("炼制中断，返还灵气: %d", refund))
-        end
-    end
-    
-    -- 重置状态
-    self.frameCount = 0
-    self.itemGenerated = false
-end
-
--- 可选：添加冷却时间
-function tbMagic:GetCooldown()
-    return self.magic.Param2 or 10  -- 参数2作为冷却时间，默认10秒
 end
