@@ -38,7 +38,7 @@ end
 --返回值  0继续 1成功并结束 -1失败并结束
 function tbMagic:MagicStep(dt,duration)
     -- 修复：设置施展进度（取消注释并修正语法）
-    local castTime = self.magic.Param1 or 10  -- 默认10秒
+    local castTime = self.magic.Param1 or 5  -- 默认10秒
     local progress = math.min(duration / castTime, 1.0)
     self:SetProgress(progress);  -- 设置施展进度 主要用于UI显示
     
