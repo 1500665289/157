@@ -18,38 +18,6 @@
 
 <!--覆盖官方-->
 
-	<Magic Name="LingStoneMake" Type="Class">
-		<DisplayName>炼制灵石</DisplayName>
-		<Desc>将灵气凝结为灵石。</Desc>
-		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
-		<Ani>dazuo</Ani>
-		<Param1>3</Param1>
-		<Kind>None</Kind>
-		<CostLing>1000</CostLing>
-		<CostAge>0</CostAge>
-		<Penalty>0</Penalty>
-		<ScoreGood>0</ScoreGood>
-		<SelectMode>None</SelectMode>
-		<SelectTarget>None</SelectTarget>
-		<ClassName>SoulColor_Magic_1</ClassName>
-	</Magic>
-	
-	<Magic Name="LingCrystalMake" Type="Class">
-		<DisplayName>炼制灵晶</DisplayName>
-		<Desc>将灵气凝结为灵晶。</Desc>
-		<Icon>res\Sprs\ui\icon_lingjing01</Icon>
-		<Ani>dazuo</Ani>
-		<Param1>5</Param1>
-		<Kind>None</Kind>
-		<CostLing>20000</CostLing>
-		<CostAge>0</CostAge>
-		<Penalty>0</Penalty>
-		<ScoreGood>0</ScoreGood>
-		<SelectMode>None</SelectMode>
-		<SelectTarget>None</SelectTarget>
-		<ClassName>SoulColor_Magic_2</ClassName>
-	</Magic>
-
 	<Magic Name="MakePuppet">
 		<DisplayName>御灵术</DisplayName>
 		<Desc>对躯体释放，将其唤醒。被唤醒的躯体可以承担一些简单的苦力劳动，其素质与躯体生前境界有关。\n[color=#D06508]每个修行者只可操纵一个傀儡[/color]</Desc>
