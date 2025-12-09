@@ -23,7 +23,7 @@
 		<Desc>将灵气凝结为灵石。</Desc>
 		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
 		<Ani>dazuo</Ani>
-		<Param1>5</Param1>
+		<Param1>2</Param1>
 		<Kind>None</Kind>
 		<CostLing>5000</CostLing>
 		<CostAge>0</CostAge>
