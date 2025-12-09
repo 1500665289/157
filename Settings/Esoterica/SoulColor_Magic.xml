@@ -12,7 +12,7 @@
 			<Type>Refining</Type>
 			<EffectDesc>[size=20][color=#D06508]习得神通：炼制灵石\n将灵气凝结为灵石。[/color][/size]</EffectDesc>
 			<Magics>
-				<li>SoulColor_Magic_1</li>
+				<li>LingStoneMake</li>
 			</Magics>
 		</Esoterica>
 		
