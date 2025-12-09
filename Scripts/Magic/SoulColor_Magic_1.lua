@@ -3,6 +3,7 @@ local tbTable = GameMain:GetMod("MagicHelper");--获取神通模块 这里不要
 local tbMagic = tbTable:GetMagic("SoulColor_Magic_1");--创建一个新的神通class
 
 local Count;
+local targetKey; -- 存储施法者脚下的位置
 
 --注意-
 --神通脚本运行的时候有两个固定变量
@@ -17,9 +18,7 @@ function tbMagic:EnableCheck(npc)
 	return true;
 end
 
---目标合法检测 首先会通过magic的SelectTarget过滤，然后再通过这里过滤
---IDs是一个List<int> 如果目标是非对象，里面的值就是地点key，如果目标是物体，值就是对象ID，否则为nil
---IsThing 目标类型是否为物体
+--目标合法检测
 function tbMagic:TargetCheck(key, t)
 	return true
 end
@@ -28,28 +27,62 @@ end
 function tbMagic:MagicEnter(IDs, IsThing)
 	self.Count = 0;
 	self.bind:AddLing(-self.magic.CostLing);
+	-- 记录施法者当前位置
+	targetKey = self.bind.Key;
 end
 
---神通施展过程中，需要返回值
---返回值  0继续 1成功并结束 -1失败并结束
-function tbMagic:MagicStep(dt,duration)
-	--self:SetProgress(durationf.magic.Param1);--设置施展进度 主要用于UI显示 这里使用了参数1作为施法时间
+--神通施展过程中
+function tbMagic:MagicStep(dt, duration)
 	self.Count = self.Count + 1;
-	if self.Count == 150 then
-		local item = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone");--读取物品
-		item.FSItemState = -1;--镇物状态0未知 -1无 1有未鉴定 2有已鉴定
-		self.bind.map:DropItem(item,self.bind.Key,true,true,false,false,0,false);--地图掉落物品方法：物品、地点、是否可见、是否携带、没有自我、需要点击、等待、分散。
-		print(self.bind.LingV);
-		print(self.bind);
-		self.bind:AddLing(-self.magic.CostLing);
-		if self.bind.LingV < self.magic.CostLing then
-			return 1;
+	-- 减少生成时间，从150减少到30（约5倍速度）
+	if self.Count >= 30 then
+		-- 获取施法者脚下的所有物品
+		local items = self.bind.map:GetItemsByKey(targetKey);
+		local existingLingStone = nil;
+		
+		-- 查找是否已经有灵石
+		if items and items.Count > 0 then
+			for i = 0, items.Count - 1 do
+				local item = items[i];
+				if item and item.Def.Name == "Item_LingStone" then
+					existingLingStone = item;
+					break;
+				end
+			end
 		end
-		self.Count = 0;
+		
+		if existingLingStone then
+			-- 如果有灵石，增加堆叠数量
+			if existingLingStone.MaxNum > existingLingStone.Num then
+				existingLingStone:AddNum(1);
+			else
+				-- 如果堆叠已满，创建新的灵石
+				local newItem = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone");
+				newItem.FSItemState = -1;
+				self.bind.map:DropItem(newItem, targetKey, true, true, false, false, 0, false);
+			end
+		else
+			-- 如果没有灵石，创建新的灵石
+			local item = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone");
+			item.FSItemState = -1;
+			self.bind.map:DropItem(item, targetKey, true, true, false, false, 0, false);
+		end
+		
+		-- 扣除灵力
+		self.bind:AddLing(-self.magic.CostLing);
+		
+		-- 检查灵力是否足够继续
+		if self.bind.LingV < self.magic.CostLing then
+			return 1; -- 灵力不足，结束神通
+		end
+		
+		self.Count = 0; -- 重置计数器
 	end
 	return 0;
 end
 
---施展完成/失败 success是否成功
+--施展完成/失败
 function tbMagic:MagicLeave(success)
+	-- 清理变量
+	targetKey = nil;
 end
