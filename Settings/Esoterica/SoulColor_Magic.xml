@@ -27,7 +27,7 @@
 			<Type>Refining</Type>
 			<EffectDesc>[size=10][color=#D06508]习得神通：炼制灵晶\n将灵气凝结为灵晶。[/color][/size]</EffectDesc>
 			<Magics>
-				<li>SoulColor_Magic_2</li>
+				<li>LingCrystalMake</li>
 			</Magics>
 		</Esoterica>
 
