@@ -1,6 +1,6 @@
 --炼制灵石
 local tbTable = GameMain:GetMod("MagicHelper")  --获取神通模块
-local tbMagic = tbTable:GetMagic("LingStoneMake")  --修改为XML中的魔法名称
+local tbMagic = tbTable:GetMagic("SoulColor_Magic_1")  --修改为XML中的魔法名称
 
 local frameCount  -- 帧计数器
 local totalFrames  -- 总帧数
