@@ -17,6 +17,7 @@ function tbMagic:EnableCheck(npc)
 	return true;
 end
 
+
 --目标合法检测 首先会通过magic的SelectTarget过滤，然后再通过这里过滤
 --IDs是一个List<int> 如果目标是非对象，里面的值就是地点key，如果目标是物体，值就是对象ID，否则为nil
 --IsThing 目标类型是否为物体
