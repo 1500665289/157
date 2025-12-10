@@ -53,4 +53,3 @@ end
 --施展完成/失败 success是否成功
 function tbMagic:MagicLeave(success)
 end
-灵石生成在施法者脚下如果脚下有灵石则直接堆叠在一起
