@@ -35,7 +35,7 @@ end
 function tbMagic:MagicStep(dt,duration)
 	--self:SetProgress(durationf.magic.Param1);--设置施展进度 主要用于UI显示 这里使用了参数1作为施法时间
 	self.Count = self.Count + 1;
-	if self.Count == 150 then
+	if self.Count == 30 then
 		local item = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone");--读取物品
 		item.FSItemState = -1;--镇物状态0未知 -1无 1有未鉴定 2有已鉴定
 		self.bind.map:DropItem(item,self.bind.Key,true,true,false,false,0,false);--地图掉落物品方法：物品、地点、是否可见、是否携带、没有自我、需要点击、等待、分散。
