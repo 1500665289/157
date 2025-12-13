@@ -23,10 +23,10 @@
 		<Desc>将灵气凝结为灵石。</Desc>
 		<Icon>res\Sprs\ui\icon_lingjshi01</Icon>
 		<Ani>dazuo</Ani>
-		<Param1>5</Param1>
+		<Param1>0</Param1>
 		<Kind>None</Kind>
-		<CostLing>5000</CostLing>
-		<CostAge>0</CostAge>
+		<CostLing>2000</CostLing>
+		<CostAge>0.01</CostAge>
 		<Penalty>0</Penalty>
 		<ScoreGood>0</ScoreGood>
 		<SelectMode>None</SelectMode>
@@ -39,10 +39,10 @@
 		<Desc>将灵气凝结为灵晶。</Desc>
 		<Icon>res\Sprs\ui\icon_lingjing01</Icon>
 		<Ani>dazuo</Ani>
-		<Param1>5</Param1>
+		<Param1>0</Param1>
 		<Kind>None</Kind>
 		<CostLing>20000</CostLing>
-		<CostAge>0</CostAge>
+		<CostAge>0.1</CostAge>
 		<Penalty>0</Penalty>
 		<ScoreGood>0</ScoreGood>
 		<SelectMode>None</SelectMode>
