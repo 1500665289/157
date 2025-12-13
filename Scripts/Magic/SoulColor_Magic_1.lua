@@ -17,10 +17,7 @@ function tbMagic:EnableCheck(npc)
 	return true;
 end
 
-
---目标合法检测 首先会通过magic的SelectTarget过滤，然后再通过这里过滤
---IDs是一个List<int> 如果目标是非对象，里面的值就是地点key，如果目标是物体，值就是对象ID，否则为nil
---IsThing 目标类型是否为物体
+--目标合法检测
 function tbMagic:TargetCheck(key, t)
 	return true
 end
@@ -31,27 +28,82 @@ function tbMagic:MagicEnter(IDs, IsThing)
 	self.bind:AddLing(-self.magic.CostLing);
 end
 
---神通施展过程中，需要返回值
---返回值  0继续 1成功并结束 -1失败并结束
+--神通施展过程中
 function tbMagic:MagicStep(dt,duration)
-	--self:SetProgress(durationf.magic.Param1);--设置施展进度 主要用于UI显示 这里使用了参数1作为施法时间
 	self.Count = self.Count + 1;
 	if self.Count == 5 then
-		local item = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone");--读取物品
-		item.FSItemState = -1;--镇物状态0未知 -1无 1有未鉴定 2有已鉴定
-		self.bind.map:DropItem(item,self.bind.Key,true,true,false,false,0,false);--地图掉落物品方法：物品、地点、是否可见、是否携带、没有自我、需要点击、等待、分散。
-		print(self.bind.LingV);
-		print(self.bind);
+		-- 查找角色周围已存在的灵石
+		local existingLingStone = self:FindNearbyLingStone();
+		
+		if existingLingStone then
+			-- 找到已存在的灵石，增加其数量
+			existingLingStone.Number = existingLingStone.Number + 1;
+			print("灵石数量已堆叠，当前数量：" .. existingLingStone.Number);
+		else
+			-- 没有找到已存在的灵石，掉落新的灵石
+			local item = CS.XiaWorld.ItemRandomMachine.RandomItem("Item_LingStone");
+			item.FSItemState = -1;
+			
+			-- 掉落灵石到角色位置
+			self.bind.map:DropItem(item, self.bind.Key, true, true, false, false, 0, false);
+			print("掉落新的灵石");
+		end
+		
+		print("当前灵气值：" .. self.bind.LingV);
 		self.bind:AddLing(-self.magic.CostLing);
+		
+		-- 灵气不足时结束神通
 		if self.bind.LingV < self.magic.CostLing then
 			return 1;
 		end
+		
 		self.Count = 0;
 	end
 	return 0;
 end
 
---施展完成/失败 success是否成功
+--施展完成/失败
 function tbMagic:MagicLeave(success)
+	-- 清理工作
+	self.Count = nil;
+end
 
+-- 查找角色周围已存在的灵石
+function tbMagic:FindNearbyLingStone()
+	local npc = self.bind;
+	if not npc or not npc.map then
+		return nil;
+	end
+	
+	local cellKey = npc.Key; -- 角色所在格子
+	local map = npc.map;
+	local range = 1; -- 搜索范围（格子数）
+	
+	-- 获取角色当前位置
+	local centerCell = map:GetCell(cellKey);
+	if not centerCell then
+		return nil;
+	end
+	
+	-- 搜索周围格子
+	local cells = map:GetRoundGrids(centerCell.x, centerCell.y, range);
+	
+	for _, cell in pairs(cells) do
+		-- 检查格子中的物品
+		local things = map:GetThings(cell.Key);
+		if things and things.Count > 0 then
+			for i = 0, things.Count - 1 do
+				local thing = things[i];
+				-- 检查是否是灵石
+				if thing and thing.Def.Name == "Item_LingStone" then
+					-- 确保灵石在地上（不是被携带或装备）
+					if thing.Pos and not thing.EquipCharacter and not thing.CarryCharacter then
+						return thing;
+					end
+				end
+			end
+		end
+	end
+	
+	return nil;
 end
