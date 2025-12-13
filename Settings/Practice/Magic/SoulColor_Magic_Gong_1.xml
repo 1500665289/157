@@ -25,8 +25,8 @@
 		<Ani>dazuo</Ani>
 		<Param1>1</Param1>
 		<Kind>None</Kind>
-		<CostLing>2000</CostLing>
-		<CostAge>0.01</CostAge>
+		<CostLing>5000</CostLing>
+		<CostAge>0</CostAge>
 		<Penalty>0</Penalty>
 		<ScoreGood>0</ScoreGood>
 		<SelectMode>None</SelectMode>
